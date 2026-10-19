@@ -311,7 +311,8 @@ main:focus{outline:none}
 .team-mini .photo{margin-bottom:var(--s2)}
 .team-mini .photo-ph{font-size:.75rem;padding:var(--s2)}
 .team-mini figcaption{font-size:.85rem;line-height:1.3}
-.team{list-style:none;padding:0;display:grid;gap:var(--s4);grid-template-columns:repeat(auto-fill,minmax(200px,1fr))}
+.team{list-style:none;padding:0;display:grid;gap:var(--s4);grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+@media (min-width:768px){.team{grid-template-columns:repeat(3,1fr)}}
 .team-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:var(--s4)}
 .team-card h3{margin:var(--s2) 0}
 .team-facts{margin:0 0 var(--s2)}

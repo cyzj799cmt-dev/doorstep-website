@@ -59,12 +59,13 @@ CONFIG = {
     "reply_time": "",
     "payment_methods": "",
 
-    # --- Team (B01 names the five founders; nothing else about them) ----------
-    "team_bora_role": "", "team_bora_languages": "", "team_bora_photo": "", "team_bora_bio": "",
-    "team_arsen_role": "", "team_arsen_languages": "", "team_arsen_photo": "", "team_arsen_bio": "",
-    "team_adon_role": "", "team_adon_languages": "", "team_adon_photo": "", "team_adon_bio": "",
-    "team_nikola_role": "", "team_nikola_languages": "", "team_nikola_photo": "", "team_nikola_bio": "",
-    "team_nina_role": "", "team_nina_languages": "", "team_nina_photo": "", "team_nina_bio": "",
+    # --- Team (six founders; roles, languages, photos and bios still to fill in) --
+    "team_mila_role": "", "team_mila_languages": "", "team_mila_photo": "", "team_mila_bio": "",
+    "team_taras_role": "", "team_taras_languages": "", "team_taras_photo": "", "team_taras_bio": "",
+    "team_elif_role": "", "team_elif_languages": "", "team_elif_photo": "", "team_elif_bio": "",
+    "team_jonas_role": "", "team_jonas_languages": "", "team_jonas_photo": "", "team_jonas_bio": "",
+    "team_ana_role": "", "team_ana_languages": "", "team_ana_photo": "", "team_ana_bio": "",
+    "team_kacper_role": "", "team_kacper_languages": "", "team_kacper_photo": "", "team_kacper_bio": "",
     "team_contact_students": "",     # name + channel of the person who answers students
     "team_contact_parents": "",
     "team_contact_professionals": "",

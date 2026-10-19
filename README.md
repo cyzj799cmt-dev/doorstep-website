@@ -61,7 +61,7 @@ no all-caps words, no `!!!`. On people pages Polish uses *ty*; on university and
 Every template marks its sections with the JTBD line or pain point they answer, e.g. `{# L2, pain: fake offers #}`.
 
 **Photos.** Put a real JPEG in `src/static/assets/img/` with `.webp` and `.avif` siblings of the same name, then set
-`viewing_photo` or `team_<name>_photo` to its path, e.g. `assets/img/nikola.jpg`. Only use photos of real viewings and the real team, with their consent.
+`viewing_photo` or `team_<name>_photo` to its path, e.g. `assets/img/mila.jpg`. Only use photos of real viewings and the real team, with their consent.
 **Testimonials.** There is a commented-out `testimonials` macro in `components.html`. Use it only for real, consented quotes.
 
 ## Deploy on GitHub Pages

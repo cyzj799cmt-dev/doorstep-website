@@ -14,7 +14,7 @@ common:
   record_title: "At a glance"
   crumbs_label: "Breadcrumb"
   org_description: "Housing search in Warsaw, done for you: we find, check, negotiate and book, and you choose."
-  founders: ["Bora Cetinkaya", "Arsen Dzhepparov", "Adon Grubi", "Nikola Hub", "Nina Schmelzer"]
+  founders: ["Mila Novak", "Taras Kovalenko", "Elif Yilmaz", "Jonas Weber", "Ana Petrovska", "Kacper Wiśniewski"]
   ph:
     fill: "FILL IN"
     confirm: "confirm"
@@ -40,26 +40,30 @@ common:
     contact_hours: "hours when we answer"
     reply_time: "reply time"
     payment_methods: "payment details"
-    team_bora_role: "Bora's role"
-    team_bora_languages: "Bora's languages"
-    team_bora_photo: "photo of Bora"
-    team_bora_bio: "one line about Bora"
-    team_arsen_role: "Arsen's role"
-    team_arsen_languages: "Arsen's languages"
-    team_arsen_photo: "photo of Arsen"
-    team_arsen_bio: "one line about Arsen"
-    team_adon_role: "Adon's role"
-    team_adon_languages: "Adon's languages"
-    team_adon_photo: "photo of Adon"
-    team_adon_bio: "one line about Adon"
-    team_nikola_role: "Nikola's role"
-    team_nikola_languages: "Nikola's languages"
-    team_nikola_photo: "photo of Nikola"
-    team_nikola_bio: "one line about Nikola"
-    team_nina_role: "Nina's role"
-    team_nina_languages: "Nina's languages"
-    team_nina_photo: "photo of Nina"
-    team_nina_bio: "one line about Nina"
+    team_mila_role: "Mila's role"
+    team_mila_languages: "Mila's languages"
+    team_mila_photo: "photo of Mila"
+    team_mila_bio: "one line about Mila"
+    team_taras_role: "Taras's role"
+    team_taras_languages: "Taras's languages"
+    team_taras_photo: "photo of Taras"
+    team_taras_bio: "one line about Taras"
+    team_elif_role: "Elif's role"
+    team_elif_languages: "Elif's languages"
+    team_elif_photo: "photo of Elif"
+    team_elif_bio: "one line about Elif"
+    team_jonas_role: "Jonas's role"
+    team_jonas_languages: "Jonas's languages"
+    team_jonas_photo: "photo of Jonas"
+    team_jonas_bio: "one line about Jonas"
+    team_ana_role: "Ana's role"
+    team_ana_languages: "Ana's languages"
+    team_ana_photo: "photo of Ana"
+    team_ana_bio: "one line about Ana"
+    team_kacper_role: "Kacper's role"
+    team_kacper_languages: "Kacper's languages"
+    team_kacper_photo: "photo of Kacper"
+    team_kacper_bio: "one line about Kacper"
     team_contact_students: "named contact for students"
     team_contact_parents: "named contact for parents"
     team_contact_professionals: "named contact for professionals"
@@ -120,7 +124,7 @@ common:
     email: "Email"
   footer:
     tagline: "Housing search in Warsaw, done for you. Warsaw only."
-    founded: "Founded in autumn 2026 by five Lazarski University students. Our own business, not a university service."
+    founded: "Founded in autumn 2026 by six Lazarski University students. Our own business, not a university service."
     help_title: "Ask us"
     whatsapp_label: "WhatsApp"
     email_label: "Email:"
@@ -158,7 +162,7 @@ common:
     total: "You pay each month"
     deposit: "Deposit <span class='muted'>([[pl:kaucja]], once)</span>"
     empty: "— PLN"
-    note: "“Arsen here. I saw the flat this morning. The video is in your WhatsApp.”"
+    note: "“Jonas here. I saw the flat this morning. The video is in your WhatsApp.”"
     sr_caption: "Sample of what a checked option looks like. Values appear once real data exists."
   promises:
     title: "Three things we promise"
@@ -240,11 +244,12 @@ common:
       - title: "Not a relocation firm for companies"
         text: "Companies with their own relocation department don't need us."
   team:
-    - {key: "bora", name: "Bora Cetinkaya", photo_caption: "[Team photo: Bora]"}
-    - {key: "arsen", name: "Arsen Dzhepparov", photo_caption: "[Team photo: Arsen]"}
-    - {key: "adon", name: "Adon Grubi", photo_caption: "[Team photo: Adon]"}
-    - {key: "nikola", name: "Nikola Hub", photo_caption: "[Team photo: Nikola]"}
-    - {key: "nina", name: "Nina Schmelzer", photo_caption: "[Team photo: Nina]"}
+    - {key: "mila", name: "Mila Novak", photo_caption: "[Team photo: Mila]"}
+    - {key: "taras", name: "Taras Kovalenko", photo_caption: "[Team photo: Taras]"}
+    - {key: "elif", name: "Elif Yilmaz", photo_caption: "[Team photo: Elif]"}
+    - {key: "jonas", name: "Jonas Weber", photo_caption: "[Team photo: Jonas]"}
+    - {key: "ana", name: "Ana Petrovska", photo_caption: "[Team photo: Ana]"}
+    - {key: "kacper", name: "Kacper Wiśniewski", photo_caption: "[Team photo: Kacper]"}
   forms:
     required: "(required)"
     optional: "(optional)"
@@ -437,9 +442,9 @@ home:
     link: "Registration and insurance details"
   story:
     heading: "Why we exist"
-    text: "Two months before term, Nikola’s confirmed flat in Warsaw was cancelled. He had two weeks to find a new one from abroad. We built the service we would have paid for."
-    meta: "Five founders · Lazarski University students"
-    names: "Bora, Arsen, Adon, Nikola and Nina"
+    text: "Two months before term, Taras’s confirmed flat in Warsaw was cancelled. He had two weeks to find a new one from abroad. We built the service we would have paid for."
+    meta: "Six founders · Lazarski University students"
+    names: "Mila, Taras, Elif, Jonas, Ana and Kacper"
     link: "Meet us"
   guides:
     title: "Before you search"
@@ -550,7 +555,7 @@ parents:
   real:
     title: "Is this company real?"
     text:
-      - "A fair question. Doorstep was founded in autumn 2026 by five students at Lazarski University. We have no reviews yet, so we show none."
+      - "A fair question. Doorstep was founded in autumn 2026 by six students at Lazarski University. We have no reviews yet, so we show none."
       - "This is what you can check before you pay us anything:"
     link: "Registration and insurance details"
   safe:
@@ -871,16 +876,16 @@ how:
 about:
   meta:
     title: "About Doorstep: who we are and how to check us"
-    description: "Doorstep was founded in autumn 2026 by five Lazarski University students who searched for housing in Warsaw from abroad. Who we are, and how to check us."
+    description: "Doorstep was founded in autumn 2026 by six Lazarski University students who searched for housing in Warsaw from abroad. Who we are, and how to check us."
   hero:
     eyebrow: "About us"
     title: "We built the service we would have paid for."
     story:
-      - "Two months before this semester, Nikola had a flat in Warsaw confirmed. It was cancelled at short notice, and he had two weeks to find a new one from abroad. He found his room in a newly opened student residence by chance, after days of stress."
+      - "Two months before this semester, Taras had a flat in Warsaw confirmed. It was cancelled at short notice, and he had two weeks to find a new one from abroad. He found his room in a newly opened student residence by chance, after days of stress."
       - "The rest of us had versions of the same story: ads only in Polish, listings that vanished, and nobody to ask whether an offer was genuine."
-      - "Doorstep was founded in autumn 2026 by five students at Lazarski University: three on Erasmus exchange, two in full-time degree programmes. We are not trading yet."
+      - "Doorstep was founded in autumn 2026 by six students at Lazarski University: three on Erasmus exchange, three in full-time degree programmes. We are not trading yet."
   team:
-    title: "The five of us"
+    title: "The six of us"
     intro: "One of us handles your case from your first message to your keys."
     role: "Role"
     languages: "Languages"

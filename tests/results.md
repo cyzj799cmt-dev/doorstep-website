@@ -1,6 +1,6 @@
 # Test results
 
-Run: 2026-10-19 06:38 · 69 checks · **69 passed, 0 failed** · 91 s
+Run: 2026-10-19 12:23 · 68 checks · **68 passed, 0 failed** · 36 s
 
 
 ## content
@@ -10,7 +10,7 @@ Run: 2026-10-19 06:38 · 69 checks · **69 passed, 0 failed** · 91 s
 | PASS | banned-word / caps / !!! lint passes on en.yml and pl.yml |  |
 | PASS | every [[…]] token is resolved in the output |  |
 | PASS | no lorem / TODO text in the output |  |
-| PASS | CHECKLIST.md matches the 77 placeholder keys found on pages |  |
+| PASS | CHECKLIST.md matches the 81 placeholder keys found on pages |  |
 | PASS | CHECKLIST.md lists every CONFIG item |  |
 | PASS | style.css under 40 KB (33 KB) |  |
 | PASS | site.js under 25 KB (19 KB) |  |
@@ -45,12 +45,6 @@ Run: 2026-10-19 06:38 · 69 checks · **69 passed, 0 failed** · 91 s
 |---|---|---|
 | PASS | SHOW_PLACEHOLDER_HIGHLIGHTS=False: no highlight markup or labels in the output |  |
 | PASS | hidden mode: sentences around empty FILL IN items still read correctly |  |
-
-## screens
-
-| Result | Check | Detail |
-|---|---|---|
-| PASS | 136 full-page screenshots at 390×844 and 1440×900 (with and without highlights) |  |
 
 ## a11y
 

@@ -11,7 +11,7 @@ common:
   record_title: "W skrócie"
   crumbs_label: "Ścieżka"
   org_description: "Szukamy mieszkania w Warszawie za Ciebie: znajdujemy, sprawdzamy, negocjujemy i rezerwujemy, a Ty wybierasz."
-  founders: ["Bora Cetinkaya", "Arsen Dzhepparov", "Adon Grubi", "Nikola Hub", "Nina Schmelzer"]
+  founders: ["Mila Novak", "Taras Kovalenko", "Elif Yilmaz", "Jonas Weber", "Ana Petrovska", "Kacper Wiśniewski"]
   ph:
     fill: "UZUPEŁNIJ"
     confirm: "do potwierdzenia"
@@ -37,26 +37,30 @@ common:
     contact_hours: "godziny, w których odpowiadamy"
     reply_time: "czas odpowiedzi"
     payment_methods: "dane do płatności"
-    team_bora_role: "rola Bory"
-    team_bora_languages: "języki Bory"
-    team_bora_photo: "zdjęcie Bory"
-    team_bora_bio: "jedno zdanie o Borze"
-    team_arsen_role: "rola Arsena"
-    team_arsen_languages: "języki Arsena"
-    team_arsen_photo: "zdjęcie Arsena"
-    team_arsen_bio: "jedno zdanie o Arsenie"
-    team_adon_role: "rola Adona"
-    team_adon_languages: "języki Adona"
-    team_adon_photo: "zdjęcie Adona"
-    team_adon_bio: "jedno zdanie o Adonie"
-    team_nikola_role: "rola Nikoli"
-    team_nikola_languages: "języki Nikoli"
-    team_nikola_photo: "zdjęcie Nikoli"
-    team_nikola_bio: "jedno zdanie o Nikoli"
-    team_nina_role: "rola Niny"
-    team_nina_languages: "języki Niny"
-    team_nina_photo: "zdjęcie Niny"
-    team_nina_bio: "jedno zdanie o Ninie"
+    team_mila_role: "rola Mili"
+    team_mila_languages: "języki Mili"
+    team_mila_photo: "zdjęcie Mili"
+    team_mila_bio: "jedno zdanie o Mili"
+    team_taras_role: "rola Tarasa"
+    team_taras_languages: "języki Tarasa"
+    team_taras_photo: "zdjęcie Tarasa"
+    team_taras_bio: "jedno zdanie o Tarasie"
+    team_elif_role: "rola Elif"
+    team_elif_languages: "języki Elif"
+    team_elif_photo: "zdjęcie Elif"
+    team_elif_bio: "jedno zdanie o Elif"
+    team_jonas_role: "rola Jonasa"
+    team_jonas_languages: "języki Jonasa"
+    team_jonas_photo: "zdjęcie Jonasa"
+    team_jonas_bio: "jedno zdanie o Jonasie"
+    team_ana_role: "rola Any"
+    team_ana_languages: "języki Any"
+    team_ana_photo: "zdjęcie Any"
+    team_ana_bio: "jedno zdanie o Anie"
+    team_kacper_role: "rola Kacpra"
+    team_kacper_languages: "języki Kacpra"
+    team_kacper_photo: "zdjęcie Kacpra"
+    team_kacper_bio: "jedno zdanie o Kacprze"
     team_contact_students: "osoba kontaktowa dla studentów"
     team_contact_parents: "osoba kontaktowa dla rodziców"
     team_contact_professionals: "osoba kontaktowa dla osób pracujących"
@@ -117,7 +121,7 @@ common:
     email: "E-mail"
   footer:
     tagline: "Szukamy mieszkania w Warszawie za Ciebie. Tylko Warszawa."
-    founded: "Założone jesienią 2026 przez pięcioro studentów Uczelni Łazarskiego. Nasza własna firma, nie usługa uczelni."
+    founded: "Założone jesienią 2026 przez sześcioro studentów Uczelni Łazarskiego. Nasza własna firma, nie usługa uczelni."
     help_title: "Zapytaj nas"
     whatsapp_label: "WhatsApp"
     email_label: "E-mail:"
@@ -155,7 +159,7 @@ common:
     total: "Płacisz co miesiąc"
     deposit: "Kaucja <span class='muted'>(jednorazowo)</span>"
     empty: "— zł"
-    note: "„Tu Arsen. Byłem dziś rano w tym mieszkaniu. Nagranie masz na WhatsAppie.”"
+    note: "„Tu Jonas. Byłem dziś rano w tym mieszkaniu. Nagranie masz na WhatsAppie.”"
     sr_caption: "Przykład sprawdzonej oferty. Kwoty pojawią się, gdy będą prawdziwe dane."
   promises:
     title: "Trzy rzeczy, które obiecujemy"
@@ -237,11 +241,12 @@ common:
       - title: "Nie jesteśmy firmą relokacyjną dla korporacji"
         text: "Firmy z własnym działem relokacji nas nie potrzebują."
   team:
-    - {key: "bora", name: "Bora Cetinkaya", photo_caption: "[Zdjęcie zespołu: Bora]"}
-    - {key: "arsen", name: "Arsen Dzhepparov", photo_caption: "[Zdjęcie zespołu: Arsen]"}
-    - {key: "adon", name: "Adon Grubi", photo_caption: "[Zdjęcie zespołu: Adon]"}
-    - {key: "nikola", name: "Nikola Hub", photo_caption: "[Zdjęcie zespołu: Nikola]"}
-    - {key: "nina", name: "Nina Schmelzer", photo_caption: "[Zdjęcie zespołu: Nina]"}
+    - {key: "mila", name: "Mila Novak", photo_caption: "[Zdjęcie zespołu: Mila]"}
+    - {key: "taras", name: "Taras Kovalenko", photo_caption: "[Zdjęcie zespołu: Taras]"}
+    - {key: "elif", name: "Elif Yilmaz", photo_caption: "[Zdjęcie zespołu: Elif]"}
+    - {key: "jonas", name: "Jonas Weber", photo_caption: "[Zdjęcie zespołu: Jonas]"}
+    - {key: "ana", name: "Ana Petrovska", photo_caption: "[Zdjęcie zespołu: Ana]"}
+    - {key: "kacper", name: "Kacper Wiśniewski", photo_caption: "[Zdjęcie zespołu: Kacper]"}
   forms:
     required: "(wymagane)"
     optional: "(opcjonalnie)"
@@ -434,9 +439,9 @@ home:
     link: "Dane rejestrowe i ubezpieczenie"
   story:
     heading: "Dlaczego istniejemy"
-    text: "Dwa miesiące przed semestrem Nikoli odwołano potwierdzone mieszkanie w Warszawie. Miał dwa tygodnie, żeby z zagranicy znaleźć nowe. Zbudowaliśmy usługę, za którą sami chętnie byśmy zapłacili."
-    meta: "Pięcioro założycieli · studenci Uczelni Łazarskiego"
-    names: "Bora, Arsen, Adon, Nikola i Nina"
+    text: "Dwa miesiące przed semestrem Tarasowi odwołano potwierdzone mieszkanie w Warszawie. Miał dwa tygodnie, żeby z zagranicy znaleźć nowe. Zbudowaliśmy usługę, za którą sami chętnie byśmy zapłacili."
+    meta: "Sześcioro założycieli · studenci Uczelni Łazarskiego"
+    names: "Mila, Taras, Elif, Jonas, Ana i Kacper"
     link: "Poznaj nas"
   guides:
     title: "Zanim zaczniesz szukać"
@@ -547,7 +552,7 @@ parents:
   real:
     title: "Czy ta firma naprawdę istnieje?"
     text:
-      - "Uczciwe pytanie. Doorstep założyło jesienią 2026 pięcioro studentów Uczelni Łazarskiego. Nie mamy jeszcze opinii, więc żadnych nie pokazujemy."
+      - "Uczciwe pytanie. Doorstep założyło jesienią 2026 sześcioro studentów Uczelni Łazarskiego. Nie mamy jeszcze opinii, więc żadnych nie pokazujemy."
       - "Oto co możesz sprawdzić, zanim cokolwiek nam zapłacisz:"
     link: "Dane rejestrowe i ubezpieczenie"
   safe:
@@ -868,16 +873,16 @@ how:
 about:
   meta:
     title: "O Doorstep: kim jesteśmy i jak nas sprawdzić"
-    description: "Doorstep założyło jesienią 2026 pięcioro studentów Uczelni Łazarskiego, którzy sami szukali mieszkania w Warszawie z zagranicy. Kim jesteśmy?"
+    description: "Doorstep założyło jesienią 2026 sześcioro studentów Uczelni Łazarskiego, którzy sami szukali mieszkania w Warszawie z zagranicy. Kim jesteśmy?"
   hero:
     eyebrow: "O nas"
     title: "Zbudowaliśmy usługę, za którą sami byśmy zapłacili."
     story:
-      - "Dwa miesiące przed tym semestrem Nikola miał potwierdzone mieszkanie w Warszawie. Odwołano je w ostatniej chwili, a on miał dwa tygodnie, żeby z zagranicy znaleźć nowe. Pokój w nowo otwartym akademiku znalazł przypadkiem, po kilku dniach stresu."
+      - "Dwa miesiące przed tym semestrem Taras miał potwierdzone mieszkanie w Warszawie. Odwołano je w ostatniej chwili, a on miał dwa tygodnie, żeby z zagranicy znaleźć nowe. Pokój w nowo otwartym akademiku znalazł przypadkiem, po kilku dniach stresu."
       - "Każdy z nas miał podobną historię: ogłoszenia tylko po polsku, oferty, które znikały, i nikogo, kogo można zapytać, czy oferta jest prawdziwa."
-      - "Doorstep założyło jesienią 2026 pięcioro studentów Uczelni Łazarskiego: troje na wymianie Erasmus, dwoje na studiach stacjonarnych. Jeszcze nie prowadzimy sprzedaży."
+      - "Doorstep założyło jesienią 2026 sześcioro studentów Uczelni Łazarskiego: troje na wymianie Erasmus, troje na studiach stacjonarnych. Jeszcze nie prowadzimy sprzedaży."
   team:
-    title: "Nasza piątka"
+    title: "Nasza szóstka"
     intro: "Twoją sprawę prowadzi jedna osoba z nas, od pierwszej wiadomości do kluczy."
     role: "Rola"
     languages: "Języki"
