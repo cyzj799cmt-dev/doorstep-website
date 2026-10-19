@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block main %}
+<section class="hero hero-plain" aria-labelledby="h1">
+  <div class="wrap narrow">
+    {{ ui.eyebrow(c.hero.eyebrow) }}
+    <h1 id="h1" tabindex="-1">{{ c.hero.title }}</h1>
+    {# site.js shows the message for ?form=…; without JS the generic one stays #}
+    <div class="thanks-msg" data-thanks-for="default"><p class="lead">{{ t(c.messages.default) }}</p></div>
+    {% for key in ['search', 'call', 'proposal', 'partner', 'contact'] %}
+    <div class="thanks-msg" data-thanks-for="{{ key }}" hidden><p class="lead">{{ t(c.messages[key]) }}</p></div>
+    {% endfor %}
+    {{ ui.para(c.reply) }}
+    <div class="cta-row">
+      {{ ui.whatsapp_button(common.cta.whatsapp, 'thanks', 'btn-primary') }}
+      <a class="btn btn-secondary" href="{{ url('guides') }}">{{ c.guides_link }}</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

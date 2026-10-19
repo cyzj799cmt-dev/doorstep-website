@@ -1,0 +1,30 @@
+{% set nav = common.nav %}
+{% macro navlink(target, label) %}<a href="{{ url(target) }}"{% if pid == target %} aria-current="page"{% endif %}>{{ label }}</a>{% endmacro %}
+<header class="site-header">
+  <div class="wrap header-in">
+    <a class="brand" href="{{ url('home') }}">{{ ui.icon('door', 'brand-mark') }}<span>Doorstep</span><span class="vh"> {{ nav.home_suffix }}</span></a>
+    <nav class="main-nav" id="main-nav" aria-label="{{ nav.label }}">
+      <ul class="nav-list">
+        <li>{{ navlink('students', nav.students) }}</li>
+        <li>{{ navlink('parents', nav.parents) }}</li>
+        <li>{{ navlink('professionals', nav.professionals) }}</li>
+        <li class="has-sub">
+          <button type="button" class="sub-toggle js-only" aria-expanded="false" aria-controls="sub-partners">{{ nav.partners }}{{ ui.icon('chevron', 'chev') }}</button>
+          <span class="sub-label no-js-only">{{ nav.partners }}</span>
+          <ul class="sub" id="sub-partners">
+            <li>{{ navlink('universities', nav.universities) }}</li>
+            <li>{{ navlink('landlords', nav.landlords) }}</li>
+          </ul>
+        </li>
+        <li>{{ navlink('how', nav.how) }}</li>
+        <li>{{ navlink('about', nav.about) }}</li>
+        <li class="nav-extra">{{ navlink('guides', nav.guides) }}</li>
+        <li class="nav-extra">{{ navlink('contact', nav.contact) }}</li>
+      </ul>
+      <a class="btn btn-primary nav-panel-cta" href="{{ url('start') }}" data-cta="start" data-loc="menu">{{ common.cta.start }}</a>
+    </nav>
+    <a class="lang-switch" href="{{ switch_url }}" hreflang="{{ other_lang }}" lang="{{ other_lang }}" data-to="{{ other_lang }}"><span class="lang-code" aria-hidden="true">{{ other_lang | upper }}</span><span class="lang-name">{{ other_common.lang_name }}</span></a>
+    <a class="btn btn-primary header-cta" href="{{ url('start') }}" data-cta="start" data-loc="header">{{ common.cta.start }}</a>
+    <button type="button" class="menu-toggle js-only" aria-expanded="false" aria-controls="main-nav">{{ ui.icon('menu', 'i-menu') }}{{ ui.icon('close', 'i-close') }}<span>{{ nav.menu }}</span></button>
+  </div>
+</header>

@@ -1,0 +1,59 @@
+{% import "components.html" as ui with context %}
+<!doctype html>
+<html lang="{{ lang }}" class="no-js{% if not highlights %} ph-off{% endif %}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>{{ inline_js | safe }}</script>
+<title>{{ meta.title }}</title>
+<meta name="description" content="{{ meta.description }}">
+{% if noindex %}
+<meta name="robots" content="noindex">
+{% endif %}
+<link rel="canonical" href="{{ canonical }}">
+{% for alt in alternates %}
+<link rel="alternate" hreflang="{{ alt.hreflang }}" href="{{ alt.href }}">
+{% endfor %}
+<link rel="preload" href="{{ asset('fonts/instrument-sans-latin-400-normal.woff2') }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ asset('fonts/bricolage-grotesque-latin-800-normal.woff2') }}" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{ asset('style.css') }}?v={{ version }}">
+<link rel="icon" href="{{ root('favicon.ico') }}" sizes="32x32">
+<link rel="icon" href="{{ root('favicon.svg') }}" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{ root('apple-touch-icon.png') }}">
+<link rel="manifest" href="{{ root('site.webmanifest') }}">
+<meta name="theme-color" content="#1E4D3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Doorstep">
+<meta property="og:title" content="{{ meta.title }}">
+<meta property="og:description" content="{{ meta.description }}">
+<meta property="og:url" content="{{ canonical }}">
+<meta property="og:locale" content="{{ 'en_GB' if lang == 'en' else 'pl_PL' }}">
+<meta property="og:locale:alternate" content="{{ 'pl_PL' if lang == 'en' else 'en_GB' }}">
+{% if og_image %}
+<meta property="og:image" content="{{ og_image }}">
+<meta name="twitter:image" content="{{ og_image }}">
+{% endif %}
+<meta name="twitter:card" content="{{ 'summary_large_image' if og_image else 'summary' }}">
+<meta name="twitter:title" content="{{ meta.title }}">
+<meta name="twitter:description" content="{{ meta.description }}">
+{% if filled('search_console_verification') %}
+<meta name="google-site-verification" content="{{ cfg('search_console_verification') }}">
+{% endif %}
+<script src="{{ asset('site.js') }}?v={{ version }}" defer></script>
+{% for block in jsonld %}
+<script type="application/ld+json">{{ block | tojson_ld }}</script>
+{% endfor %}
+</head>
+<body data-page="{{ pid }}" data-lang="{{ lang }}" data-persona="{{ persona }}"{% if page.bar %} data-bar="{{ page.bar }}"{% endif %}
+ data-gtm="{{ cfg('gtm_id') }}" data-ga4="{{ cfg('ga4_id') }}"{% if use_gsap %} data-gsap="{{ asset('vendor/gsap.min.js') }}"{% endif %}
+ data-thanks="{{ url('thanks') }}" data-start="{{ url('start') }}"{% if highlights %} data-fill-label="{{ common.ph.fill }}"{% endif %}>
+<a class="skip" href="#main">{{ common.skip }}</a>
+{% include "partials/header.html" %}
+<main id="main" tabindex="-1">
+{% block main %}{% endblock %}
+</main>
+{% include "partials/footer.html" %}
+{% include "partials/actionbar.html" %}
+{% include "partials/consent.html" %}
+</body>
+</html>

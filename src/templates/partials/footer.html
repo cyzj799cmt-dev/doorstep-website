@@ -1,0 +1,43 @@
+{% set f = common.footer %}
+{% set nav = common.nav %}
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <p class="brand brand-footer">{{ ui.icon('door', 'brand-mark') }}<span>Doorstep</span></p>
+      <p>{{ f.tagline }}</p>
+      <p class="small">{{ t(f.founded) }}</p>
+    </div>
+    {# Consistent help (WCAG 3.2.6): the same help block, in the same place, on every page #}
+    <section class="footer-help" aria-labelledby="footer-help-h">
+      <h2 id="footer-help-h" class="footer-h">{{ f.help_title }}</h2>
+      <ul class="plain">
+        <li>{{ ui.whatsapp_link(f.whatsapp_label, 'footer') }}</li>
+        {% set em = ui.email_link('footer') %}{% if em | trim %}<li>{{ em }}</li>{% endif %}
+        <li><a href="{{ url('contact') }}">{{ f.contact_page }}</a></li>
+        {% set hours = t(f.hours) %}{% if hours %}<li class="small">{{ hours }}</li>{% endif %}
+      </ul>
+      <p class="small">{{ t(f.languages) }}</p>
+    </section>
+    <nav class="footer-nav" aria-labelledby="footer-nav-h">
+      <h2 id="footer-nav-h" class="footer-h">{{ f.nav_title }}</h2>
+      <ul class="plain">
+        <li><a href="{{ url('students') }}">{{ nav.students }}</a></li>
+        <li><a href="{{ url('parents') }}">{{ nav.parents }}</a></li>
+        <li><a href="{{ url('professionals') }}">{{ nav.professionals }}</a></li>
+        <li><a href="{{ url('universities') }}">{{ nav.universities }}</a></li>
+        <li><a href="{{ url('landlords') }}">{{ nav.landlords }}</a></li>
+        <li><a href="{{ url('how') }}">{{ nav.how }}</a></li>
+        <li><a href="{{ url('guides') }}">{{ nav.guides }}</a></li>
+        <li><a href="{{ url('about') }}">{{ nav.about }}</a></li>
+      </ul>
+    </nav>
+    <section class="footer-legal" aria-labelledby="footer-legal-h">
+      <h2 id="footer-legal-h" class="footer-h">{{ f.legal_title }}</h2>
+      <ul class="plain small">
+        {% for line in f.legal_lines %}{% set l = t(line) %}{% if l %}<li>{{ l }}</li>{% endif %}{% endfor %}
+        <li><a href="{{ url('privacy') }}">{{ nav.privacy }}</a> · <a href="{{ url('terms') }}">{{ nav.terms }}</a></li>
+        <li class="js-only"><button type="button" class="linklike" data-consent-open>{{ f.cookie_settings }}</button></li>
+      </ul>
+    </section>
+  </div>
+</footer>

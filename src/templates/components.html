@@ -1,0 +1,224 @@
+{# Shared components. Imported in base.html as `ui`. #}
+
+{% macro icon(name, cls='') -%}
+<svg class="icon {{ cls }}" aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="24" height="24">
+{%- if name == 'door' -%}<path d="M6 21V9a6 6 0 0 1 12 0v12M4 21h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="14.5" cy="14" r="1.25" fill="currentColor"/>
+{%- elif name == 'check' -%}<path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+{%- elif name == 'cross' -%}<path d="M7 7l10 10M17 7L7 17" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+{%- elif name == 'arrow' -%}<path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+{%- elif name == 'chevron' -%}<path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+{%- elif name == 'menu' -%}<path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+{%- elif name == 'close' -%}<path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+{%- elif name == 'alert' -%}<circle cx="12" cy="12" r="9.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><circle cx="12" cy="16.6" r="1.3" fill="currentColor"/>
+{%- elif name == 'copy' -%}<rect x="8" y="8" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3" fill="none" stroke="currentColor" stroke-width="2"/>
+{%- elif name == 'pin' -%}<path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="9.5" r="2.5" fill="currentColor"/>
+{%- endif -%}
+</svg>
+{%- endmacro %}
+
+{# ---- contact links ------------------------------------------------------ #}
+{% macro wa_href() -%}
+{%- set text = common.wa_text[pid] if pid in common.wa_text else common.wa_text.default -%}
+{{ wa(text) or url('contact') ~ '#whatsapp' }}
+{%- endmacro %}
+
+{% macro whatsapp_link(label, loc) -%}
+<a href="{{ wa_href() }}"{% if filled('whatsapp') %} rel="noopener" target="_blank"{% endif %} data-loc="{{ loc }}">{{ label }}</a>{% if not filled('whatsapp') %} {{ fill('whatsapp') }}{% endif %}
+{%- endmacro %}
+
+{% macro whatsapp_button(label, loc, cls='btn-secondary') -%}
+<a class="btn {{ cls }}" href="{{ wa_href() }}"{% if filled('whatsapp') %} rel="noopener" target="_blank"{% endif %} data-cta="whatsapp" data-loc="{{ loc }}">{{ label }}</a>
+{%- endmacro %}
+
+{% macro email_link(loc) -%}
+{% if filled('email') %}<a href="mailto:{{ cfg('email') }}" data-loc="{{ loc }}">{{ cfg('email') }}</a>{% elif highlights %}{{ common.footer.email_label }} {{ fill('email') }}{% endif %}
+{%- endmacro %}
+
+{% macro email_button(label, loc, cls='btn-secondary') -%}
+<a class="btn {{ cls }}" href="{{ 'mailto:' ~ cfg('email') if filled('email') else url('contact') }}" data-cta="email" data-loc="{{ loc }}">{{ label }}</a>
+{%- endmacro %}
+
+{# ---- layout helpers --------------------------------------------------------- #}
+{% macro eyebrow(text) %}{% if text %}<p class="eyebrow">{{ t(text) }}</p>{% endif %}{% endmacro %}
+
+{% macro para(text, cls='') %}{% set out = t(text) %}{% if out %}<p{% if cls %} class="{{ cls }}"{% endif %}>{{ out }}</p>{% endif %}{% endmacro %}
+
+{% macro paras(list, cls='') %}{% for p in list %}{{ para(p, cls) }}{% endfor %}{% endmacro %}
+
+{% macro bullets(list, cls='ticks') %}
+<ul class="{{ cls }}">
+{% for item in list %}{% set out = t(item) %}{% if out %}<li>{% if cls == 'ticks' %}{{ icon('check', 'tick') }}{% elif cls == 'crosses' %}{{ icon('cross', 'tick') }}{% endif %}<span>{{ out }}</span></li>{% endif %}
+{% endfor %}
+</ul>
+{% endmacro %}
+
+{% macro source(text) %}<p class="source"><span class="mono-label">{{ common.source_label }}</span> {{ t(text) }}</p>{% endmacro %}
+
+{% macro photo(caption, fill_key='viewing_photo', ratio='wide', eager=False) %}
+{% if filled(fill_key) %}
+{% set src = cfg(fill_key) %}{% set stem = src.rsplit('.', 1)[0] %}
+<picture class="photo photo-{{ ratio }}">
+  <source srcset="{{ root(stem.lstrip('/') ~ '.avif') }}" type="image/avif">
+  <source srcset="{{ root(stem.lstrip('/') ~ '.webp') }}" type="image/webp">
+  <img src="{{ root(src.lstrip('/')) }}" alt="{{ caption | striptags | replace('[', '') | replace(']', '') }}" width="800" height="{{ 450 if ratio == 'wide' else 800 }}"{% if not eager %} loading="lazy"{% endif %} decoding="async">
+</picture>
+{% else %}
+<div class="photo photo-ph photo-{{ ratio }}" role="img" aria-label="{{ caption | striptags }}">
+  <span>{{ caption }}</span>{% if highlights %}<mark class="ph ph-fill ph-small" data-ph="{{ fill_key }}">{{ common.ph.fill }}: {{ common.fill_labels[fill_key] if fill_key in common.fill_labels else fill_key }}</mark>{% endif %}
+</div>
+{% endif %}
+{% endmacro %}
+
+{# ---- signature components ------------------------------------------------- #}
+
+{# 1. The checked card: always "Sample", always "—" until real data exists. #}
+{% macro checked_card(variant='person', eager=False, deposit=True) %}
+{% set cc = common.checked_card %}
+<figure class="checked-card" aria-labelledby="cc-{{ variant }}-cap">
+  <div class="cc-top">
+    <span class="stamp" data-stamp>{{ cc.stamp_person if variant == 'person' else cc.stamp_video }}</span>
+    <span class="mono-label">{{ cc.sample }}</span>
+  </div>
+  {{ photo(cc.photo, eager=eager) }}
+  <dl class="cc-lines">
+    <div><dt>{{ cc.rent }}</dt><dd>{{ cc.empty }}</dd></div>
+    <div><dt>{{ t(cc.czynsz) }}</dt><dd>{{ cc.empty }}</dd></div>
+    <div><dt>{{ t(cc.utilities) }}</dt><dd>{{ cc.empty }}</dd></div>
+    <div class="cc-total"><dt>{{ cc.total }}</dt><dd><span class="brass">{{ cc.empty }}</span></dd></div>
+    {% if deposit %}<div class="cc-deposit"><dt>{{ t(cc.deposit) }}</dt><dd>{{ cc.empty }}</dd></div>{% endif %}
+  </dl>
+  <figcaption id="cc-{{ variant }}-cap"><span class="vh">{{ cc.sr_caption }} </span>{{ cc.note }}</figcaption>
+</figure>
+{% endmacro %}
+
+{# A record: label/value rows with dashed rules, used in persona heroes. #}
+{% macro record(rows, title='') %}
+<div class="record">
+  {% if title %}<p class="mono-label record-title">{{ title }}</p>{% endif %}
+  <dl>
+  {% for r in rows %}{% set v = t(r.v) %}{% if v %}<div><dt>{{ r.k }}</dt><dd>{{ v }}</dd></div>{% endif %}
+  {% endfor %}
+  </dl>
+</div>
+{% endmacro %}
+
+{# 2. Door card: the whole card is one link. #}
+{% macro door(d, position, size='big') %}
+<a class="door door-{{ size }}" href="{{ url(d.page) }}" data-door="{{ d.persona }}" data-position="{{ position }}">
+  {{ icon('door', 'door-icon') }}
+  <q>{{ d.quote }}</q>
+  <span class="door-go">{{ d.link }} {{ icon('arrow', 'arrow') }}</span>
+</a>
+{% endmacro %}
+
+{# 3. Step list: five steps, the pay step marked. #}
+{% macro steps(list, pay_label) %}
+<ol class="steps">
+{% for s in list %}
+  <li{% if s.pay %} class="pay"{% endif %}>
+    <span class="step-n" aria-hidden="true">{{ loop.index }}</span>
+    <div>
+      <h3>{{ t(s.title) }}{% if s.pay %} <span class="pay-tag">{{ pay_label }}</span>{% endif %}</h3>
+      {{ para(s.text) }}
+    </div>
+  </li>
+{% endfor %}
+</ol>
+{% endmacro %}
+
+{# 4. Price box #}
+{% macro price_box(kind, id='price', heading_level=2) %}
+{% set p = common.price %}
+<div class="price-box" id="{{ id }}">
+  <div class="price-head">
+    <p class="mono-label">{{ p[kind].name }}</p>
+    <p class="price-figure">{{ confirm('fee_' ~ kind) }}</p>
+    <p class="price-when"><strong>{{ confirm('pay_on_signing') }}.</strong> {{ confirm('no_home_no_fee') }}</p>
+    {{ para('[[confirm:fees_gross_vat]]', 'small') }}
+  </div>
+  <div class="price-cols">
+    <div>
+      <h{{ heading_level + 1 }} class="mono-label">{{ p.included_title }}</h{{ heading_level + 1 }}>
+      {{ bullets(p.included, 'ticks') }}
+    </div>
+    <div>
+      <h{{ heading_level + 1 }} class="mono-label">{{ p.not_included_title }}</h{{ heading_level + 1 }}>
+      {{ bullets(p.not_included, 'crosses') }}
+    </div>
+  </div>
+  <p class="price-note">{{ t(p.who_pays_note) }}</p>
+</div>
+{% endmacro %}
+
+{# 5. Fee comparison #}
+{% macro fee_compare(fc) %}
+<div class="fee-compare">
+  <div class="fee-row">
+    <span class="fee-name">{{ t(fc.agency) }}</span>
+    <span class="fee-num">{{ t(fc.agency_value) }}</span>
+  </div>
+  <div class="fee-row fee-us">
+    <span class="fee-name"><strong>{{ t(fc.us) }}</strong> · {{ confirm('pay_on_signing') | lower if lang == 'en' else confirm('pay_on_signing') }}</span>
+    <span class="fee-num">{{ t(fc.us_value) }}</span>
+  </div>
+</div>
+{{ source(fc.source) }}
+{% endmacro %}
+
+{# 6. Check-us list #}
+{% macro checkus(items) %}
+<ul class="checkus">
+{% for i in items %}{% set txt = t(i.text) %}{% if txt %}
+  <li>{{ icon('check', 'tick') }}<span>{{ txt }}{% if i.proof %} <a href="{{ i.proof }}" rel="noopener" target="_blank">{{ i.proof_label }}<span class="vh"> {{ common.new_tab }}</span></a>{% endif %}</span></li>{% endif %}
+{% endfor %}
+</ul>
+{% endmacro %}
+
+{# 8. FAQ #}
+{% macro faq(f, id='faq') %}
+<section class="section" id="{{ id }}" aria-labelledby="{{ id }}-h">
+  <div class="wrap narrow">
+    <h2 id="{{ id }}-h">{{ f.title }}</h2>
+    <div class="faq">
+    {% for item in f['items'] %}{% set a = t(item.a) %}{% if a %}
+      <details data-q="{{ item.id }}">
+        <summary>{{ t(item.q) }}</summary>
+        <div class="faq-a"><p>{{ a }}</p></div>
+      </details>
+    {% endif %}{% endfor %}
+    </div>
+  </div>
+</section>
+{% endmacro %}
+
+{# Named contact block, ends persona pages with their preferred channel #}
+{% macro named_contact(nc, fill_key) %}
+<div class="named-contact">
+  {{ icon('door', 'door-icon') }}
+  <div>
+    <h2>{{ nc.title }}</h2>
+    {{ para('[[fill:' ~ fill_key ~ ']]') }}
+    {{ para(nc.text) }}
+  </div>
+</div>
+{% endmacro %}
+
+{# Soft CTA at the end of guides #}
+{% macro soft_cta(sc) %}
+<aside class="soft-cta" aria-labelledby="soft-cta-h">
+  <h2 id="soft-cta-h">{{ sc.title }}</h2>
+  {{ para(sc.text) }}
+  <div class="cta-row">
+    <a class="btn btn-primary" href="{{ url('start') }}" data-cta="start" data-loc="guide">{{ common.cta.start }}</a>
+    {% for l in sc.links %}<a class="text-link" href="{{ url(l.page) }}">{{ l.label }} {{ icon('arrow', 'arrow') }}</a>{% endfor %}
+  </div>
+</aside>
+{% endmacro %}
+
+{# Testimonials slot: B01 has none yet. Do not fill with invented quotes.
+{% macro testimonials(items) %}
+<section class="section" aria-labelledby="voices-h">
+  <div class="wrap"><h2 id="voices-h">…</h2> … real, signed quotes with consent only …</div>
+</section>
+{% endmacro %}
+#}

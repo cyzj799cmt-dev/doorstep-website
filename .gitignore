@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+.test-build/
+tests/screenshots/
+doorstep-website.zip
+.DS_Store
+node_modules/

@@ -1,0 +1,18 @@
+{% extends "guide_base.html" %}
+{% block guide %}
+{# L2, K1; pain: fake offers, deposit before viewing. Calm language, no capitals, no percentages. #}
+<ol class="patterns">
+  {% for p in c.patterns %}
+  <li data-reveal>
+    <h2><span class="mono-label">{{ c.sign_label }} {{ loop.index }}</span> {{ p.title }}</h2>
+    {{ ui.paras(p.text) }}
+    <div class="instead">
+      <h3 class="mono-label">{{ c.instead_label }}</h3>
+      {{ ui.paras(p.instead) }}
+    </div>
+  </li>
+  {% endfor %}
+</ol>
+<p class="closing">{{ c.closing }}</p>
+{{ ui.source(c.source) }}
+{% endblock %}

@@ -1,0 +1,203 @@
+{# Form building blocks and the five forms. Copy: common.forms in en.yml / pl.yml. #}
+{% set F = common.forms %}
+
+{% macro req(required) %}{% if required %} <span class="req">{{ F.required }}</span>{% else %} <span class="opt">{{ F.optional }}</span>{% endif %}{% endmacro %}
+
+{% macro msgs(name, required, fmt) -%}
+{%- set e = F.errors -%}
+{% if required %} data-msg-required="{{ e[name] if name in e else e.required }}"{% endif %}{% if fmt %} data-msg-format="{{ e[fmt] }}"{% endif %}
+{%- endmacro %}
+
+{% macro field(fid, name, label, type='text', required=False, hint='', autocomplete='', inputmode='', extra='', fmt='', value='') %}
+{% set id = fid ~ '-' ~ name %}
+<div class="field" data-field="{{ name }}">
+  <label for="{{ id }}">{{ label }}{{ req(required) }}</label>
+  {% if hint %}<p class="hint" id="{{ id }}-hint">{{ t(hint) }}</p>{% endif %}
+  <p class="field-error" id="{{ id }}-error" hidden></p>
+  {% if type == 'textarea' %}
+  <textarea id="{{ id }}" name="{{ name }}" rows="4"{% if required %} required{% endif %}{% if hint %} aria-describedby="{{ id }}-hint"{% endif %}{{ msgs(name, required, fmt) }} {{ extra | safe }}></textarea>
+  {% else %}
+  <input id="{{ id }}" name="{{ name }}" type="{{ type }}"{% if required %} required{% endif %}{% if autocomplete %} autocomplete="{{ autocomplete }}"{% endif %}{% if inputmode %} inputmode="{{ inputmode }}"{% endif %}{% if hint %} aria-describedby="{{ id }}-hint"{% endif %}{% if value %} value="{{ value }}"{% endif %}{{ msgs(name, required, fmt) }} {{ extra | safe }}>
+  {% endif %}
+</div>
+{% endmacro %}
+
+{% macro select(fid, name, label, options, required=False, hint='') %}
+{% set id = fid ~ '-' ~ name %}
+<div class="field" data-field="{{ name }}">
+  <label for="{{ id }}">{{ label }}{{ req(required) }}</label>
+  {% if hint %}<p class="hint" id="{{ id }}-hint">{{ hint }}</p>{% endif %}
+  <p class="field-error" id="{{ id }}-error" hidden></p>
+  <select id="{{ id }}" name="{{ name }}"{% if required %} required{% endif %}{% if hint %} aria-describedby="{{ id }}-hint"{% endif %}{{ msgs(name, required, '') }}>
+    <option value="">{{ F.choose }}</option>
+    {% for o in options %}<option value="{{ o.v }}">{{ o.l }}</option>{% endfor %}
+  </select>
+</div>
+{% endmacro %}
+
+{% macro choice(fid, name, legend, options, required=False, type='radio', hint='', inline=False) %}
+{% set id = fid ~ '-' ~ name %}
+<fieldset class="field choice{% if inline %} choice-inline{% endif %}" id="{{ id }}" data-field="{{ name }}"{% if required %} data-required{% endif %}{{ msgs(name, required, '') }}{% if hint %} aria-describedby="{{ id }}-hint"{% endif %}>
+  <legend>{{ legend }}{{ req(required) }}</legend>
+  {% if hint %}<p class="hint" id="{{ id }}-hint">{{ hint }}</p>{% endif %}
+  <p class="field-error" id="{{ id }}-error" hidden></p>
+  {% for o in options %}
+  <div class="check">
+    <input type="{{ type }}" id="{{ id }}-{{ loop.index }}" name="{{ name }}" value="{{ o.v }}"{% if required and type == 'radio' %} required{% endif %}>
+    <label for="{{ id }}-{{ loop.index }}">{{ o.l }}</label>
+  </div>
+  {% endfor %}
+</fieldset>
+{% endmacro %}
+
+{% macro consent_box(fid, extra_optin=False) %}
+<div class="field consent-field" data-field="consent">
+  <p class="field-error" id="{{ fid }}-consent-error" hidden></p>
+  <div class="check">
+    <input type="checkbox" id="{{ fid }}-consent" name="consent" value="yes" required data-msg-required="{{ F.errors.consent }}">
+    <label for="{{ fid }}-consent">{{ F.consent }} <a href="{{ url('privacy') }}">{{ F.privacy_link }}</a> <span class="req">{{ F.required }}</span></label>
+  </div>
+  {% if extra_optin %}
+  <div class="check">
+    <input type="checkbox" id="{{ fid }}-next_year" name="write_before_next_year" value="yes">
+    <label for="{{ fid }}-next_year">{{ F.next_year }} <span class="opt">{{ F.optional }}</span></label>
+  </div>
+  {% endif %}
+</div>
+{% endmacro %}
+
+{# Wrapper: hidden fields, error summary, honeypot, status, submit #}
+{% macro form(form_id, submit, persona='', anchor='') %}
+{% set fid = 'f-' ~ form_id %}
+<form class="form" id="{{ anchor or fid }}" method="post" action="{{ cfg('form_endpoint') or url('contact') ~ '#no-backend' }}" data-form="{{ form_id }}" data-endpoint="{{ cfg('form_endpoint') }}" data-persona="{{ persona }}">
+  <div class="error-summary" tabindex="-1" hidden aria-labelledby="{{ fid }}-err-h">
+    <h2 id="{{ fid }}-err-h" class="h3">{{ icon_alert() }}{{ F.error_title }}</h2>
+    <ul></ul>
+  </div>
+  <input type="hidden" name="form_id" value="{{ form_id }}">
+  <input type="hidden" name="page" value="{{ pid }}">
+  <input type="hidden" name="lang" value="{{ lang }}">
+  <input type="hidden" name="persona" value="{{ persona }}">
+  <input type="hidden" name="utm_source" value="">
+  <input type="hidden" name="utm_medium" value="">
+  <input type="hidden" name="utm_campaign" value="">
+  <input type="hidden" name="referrer" value="">
+  <input type="hidden" name="fill_ms" value="">
+  <div class="hp" aria-hidden="true">
+    <label for="{{ fid }}-website">{{ F.honeypot }}</label>
+    <input type="text" id="{{ fid }}-website" name="website" tabindex="-1" autocomplete="off">
+  </div>
+  {{ caller(fid) }}
+  <p class="form-status" role="status" aria-live="polite" data-no-backend="{{ F.no_backend }}" data-sending="{{ F.sending }}" data-failed="{{ F.failed }}"></p>
+  <button type="submit" class="btn btn-primary btn-submit">{{ submit }}</button>
+  {% if not cfg('form_endpoint') and highlights %}<p class="small no-backend-note">{{ fill('form_endpoint') }}</p>{% endif %}
+  {% set rt = t(F.reply_line) %}{% if rt %}<p class="small">{{ rt }}</p>{% endif %}
+</form>
+{% endmacro %}
+
+{% macro icon_alert() %}<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="24" height="24"><circle cx="12" cy="12" r="9.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><circle cx="12" cy="16.6" r="1.3" fill="currentColor"/></svg>{% endmacro %}
+
+{# ---- 1. Search brief: full (/start/) or inline (students, professionals) ---- #}
+{% macro search_brief(variant='full', anchor='') %}
+{% set S = F.search %}
+{% set persona = {'student': 'lena', 'professional': 'marco'}.get(variant, '') %}
+{% call(fid) form('search', S.submit_full if variant == 'full' else S.submit_inline[variant], persona, anchor) %}
+  {% if variant == 'full' %}
+  {{ choice(fid, 'who', S.who, S.who_options, required=True) }}
+  {% else %}
+  <input type="hidden" name="who" value="{{ variant }}">
+  {% endif %}
+  <div class="field-row">
+  {{ field(fid, 'arrival', S.job_start if variant == 'professional' else S.arrival, 'date', True, fmt='fmt_date') }}
+  {{ field(fid, 'months', S.months, 'number', True, S.months_hint[variant], inputmode='numeric', extra='min="1" max="24" step="1"', fmt='fmt_months') }}
+  </div>
+  {{ field(fid, 'budget', S.budget, 'number', True, S.budget_hint[variant], inputmode='numeric', extra='min="300" step="50"', fmt='fmt_budget') }}
+  {{ field(fid, 'area', S.area_work if variant == 'professional' else (S.area if variant == 'full' else S.area_uni), 'text', True, S.area_hint if variant == 'full' else '') }}
+  {% if variant == 'full' %}
+  {{ choice(fid, 'place', S.place, S.place_options, inline=True) }}
+  {% elif variant == 'professional' %}
+  {{ choice(fid, 'furnished', S.furnished, S.yes_no, inline=True) }}
+  {{ choice(fid, 'employer_reimburses', S.reimburse, S.yes_no_unsure, inline=True) }}
+  {% endif %}
+  {{ field(fid, 'name', S.name, 'text', True, autocomplete='name') }}
+  {{ field(fid, 'contact', S.contact, 'text', True, S.contact_hint, autocomplete='email', fmt='fmt_contact') }}
+  {{ choice(fid, 'channel', S.channel, S.channel_options, inline=True) }}
+  {% if variant == 'full' %}
+  {{ field(fid, 'notes', S.notes, 'textarea') }}
+  {% endif %}
+  {{ consent_box(fid) }}
+{% endcall %}
+{% endmacro %}
+
+{# ---- 2. Book a call (parents) ---- #}
+{% macro book_call() %}
+{% set B = F.call %}
+{% call(fid) form('call', B.submit, 'katrin') %}
+  {{ field(fid, 'name', B.name, 'text', True, autocomplete='name') }}
+  {{ field(fid, 'child_name', B.child_name) }}
+  <div class="field-row">
+  {{ field(fid, 'email', B.email, 'email', True, autocomplete='email', fmt='fmt_email') }}
+  {{ field(fid, 'phone', B.phone, 'tel', False, autocomplete='tel', inputmode='tel') }}
+  </div>
+  {{ field(fid, 'times', B.times, 'text', True, B.times_hint) }}
+  {{ select(fid, 'timezone', B.timezone, B.timezones, True) }}
+  {{ field(fid, 'call_language', B.language) }}
+  {{ field(fid, 'university_start', B.university_start, 'text', False, B.university_start_hint) }}
+  {{ consent_box(fid, extra_optin=True) }}
+{% endcall %}
+{% endmacro %}
+
+{# ---- 3. Proposal request (universities) ---- #}
+{% macro proposal() %}
+{% set P = F.proposal %}
+{% call(fid) form('proposal', P.submit, 'agnieszka', 'proposal-form') %}
+  {{ field(fid, 'university', P.university, 'text', True, autocomplete='organization') }}
+  <div class="field-row">
+  {{ field(fid, 'name', P.name, 'text', True, autocomplete='name') }}
+  {{ field(fid, 'role', P.role, 'text', True, autocomplete='organization-title') }}
+  </div>
+  <div class="field-row">
+  {{ field(fid, 'email', P.email, 'email', True, autocomplete='email', fmt='fmt_email') }}
+  {{ field(fid, 'phone', P.phone, 'tel', False, autocomplete='tel', inputmode='tel') }}
+  </div>
+  {{ field(fid, 'students_per_intake', P.students, 'number', False, P.students_hint, inputmode='numeric', extra='min="0" step="1"') }}
+  {{ choice(fid, 'intakes', P.intakes, P.intake_options, type='checkbox', inline=True) }}
+  {{ field(fid, 'questions', P.questions, 'textarea', False, P.questions_hint) }}
+  {{ consent_box(fid) }}
+{% endcall %}
+{% endmacro %}
+
+{# ---- 4. Partnership enquiry (landlords) ---- #}
+{% macro partnership() %}
+{% set P = F.partner %}
+{% call(fid) form('partner', P.submit, 'piotr', 'partnership-form') %}
+  {{ field(fid, 'company', P.company, 'text', True, autocomplete='organization') }}
+  <div class="field-row">
+  {{ field(fid, 'name', P.name, 'text', True, autocomplete='name') }}
+  {{ field(fid, 'role', P.role, 'text', False, autocomplete='organization-title') }}
+  </div>
+  <div class="field-row">
+  {{ field(fid, 'email', P.email, 'email', True, autocomplete='email', fmt='fmt_email') }}
+  {{ field(fid, 'phone', P.phone, 'tel', True, autocomplete='tel', inputmode='tel', fmt='fmt_phone') }}
+  </div>
+  {{ choice(fid, 'type', P.type, P.type_options) }}
+  <div class="field-row">
+  {{ field(fid, 'rooms', P.rooms, 'number', False, inputmode='numeric', extra='min="0" step="1"') }}
+  {{ field(fid, 'available_from', P.available_from, 'date') }}
+  </div>
+  {{ field(fid, 'districts', P.districts) }}
+  {{ consent_box(fid) }}
+{% endcall %}
+{% endmacro %}
+
+{# ---- 5. Contact ---- #}
+{% macro contact() %}
+{% set C = F.contact %}
+{% call(fid) form('contact', C.submit) %}
+  {{ field(fid, 'name', C.name, 'text', True, autocomplete='name') }}
+  {{ field(fid, 'contact', C.contact, 'text', True, C.contact_hint, autocomplete='email', fmt='fmt_contact') }}
+  {{ select(fid, 'topic', C.topic, C.topics) }}
+  {{ field(fid, 'message', C.message, 'textarea', True) }}
+  {{ consent_box(fid) }}
+{% endcall %}
+{% endmacro %}

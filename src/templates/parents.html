@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+{% import "forms.html" as forms with context %}
+{% block main %}
+{# 1. Hero: K1 (someone trustworthy checks a safe, legal flat), primary CTA = a call with a named person #}
+<section class="hero hero-persona" aria-labelledby="h1">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      {{ ui.eyebrow(c.hero.eyebrow) }}
+      <h1 id="h1">{{ c.hero.title }}</h1>
+      <p class="lead">{{ t(c.hero.lead) }}</p>
+      <div class="cta-row">
+        {% if filled('booking_url') %}
+        <a class="btn btn-primary" href="{{ cfg('booking_url') }}" target="_blank" rel="noopener" data-booking data-cta="book_call" data-loc="hero"><span>{{ t(c.hero.cta) }}</span> <span class="vh">{{ common.new_tab }}</span></a>
+        {% else %}
+        <a class="btn btn-primary" href="#book-call" data-cta="book_call" data-loc="hero"><span>{{ t(c.hero.cta) }}</span></a>
+        {% endif %}
+        {{ ui.email_button(c.hero.cta_email, 'hero') }}
+      </div>
+    </div>
+    <div class="hero-side">{{ ui.record(c.hero.record, common.record_title) }}</div>
+  </div>
+</section>
+
+{# 2. Is this company real? K2, pain: is this service trustworthy #}
+<section class="section section-plaster" aria-labelledby="real-h">
+  <div class="wrap two-col">
+    <div data-reveal>
+      <h2 id="real-h">{{ c.real.title }}</h2>
+      {{ ui.paras(c.real.text) }}
+      {{ ui.checkus(common.checkus['items']) }}
+      <p><a class="text-link" href="{{ url('about') }}#check-us">{{ c.real.link }} {{ ui.icon('arrow', 'arrow') }}</a></p>
+    </div>
+    <div class="team-strip" data-reveal>
+      {% for m in common.team %}
+      <figure class="team-mini">
+        {{ ui.photo(m.photo_caption, 'team_' ~ m.key ~ '_photo', 'square') }}
+        <figcaption><strong>{{ m.name }}</strong></figcaption>
+      </figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# 3. Safe area, legal contract, protected deposit: K1, K3; pain: safety, contract legality, deposit #}
+<section class="section" aria-labelledby="safe-h">
+  <div class="wrap">
+    <h2 id="safe-h">{{ c.safe.title }}</h2>
+    <div class="cards cards-2">
+      {% for b in c.safe['items'] %}
+      <article class="card" data-reveal>
+        <h3>{{ b.title }}</h3>
+        {{ ui.paras(b.text) }}
+        {% if b.source %}{{ ui.source(b.source) }}{% endif %}
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# 4. How you and your child choose together: B01 Katrin "her child picks and can veto" #}
+<section class="section section-plaster" aria-labelledby="together-h">
+  <div class="wrap">
+    <h2 id="together-h">{{ c.together.title }}</h2>
+    <div class="together" role="table" aria-label="{{ c.together.title }}">
+      <div class="together-row together-head" role="row">
+        <span role="columnheader" class="mono-label">{{ c.together.step }}</span>
+        <span role="columnheader" class="mono-label">{{ c.together.you }}</span>
+        <span role="columnheader" class="mono-label">{{ c.together.child }}</span>
+      </div>
+      {% for r in c.together.rows %}
+      <div class="together-row" role="row">
+        <span role="rowheader" class="step-n">{{ loop.index }}</span>
+        <span role="cell"><span class="mono-label together-k" aria-hidden="true">{{ c.together.you }}</span>{{ t(r.you) }}</span>
+        <span role="cell"><span class="mono-label together-k" aria-hidden="true">{{ c.together.child }}</span>{{ t(r.child) }}</span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# 5. After move-in: who you call. K4, her lowest point (B01 §5 stage 4) #}
+<section class="section" aria-labelledby="after-h">
+  <div class="wrap narrow">
+    <h2 id="after-h">{{ c.after.title }}</h2>
+    {{ ui.paras(c.after.text) }}
+    {{ ui.bullets(c.after['items']) }}
+  </div>
+</section>
+
+{# 6. Price box #}
+<section class="section section-card" aria-labelledby="price-h">
+  <div class="wrap narrow">
+    <h2 id="price-h">{{ c.price_title }}</h2>
+    {{ ui.price_box('student') }}
+  </div>
+</section>
+
+{# 7. Book a call: Katrin's primary contact (B01: phone or video call first, then email) #}
+<section class="section" id="book-call" aria-labelledby="call-h">
+  <div class="wrap narrow">
+    <h2 id="call-h">{{ t(c.call.title) }}</h2>
+    {{ ui.para(c.call.text) }}
+    {% if filled('booking_url') %}
+    <p><a class="btn btn-primary" href="{{ cfg('booking_url') }}" target="_blank" rel="noopener" data-booking data-cta="book_call" data-loc="form"><span>{{ t(c.hero.cta) }}</span></a></p>
+    <p class="small">{{ c.call.new_tab_warning }}</p>
+    {% else %}
+    {% if highlights %}<p class="small">{{ fill('booking_url') }} {{ c.call.booking_fallback }}</p>{% endif %}
+    {{ forms.book_call() }}
+    {% endif %}
+  </div>
+</section>
+
+{# 8. FAQ: not lawyers, what the fee doesn't cover, can I pay for my child #}
+{{ ui.faq(c.faq) }}
+
+<section class="section section-plaster" aria-label="{{ c.contact.title }}">
+  <div class="wrap narrow">{{ ui.named_contact(c.contact, 'team_contact_parents') }}</div>
+</section>
+{% endblock %}

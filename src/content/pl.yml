@@ -1,0 +1,1145 @@
+# Polska wersja. Te same klucze i ta sama struktura co en.yml (build.py to sprawdza).
+# Strony dla osób (studenci, rodzice, praca): „ty”. Strony dla partnerów (uczelnie, wynajmujący):
+# „Państwo / Pan / Pani”, precyzyjnie o opłatach, danych i odpowiedzialności, nadal krótkie zdania.
+# Tokeny: patrz en.yml.
+
+common:
+  lang_name: "Polski"
+  skip: "Przejdź do treści"
+  new_tab: "(otwiera się w nowej karcie)"
+  source_label: "Źródło"
+  record_title: "W skrócie"
+  crumbs_label: "Ścieżka"
+  org_description: "Szukamy mieszkania w Warszawie za Ciebie: znajdujemy, sprawdzamy, negocjujemy i rezerwujemy, a Ty wybierasz."
+  founders: ["Bora Cetinkaya", "Arsen Dzhepparov", "Adon Grubi", "Nikola Hub", "Nina Schmelzer"]
+  ph:
+    fill: "UZUPEŁNIJ"
+    confirm: "do potwierdzenia"
+    unset: "do ustalenia"
+  fill_labels:
+    site_url: "adres strony"
+    og_image: "obraz do udostępniania"
+    search_console_verification: "kod Search Console"
+    legal_name: "nazwa firmy"
+    legal_form: "forma prawna"
+    nip: "NIP"
+    regon: "REGON"
+    krs_or_ceidg: "numer KRS lub wpis CEIDG"
+    registered_address: "adres siedziby"
+    oc_insurer: "ubezpieczyciel OC"
+    oc_policy: "numer polisy OC"
+    email: "e-mail"
+    phone: "telefon"
+    whatsapp: "numer WhatsApp"
+    instagram: "Instagram"
+    linkedin: "LinkedIn"
+    booking_url: "link do rezerwacji rozmowy"
+    contact_hours: "godziny, w których odpowiadamy"
+    reply_time: "czas odpowiedzi"
+    payment_methods: "dane do płatności"
+    team_bora_role: "rola Bory"
+    team_bora_languages: "języki Bory"
+    team_bora_photo: "zdjęcie Bory"
+    team_bora_bio: "jedno zdanie o Borze"
+    team_arsen_role: "rola Arsena"
+    team_arsen_languages: "języki Arsena"
+    team_arsen_photo: "zdjęcie Arsena"
+    team_arsen_bio: "jedno zdanie o Arsenie"
+    team_adon_role: "rola Adona"
+    team_adon_languages: "języki Adona"
+    team_adon_photo: "zdjęcie Adona"
+    team_adon_bio: "jedno zdanie o Adonie"
+    team_nikola_role: "rola Nikoli"
+    team_nikola_languages: "języki Nikoli"
+    team_nikola_photo: "zdjęcie Nikoli"
+    team_nikola_bio: "jedno zdanie o Nikoli"
+    team_nina_role: "rola Niny"
+    team_nina_languages: "języki Niny"
+    team_nina_photo: "zdjęcie Niny"
+    team_nina_bio: "jedno zdanie o Ninie"
+    team_contact_students: "osoba kontaktowa dla studentów"
+    team_contact_parents: "osoba kontaktowa dla rodziców"
+    team_contact_professionals: "osoba kontaktowa dla osób pracujących"
+    team_contact_partners: "osoba kontaktowa dla partnerów"
+    viewing_photo: "zdjęcie z prawdziwych oględzin"
+    viewing_checklist: "lista kontrolna oględzin"
+    districts_by_campus: "dzielnice według uczelni"
+    aftercare_contact: "kontakt w sprawie problemów z wynajmującym"
+    capacity_per_intake: "liczba spraw na nabór"
+    university_annual_fee: "roczna opłata uczelni"
+    data_processing_summary: "opis przetwarzania danych"
+    liability_terms: "zasady odpowiedzialności"
+    references: "referencje"
+    proposal_pdf: "oferta w PDF"
+    first_week_content: "treść na pierwszy tydzień"
+    privacy_policy_body: "treść polityki prywatności"
+    terms_body: "treść regulaminu"
+    cookie_policy_body: "treść polityki cookies"
+    form_endpoint: "formularz nie jest podłączony"
+    gtm_id: "identyfikator kontenera GTM"
+    ga4_id: "identyfikator GA4"
+    shortlist_days: "liczba dni"
+  nav:
+    label: "Główna"
+    home: "Strona główna"
+    home_suffix: "strona główna"
+    students: "Studenci"
+    parents: "Rodzice"
+    professionals: "Praca"
+    partners: "Partnerzy"
+    universities: "Uczelnie"
+    landlords: "Akademiki i wynajmujący"
+    how: "Jak to działa"
+    about: "O nas"
+    guides: "Poradniki"
+    contact: "Kontakt"
+    menu: "Menu"
+    privacy: "Prywatność"
+    terms: "Regulamin"
+  cta:
+    start: "Zacznij szukanie"
+    whatsapp: "Napisz na WhatsAppie"
+    whatsapp_short: "WhatsApp"
+    proposal: "Poproś o ofertę na piśmie"
+    partnership: "Zapytaj o współpracę"
+  wa_text:
+    default: "Cześć, szukam mieszkania w Warszawie."
+    students: "Cześć, przyjeżdżam do Warszawy na semestr. Moje daty: "
+    parents: "Dzień dobry, moje dziecko zaczyna studia w Warszawie i chciałabym/chciałbym porozmawiać."
+    professionals: "Cześć, zaczynam pracę w Warszawie i szukam umeblowanego mieszkania. Data rozpoczęcia: "
+    start: "Cześć, wolę wysłać swoje dane tutaj: "
+    thanks: "Cześć, właśnie wysłałem/wysłałam formularz."
+  bar:
+    label: "Szybkie akcje"
+    book_call: "Umów rozmowę"
+    proposal: "Poproś o ofertę"
+    partnership: "Zapytaj o współpracę"
+    email: "E-mail"
+  footer:
+    tagline: "Szukamy mieszkania w Warszawie za Ciebie. Tylko Warszawa."
+    founded: "Założone jesienią 2026 przez pięcioro studentów Uczelni Łazarskiego. Nasza własna firma, nie usługa uczelni."
+    help_title: "Zapytaj nas"
+    whatsapp_label: "WhatsApp"
+    email_label: "E-mail:"
+    contact_page: "Wszystkie sposoby kontaktu"
+    hours: "{?Odpowiadamy: [[fill:contact_hours]]?}"
+    languages: "Mówimy: [[confirm:languages]]."
+    nav_title: "Strony"
+    legal_title: "Firma"
+    legal_lines:
+      - "[[fill:legal_name]] {?· [[fill:legal_form]]?}"
+      - "NIP [[fill:nip]]"
+      - "{?REGON [[fill:regon]] · ?}KRS/CEIDG [[fill:krs_or_ceidg]]"
+      - "Ubezpieczenie OC: [[fill:oc_insurer]]"
+    cookie_settings: "Ustawienia cookies"
+  consent:
+    title: "Pliki cookies"
+    text: "Chcemy mierzyć, które strony pomagają znaleźć mieszkanie. Nic się nie wczyta, dopóki nie wybierzesz."
+    privacy_link: "Jak przetwarzamy dane"
+    accept: "Akceptuję"
+    reject: "Odrzucam"
+    settings: "Ustawienia"
+    analytics: "Analityka"
+    analytics_hint: "Anonimowe statystyki odwiedzin (Google Analytics)."
+    marketing: "Mapy i marketing"
+    marketing_hint: "Wczytuje Mapy Google i pozwala mierzyć nasze reklamy."
+    save: "Zapisz mój wybór"
+  checked_card:
+    stamp_person: "Sprawdzone na miejscu"
+    stamp_video: "Sprawdzone na wideo na żywo"
+    sample: "Przykład"
+    photo: "[Zdjęcie z prawdziwych oględzin]"
+    rent: "Czynsz najmu"
+    czynsz: "Czynsz administracyjny <span class='muted'>opłata za budynek</span>"
+    utilities: "Media <span class='muted'>(prąd, gaz, internet)</span>"
+    total: "Płacisz co miesiąc"
+    deposit: "Kaucja <span class='muted'>(jednorazowo)</span>"
+    empty: "— zł"
+    note: "„Tu Arsen. Byłem dziś rano w tym mieszkaniu. Nagranie masz na WhatsAppie.”"
+    sr_caption: "Przykład sprawdzonej oferty. Kwoty pojawią się, gdy będą prawdziwe dane."
+  promises:
+    title: "Trzy rzeczy, które obiecujemy"
+    items:
+      - title: "Ktoś z nas był w środku"
+        text: "Każde mieszkanie, które proponujemy, ktoś z nas obejrzał na miejscu albo sprawdził na wideo na żywo, zanim cokolwiek zapłacisz."
+      - title: "Ty tylko wybierasz"
+        text: "Raz podajesz budżet, daty i okolicę. My wysyłamy listę, umawiamy oglądanie i rozmawiamy z wynajmującym, po polsku, gdy trzeba."
+      - title: "Przyjeżdżasz po klucze"
+        text: "Umowa jest w języku, który rozumiesz, przekazanie mieszkania jest udokumentowane, a Ty wprowadzasz się w dniu przyjazdu."
+  nonneg:
+    title: "Cztery zasady, od których nie odstępujemy"
+    items:
+      - title: "Każdą sprawę prowadzi konkretna osoba"
+        text: "Program może sortować oferty. Mieszkanie sprawdza i odpowiada Ci człowiek."
+      - title: "Nic nie płacisz za niesprawdzone"
+        text: "Nigdy nie prosimy o pieniądze za mieszkanie, którego nikt nie zweryfikował."
+      - title: "Mówimy, kto nam płaci"
+        text: "Jeśli wynajmujący lub akademik płaci nam za Twoje zakwaterowanie, widzisz to przed decyzją."
+      - title: "Stała opłata, nie procent od czynszu"
+        text: "Nasza opłata nie rośnie razem z czynszem, więc nie mamy powodu namawiać Cię na droższe."
+  steps:
+    title: "Od pierwszej wiadomości do kluczy"
+    pay_label: "Tu płacisz"
+    not_instant: "Sprawdzona lista zajmuje kilka dni. Nie zarezerwujemy dziś wieczorem mieszkania, którego nikt nie widział."
+    items:
+      - title: "Piszesz raz"
+        text: "Daty, budżet, uczelnia albo miejsce pracy, w jednej wiadomości. Szukamy do 8 tygodni przed Twoim przyjazdem."
+      - title: "Dostajesz 3–5 sprawdzonych opcji"
+        text: "Każdą ktoś z nas obejrzał na miejscu albo sprawdził na wideo na żywo. Pełny koszt miesięczny to jedna liczba."
+      - title: "Oglądasz na żywo"
+        text: "Na wideo z kimś z nas albo osobiście, jeśli już jesteś w Warszawie."
+      - title: "Podpisujesz umowę, którą rozumiesz"
+        text: "Omawiamy ją z Tobą prostym językiem i rozmawiamy z wynajmującym po polsku. Nasza opłata: [[confirm:pay_on_signing]], nie wcześniej."
+        pay: true
+      - title: "Wprowadzasz się w dniu przyjazdu"
+        text: "Klucze i protokół przekazania ze zdjęciami."
+  price:
+    student:
+      name: "Wyszukiwanie dla studentów"
+    professional:
+      name: "Wyszukiwanie dla pracujących"
+    included_title: "W cenie"
+    not_included_title: "Poza ceną"
+    included:
+      - "Rozmowa o Twoich potrzebach"
+      - "Lista 3–5 sprawdzonych opcji"
+      - "Oglądanie na miejscu albo na wideo na żywo"
+      - "Cały kontakt z wynajmującym, po polsku, gdy trzeba"
+      - "Omówienie umowy prostym językiem"
+      - "Protokół przekazania ze zdjęciami"
+    not_included:
+      - "Czynsz"
+      - "Kaucja, zwykle w wysokości miesięcznego czynszu"
+      - "Porada prawna"
+      - "Sama przeprowadzka"
+    who_pays_note: "Jeśli akademik albo wynajmujący płaci nam za Twoje zakwaterowanie, zobaczysz to na liście."
+  checkus:
+    items:
+      - text: "Zarejestrowana firma: NIP [[fill:nip]] · KRS/CEIDG [[fill:krs_or_ceidg]]."
+        proof: "https://www.podatki.gov.pl/wykaz-podatnikow-vat-wyszukiwarka/"
+        proof_label: "Sprawdź NIP w oficjalnym wykazie"
+      - text: "Ubezpieczenie OC: [[fill:oc_insurer]], polisa [[fill:oc_policy]]."
+      - text: "Każdą sprawę prowadzi konkretna osoba. Wiesz, kto sprawdza mieszkanie i kto Ci odpowiada."
+      - text: "Mówimy, kto nam płaci. Jeśli wynajmujący lub akademik płaci nam za Twoje zakwaterowanie, widzisz to przed decyzją."
+  not_list:
+    title: "Czym nie jesteśmy"
+    items:
+      - title: "Nie jesteśmy portalem z ogłoszeniami"
+        text: "Dostajesz trzy do pięciu sprawdzonych opcji, a nie trzy tysiące niesprawdzonych."
+      - title: "Nie jesteśmy agencją od procentu"
+        text: "Nasza opłata nie zależy od czynszu."
+      - title: "Nie jesteśmy prawnikami"
+        text: "Omawiamy umowę prostym językiem. Nie udzielamy porad prawnych."
+      - title: "Nie działamy od ręki"
+        text: "Sprawdzona lista zajmuje kilka dni. Nie zarezerwujemy dziś wieczorem mieszkania, którego nikt nie widział, i nie przepraszamy za to."
+      - title: "Nie na pobyt krótszy niż miesiąc"
+        text: "Krótkie pobyty to sprawa hoteli i wynajmu wakacyjnego."
+      - title: "Nie jesteśmy firmą relokacyjną dla korporacji"
+        text: "Firmy z własnym działem relokacji nas nie potrzebują."
+  team:
+    - {key: "bora", name: "Bora Cetinkaya", photo_caption: "[Zdjęcie zespołu: Bora]"}
+    - {key: "arsen", name: "Arsen Dzhepparov", photo_caption: "[Zdjęcie zespołu: Arsen]"}
+    - {key: "adon", name: "Adon Grubi", photo_caption: "[Zdjęcie zespołu: Adon]"}
+    - {key: "nikola", name: "Nikola Hub", photo_caption: "[Zdjęcie zespołu: Nikola]"}
+    - {key: "nina", name: "Nina Schmelzer", photo_caption: "[Zdjęcie zespołu: Nina]"}
+  forms:
+    required: "(wymagane)"
+    optional: "(opcjonalnie)"
+    choose: "Wybierz"
+    honeypot: "Zostaw to pole puste"
+    error_title: "Sprawdź te pola"
+    consent: "Zgadzam się, by Doorstep użył tych danych, aby odpowiedzieć na to zapytanie."
+    privacy_link: "Jak przetwarzamy dane"
+    next_year: "Napiszcie do mnie przed kolejnym rokiem akademickim."
+    no_backend: "Formularz nie jest podłączony. Nic nie zostało wysłane."
+    sending: "Wysyłanie…"
+    failed: "Nie udało się wysłać. Spróbuj jeszcze raz albo napisz do nas na WhatsAppie."
+    reply_line: "{?Odpowiadamy w ciągu: [[fill:reply_time]].?}"
+    errors:
+      required: "Uzupełnij to pole."
+      who: "Napisz, kto szuka."
+      arrival: "Wpisz datę."
+      months: "Wpisz, na ile miesięcy."
+      budget: "Wpisz miesięczny budżet w złotych."
+      area: "Wpisz uczelnię albo miejsce pracy."
+      name: "Wpisz imię."
+      contact: "Wpisz numer WhatsApp albo adres e-mail."
+      email: "Wpisz adres e-mail."
+      times: "Napisz, kiedy możemy zadzwonić."
+      timezone: "Wybierz strefę czasową."
+      university: "Wpisz nazwę uczelni."
+      role: "Wpisz swoje stanowisko."
+      company: "Wpisz nazwę akademika lub firmy."
+      phone: "Wpisz numer telefonu."
+      message: "Napisz wiadomość."
+      consent: "Zaznacz pole, żebyśmy mogli odpowiedzieć."
+      fmt_date: "Wpisz prawdziwą datę, na przykład 28 sierpnia 2027."
+      fmt_months: "Wpisz liczbę miesięcy od 1 do 24. Nie zajmujemy się pobytami krótszymi niż miesiąc."
+      fmt_budget: "Wpisz kwotę jako liczbę, na przykład 1800."
+      fmt_email: "Wpisz adres e-mail w postaci nazwa@przyklad.pl."
+      fmt_contact: "Wpisz numer WhatsApp z kierunkowym kraju albo adres e-mail."
+      fmt_phone: "Wpisz numer telefonu z kierunkowym, na przykład +48 600 000 000."
+    search:
+      who: "Kto szuka?"
+      who_options:
+        - {v: "student", l: "Ja, jako student lub studentka"}
+        - {v: "parent", l: "Moje dziecko"}
+        - {v: "professional", l: "Ja, w związku z pracą"}
+      arrival: "Data przyjazdu"
+      job_start: "Data rozpoczęcia pracy"
+      months: "Długość pobytu w miesiącach"
+      months_hint:
+        full: "Studenci: 4–12 miesięcy. Praca: 3–12 miesięcy."
+        student: "Zwykle 4–12 miesięcy."
+        professional: "Zwykle 3–12 miesięcy."
+      budget: "Miesięczny budżet ze wszystkim (zł)"
+      budget_hint:
+        full: "Czynsz najmu, czynsz administracyjny i media. Pokój to zwykle 1400–2200 zł, mieszkanie 1–2-pokojowe 2800–4500 zł."
+        student: "Czynsz najmu, czynsz administracyjny i media. Pokój to zwykle 1400–2200 zł."
+        professional: "Czynsz najmu, czynsz administracyjny i media. Mieszkanie 1–2-pokojowe to zwykle 2800–4500 zł."
+      area: "Twoja uczelnia albo miejsce pracy"
+      area_hint: "Szukamy w okolicy."
+      area_uni: "Twoja uczelnia w Warszawie"
+      area_work: "Gdzie będziesz pracować (dzielnica lub adres)"
+      place: "Pokój czy całe mieszkanie?"
+      place_options:
+        - {v: "room", l: "Pokój"}
+        - {v: "flat", l: "Całe mieszkanie lub kawalerka"}
+        - {v: "either", l: "Obojętnie"}
+      furnished: "Umeblowane?"
+      reimburse: "Czy pracodawca dopłaca do mieszkania?"
+      yes_no:
+        - {v: "yes", l: "Tak"}
+        - {v: "no", l: "Nie"}
+      yes_no_unsure:
+        - {v: "yes", l: "Tak"}
+        - {v: "no", l: "Nie"}
+        - {v: "unsure", l: "Jeszcze nie wiem"}
+      name: "Imię"
+      contact: "Numer WhatsApp albo e-mail"
+      contact_hint: "WhatsApp z kierunkowym kraju, na przykład +49 151 …"
+      channel: "Jak mamy odpowiedzieć?"
+      channel_options:
+        - {v: "whatsapp", l: "WhatsApp"}
+        - {v: "email", l: "E-mail"}
+      notes: "Coś jeszcze, o czym powinniśmy wiedzieć?"
+      submit_full: "Wyślij zgłoszenie"
+      submit_inline:
+        student: "Wyślij moje daty"
+        professional: "Wyślij zgłoszenie"
+    call:
+      name: "Imię i nazwisko"
+      child_name: "Imię dziecka"
+      email: "Twój e-mail"
+      phone: "Telefon lub WhatsApp"
+      times: "Kiedy pasuje Ci rozmowa?"
+      times_hint: "Dni i godziny, w Twojej strefie czasowej."
+      timezone: "Twoja strefa czasowa"
+      timezones:
+        - {v: "Europe/London", l: "Wielka Brytania, Irlandia, Portugalia"}
+        - {v: "Europe/Warsaw", l: "Europa Środkowa (Polska, Niemcy, Macedonia Północna…)"}
+        - {v: "Europe/Kyiv", l: "Europa Wschodnia (Ukraina, Grecja, Finlandia…)"}
+        - {v: "Europe/Istanbul", l: "Turcja, Moskwa, zachodnia część Zatoki"}
+        - {v: "Asia/Dubai", l: "Zatoka Perska, Kaukaz"}
+        - {v: "Asia/Kolkata", l: "Indie"}
+        - {v: "Asia/Shanghai", l: "Chiny, Singapur"}
+        - {v: "America/New_York", l: "USA i Kanada, wschód"}
+        - {v: "America/Los_Angeles", l: "USA i Kanada, zachód"}
+        - {v: "America/Sao_Paulo", l: "Ameryka Południowa"}
+        - {v: "other", l: "Gdzie indziej"}
+      language: "Język rozmowy"
+      university_start: "Uczelnia i data rozpoczęcia"
+      university_start_hint: "Na przykład: nazwa uczelni, październik 2027."
+      submit: "Poproś o rozmowę"
+    proposal:
+      university: "Uczelnia"
+      name: "Imię i nazwisko"
+      role: "Stanowisko"
+      email: "Służbowy e-mail"
+      phone: "Telefon"
+      students: "Liczba przyjeżdżających studentów na nabór (szacunkowo)"
+      students_hint: "Wystarczy przybliżona liczba."
+      intakes: "Nabory, które Państwo planują"
+      intake_options:
+        - {v: "aug_sep", l: "Sierpień–wrzesień"}
+        - {v: "jan_feb", l: "Styczeń–luty"}
+      questions: "Pytania, na które oferta ma odpowiedzieć"
+      questions_hint: "Na przykład: przetwarzanie danych, odpowiedzialność, ceny, warunki zakończenia."
+      submit: "Poproś o ofertę na piśmie"
+    partner:
+      company: "Nazwa akademika lub firmy"
+      name: "Imię i nazwisko"
+      role: "Stanowisko"
+      email: "E-mail"
+      phone: "Telefon"
+      type: "Rodzaj"
+      type_options:
+        - {v: "residence", l: "Akademik prywatny"}
+        - {v: "landlord", l: "Wynajmujący z co najmniej 5 mieszkaniami"}
+        - {v: "other", l: "Inne"}
+      rooms: "Liczba wolnych pokoi lub mieszkań"
+      districts: "Dzielnice"
+      available_from: "Dostępne od"
+      submit: "Zapytaj o współpracę"
+    contact:
+      name: "Imię"
+      contact: "E-mail albo WhatsApp"
+      contact_hint: "WhatsApp z kierunkowym kraju albo adres e-mail."
+      topic: "Temat"
+      topics:
+        - {v: "moving", l: "Przeprowadzam się do Warszawy"}
+        - {v: "parent", l: "Jestem rodzicem"}
+        - {v: "university", l: "Uczelnia"}
+        - {v: "landlord", l: "Akademik lub wynajmujący"}
+        - {v: "other", l: "Coś innego"}
+      message: "Wiadomość"
+      submit: "Wyślij wiadomość"
+
+home:
+  meta:
+    title: "Doorstep · Sprawdzone mieszkania w Warszawie"
+    description: "Znajdujemy, sprawdzamy, negocjujemy i rezerwujemy pokój lub mieszkanie w Warszawie przed Twoim przyjazdem. Ktoś z nas był w każdym. Stała opłata."
+  hero:
+    eyebrow: "Warszawa · szukamy mieszkania za Ciebie"
+    title: "Przyjeżdżasz do mieszkania, które istnieje, jest sprawdzone i jest Twoje."
+    lead: "Znajdujemy, sprawdzamy, negocjujemy i rezerwujemy. Ty wybierasz. Ktoś z nas był w każdym mieszkaniu, zanim cokolwiek zapłacisz."
+    chips:
+      - "[[confirm:fee_student]] stałej opłaty"
+      - "[[confirm:pay_on_signing]]"
+      - "3–5 sprawdzonych opcji"
+  doors:
+    title: "Co brzmi jak Ty?"
+    people:
+      - {quote: "Przyjeżdżam na semestr i nadal nie mam pokoju.", link: "Dla studentów z wymiany i na studiach", page: "students", persona: "lena"}
+      - {quote: "Moje dziecko zaczyna studia w Warszawie, a ja nie mogę stąd sprawdzić mieszkań.", link: "Dla rodziców", page: "parents", persona: "katrin"}
+      - {quote: "Za kilka tygodni zaczynam pracę w Warszawie, a do tego czasu mieszkam w hotelu.", link: "Dla pracujących", page: "professionals", persona: "marco"}
+    partners_label: "Dla partnerów"
+    partners:
+      - {quote: "Studenci ciągle pytają nas o zakwaterowanie.", link: "Dla uczelni", page: "universities", persona: "agnieszka"}
+      - {quote: "Mam wolne pokoje przed początkiem semestru.", link: "Dla akademików i wynajmujących", page: "landlords", persona: "piotr"}
+  fee:
+    eyebrow: "Ile to kosztuje"
+    title: "Stała opłata, nie procent od czynszu."
+    link: "Co obejmuje opłata"
+    compare:
+      agency: "Typowa warszawska agencja, pokój za 1800 zł"
+      agency_value: "≈ 1800 zł"
+      us: "Doorstep, wyszukiwanie dla studentów"
+      us_value: "[[confirm:fee_student]]"
+      source: "Agencje zwykle pobierają prowizję w wysokości około miesięcznego czynszu, oprócz kaucji (IBB PAN Welcome Center, poradnik mieszkaniowy). Pokój kosztuje 1400–2200 zł miesięcznie (Akademia Leona Koźmińskiego, maj 2026)."
+  checkus:
+    eyebrow: "Sprawdź nas"
+    title: "Jesteśmy nowi. Tak możesz nas sprawdzić."
+    intro: "Nie mamy jeszcze opinii, więc żadnych nie pokazujemy. Oto co możesz zweryfikować."
+    link: "Dane rejestrowe i ubezpieczenie"
+  story:
+    heading: "Dlaczego istniejemy"
+    text: "Dwa miesiące przed semestrem Nikoli odwołano potwierdzone mieszkanie w Warszawie. Miał dwa tygodnie, żeby z zagranicy znaleźć nowe. Zbudowaliśmy usługę, za którą sami chętnie byśmy zapłacili."
+    meta: "Pięcioro założycieli · studenci Uczelni Łazarskiego"
+    names: "Bora, Arsen, Adon, Nikola i Nina"
+    link: "Poznaj nas"
+  guides:
+    title: "Zanim zaczniesz szukać"
+    read: "Czytaj poradnik"
+    items:
+      - page: "guide_fake"
+        label: "Poradnik · 5 sygnałów"
+        title: "Jak rozpoznać fałszywe ogłoszenie w Warszawie"
+        text: "Pięć schematów i co zrobić zamiast tego. Nie wysyłaj kaucji za mieszkanie, którego nikt nie widział."
+      - page: "guide_words"
+        label: "Poradnik · 8 słów"
+        title: "Słowa z polskiej umowy najmu"
+        text: "Czynsz, kaucja, umowa najmu i pięć innych, każde wyjaśnione raz."
+  final:
+    title: "Podaj daty, budżet i uczelnię."
+    text: "Wrócimy z trzema do pięciu opcjami. Szukamy do 8 tygodni przed Twoim przyjazdem."
+
+students:
+  meta:
+    title: "Pokoje dla studentów w Warszawie, sprawdzone | Doorstep"
+    description: "Pokój na semestr w Warszawie, który ktoś z nas widział, zanim zapłacisz. Pobyty 4–12 miesięcy, wynajmujący po polsku, pełny koszt w jednej liczbie."
+  hero:
+    eyebrow: "Dla studentów z wymiany i na studiach"
+    title: "Przyjeżdżasz na semestr? Wyląduj w pokoju, który ktoś widział."
+    lead: "Raz podajesz daty, budżet i uczelnię. Wysyłamy trzy do pięciu sprawdzonych opcji na pobyt od 4 do 12 miesięcy i rozmawiamy z wynajmującym po polsku."
+    cta: "Wyślij moje daty"
+    cta_wa: "Najpierw zapytaj na WhatsAppie"
+    record:
+      - {k: "Pobyt", v: "4–12 miesięcy"}
+      - {k: "Dostajesz", v: "3–5 sprawdzonych opcji"}
+      - {k: "Oglądanie", v: "Na miejscu albo na wideo na żywo"}
+      - {k: "Opłata", v: "[[confirm:fee_student]]"}
+      - {k: "Płacisz", v: "[[confirm:pay_on_signing]]"}
+      - {k: "Wynajmujący", v: "Rozmawiamy po polsku"}
+  questions:
+    title: "Cztery pytania, które zadaje każdy"
+    items:
+      - id: "real"
+        q: "Czy ta oferta jest prawdziwa, czy to oszustwo?"
+        a:
+          - "Każde mieszkanie, które wysyłamy, ktoś z nas obejrzał na miejscu albo sprawdził na wideo na żywo, zanim cokolwiek zapłacisz. Dostajesz nagranie."
+          - "Nie wysyłaj kaucji za mieszkanie, którego nikt nie widział. My nigdy o to nie prosimy."
+        link: {page: "guide_fake", label: "Jak rozpoznać fałszywe ogłoszenie"}
+      - id: "short"
+        q: "Czy mogę wynająć tylko na pięć miesięcy?"
+        a:
+          - "Tak. Szukamy pobytów od 4 do 12 miesięcy i podajemy Twoje daty w pierwszej wiadomości do wynajmującego, żeby nikt nie tracił czasu."
+          - "[[confirm:shortlist_accepts_dates]]"
+      - id: "cost"
+        q: "Ile dochodzi do ceny przez czynsz administracyjny i kaucję?"
+        a:
+          - "Czynsz administracyjny to opłata za budynek. Dochodzi do czynszu najmu, a cena, którą pokazujemy, już go zawiera. Kaucja to zwykle równowartość miesięcznego czynszu, płacona raz."
+          - "Pokazujemy jedną miesięczną kwotę ze wszystkim i osobno kaucję:"
+      - id: "campus"
+        q: "Jak daleko to jest od mojej uczelni?"
+        a:
+          - "Podajesz uczelnię. Szukamy w jej okolicy {?[[confirm:travel_time_per_option]]?}."
+          - "{?Które dzielnice pasują do której uczelni: [[fill:districts_by_campus]]?}"
+  price_title: "Ile to kosztuje"
+  brief:
+    title: "Wyślij nam swoje daty"
+    text: "Sześć pytań. Odpowiedzi czyta i odpisuje konkretna osoba."
+  contact:
+    title: "Kto Ci odpowiada"
+    text: "Jedna osoba prowadzi Twoje szukanie, od pierwszej wiadomości do kluczy."
+  faq:
+    title: "Zanim zapytasz"
+    items:
+      - id: "students_shortest"
+        q: "Jaki jest najkrótszy pobyt?"
+        a: "Cztery miesiące dla studentów. Nie zajmujemy się pobytami krótszymi niż miesiąc: to sprawa hoteli i wynajmu wakacyjnego."
+      - id: "students_legal"
+        q: "Czy sprawdzacie umowę od strony prawnej?"
+        a: "Nie, nie jesteśmy prawnikami. Przed podpisaniem omawiamy z Tobą umowę prostym językiem, ale nie udzielamy porad prawnych."
+      - id: "students_languages"
+        q: "Jakie języki znacie?"
+        a: "[[confirm:languages]]. Z wynajmującym rozmawiamy po polsku."
+      - id: "students_nothing"
+        q: "Co, jeśli nic z listy mi nie pasuje?"
+        a: "[[confirm:no_home_no_fee]] [[confirm:pay_on_signing]]."
+      - id: "students_abroad"
+        q: "Jak zapłacić z zagranicy?"
+        a: "Przelewem przy podpisaniu umowy. {?Dane do płatności: [[fill:payment_methods]]?}"
+  share:
+    title: "Przyjeżdżasz z innymi studentami?"
+    text: "Wyślij tę stronę na grupę studentów, którzy przyjeżdżają razem z Tobą."
+    button: "Skopiuj link"
+    copied: "Link skopiowany. Wklej go na czacie grupy."
+    wa: "Napisz na WhatsAppie"
+
+parents:
+  meta:
+    title: "Pierwsze mieszkanie dziecka w Warszawie | Doorstep"
+    description: "Znajdujemy i sprawdzamy bezpieczne mieszkanie dla Twojego dziecka w Warszawie i omawiamy umowę. Decydujecie razem. Najpierw rozmowa z konkretną osobą."
+  hero:
+    eyebrow: "Dla rodziców"
+    title: "Pierwsze mieszkanie Twojego dziecka w Warszawie, sprawdzone przez kogoś, kto był w środku."
+    lead: "Znajdujemy, sprawdzamy i omawiamy umowę. Ty i Twoje dziecko decydujecie razem, a zanim cokolwiek zapłacisz, rozmawiasz z konkretną osobą."
+    cta: "Umów [[confirm:call_length]] rozmowę z konkretną osobą"
+    cta_email: "Napisz e-mail"
+    record:
+      - {k: "Dla kogo", v: "Studenci zaczynający studia i rodzice, którzy płacą"}
+      - {k: "Rozmawiasz z", v: "Konkretną osobą"}
+      - {k: "Opłata", v: "[[confirm:fee_student]]"}
+      - {k: "Płacisz", v: "[[confirm:pay_on_signing]]"}
+      - {k: "Umowa", v: "Omówiona prostym językiem"}
+      - {k: "Przekazanie", v: "Udokumentowane zdjęciami"}
+  real:
+    title: "Czy ta firma naprawdę istnieje?"
+    text:
+      - "Uczciwe pytanie. Doorstep założyło jesienią 2026 pięcioro studentów Uczelni Łazarskiego. Nie mamy jeszcze opinii, więc żadnych nie pokazujemy."
+      - "Oto co możesz sprawdzić, zanim cokolwiek nam zapłacisz:"
+    link: "Dane rejestrowe i ubezpieczenie"
+  safe:
+    title: "Bezpieczna okolica, legalna umowa, chroniona kaucja"
+    items:
+      - title: "Co sprawdzamy podczas oglądania"
+        text:
+          - "Ktoś z nas ogląda mieszkanie na miejscu albo sprawdza je na wideo na żywo, a Ty dostajesz nagranie."
+          - "{?Nasza lista kontrolna: [[fill:viewing_checklist]]?}"
+      - title: "Umowa prostym językiem"
+        text:
+          - "Zanim ktokolwiek podpisze, omawiamy umowę z Tobą i Twoim dzieckiem prostym językiem. Z wynajmującym rozmawiamy po polsku."
+          - "Nie jesteśmy prawnikami i nie udzielamy porad prawnych."
+      - title: "Kaucja"
+        text:
+          - "Kaucja to zwykle równowartość miesięcznego czynszu. Płaci się ją raz, a protokół przekazania ze zdjęciami dokumentuje stan mieszkania pierwszego dnia."
+        source: "Wysokość kaucji: Akademia Leona Koźmińskiego, koszty życia studentów (maj 2026)."
+      - title: "Pełny koszt"
+        text:
+          - "Czynsz najmu, czynsz administracyjny i media jako jedna miesięczna kwota, a kaucja osobno."
+          - "[[confirm:written_cost_summary]]"
+  together:
+    title: "Jak wybieracie razem z dzieckiem"
+    step: "Krok"
+    you: "Ty"
+    child: "Twoje dziecko"
+    rows:
+      - {you: "W rozmowie podajesz budżet i datę rozpoczęcia.", child: "Mówi nam, jaka to uczelnia i co jest ważne na co dzień."}
+      - {you: "Widzisz tę samą listę, z pełnym kosztem miesięcznym.", child: "Ogląda nagrania i wybiera faworyta."}
+      - {you: "Pytasz nas o okolicę, umowę i kaucję.", child: "Może odrzucić każdą opcję. Bez jego zgody nic się nie dzieje."}
+      - {you: "Płacisz kaucję i naszą opłatę ([[confirm:pay_on_signing]]).", child: "Podpisuje umowę po naszym omówieniu."}
+      - {you: "Dostajesz protokół przekazania ze zdjęciami.", child: "Wprowadza się w dniu przyjazdu i odbiera klucze."}
+  after:
+    title: "Po wprowadzeniu się: do kogo dzwonisz"
+    text:
+      - "Gdy coś pierwszy raz się zepsuje, będziesz daleko, a wynajmujący mówi po polsku. Dlatego dla nas szukanie nie kończy się na kluczach."
+    items:
+      - "[[confirm:first_month_checkin]]"
+      - "{?W sprawie problemów z wynajmującym: [[fill:aftercare_contact]]?}"
+      - "Przekazanie jest udokumentowane zdjęciami, więc stan mieszkania z pierwszego dnia jest zapisany."
+  price_title: "Ile to kosztuje"
+  call:
+    title: "Umów [[confirm:call_length]] rozmowę"
+    text: "Zapytaj o okolicę, umowę i nasze ubezpieczenie. Odpowiada konkretna osoba."
+    new_tab_warning: "Strona rezerwacji otworzy się w nowej karcie."
+    booking_fallback: "Do tego czasu ten formularz wysyła nam prośbę o rozmowę."
+  faq:
+    title: "Zanim zapytasz"
+    items:
+      - id: "parents_lawyers"
+        q: "Czy jesteście prawnikami?"
+        a: "Nie. Omawiamy umowę z Tobą i Twoim dzieckiem prostym językiem, ale nie udzielamy porad prawnych."
+      - id: "parents_not_covered"
+        q: "Czego nie obejmuje opłata?"
+        a: "Czynszu, kaucji (zwykle równowartość miesięcznego czynszu), porady prawnej i samej przeprowadzki."
+      - id: "parents_pay"
+        q: "Czy mogę zapłacić za wyszukiwanie dla dziecka?"
+        a: "[[confirm:payer_differs]]"
+      - id: "parents_languages"
+        q: "Jakie języki znacie?"
+        a: "[[confirm:languages]]. Z wynajmującym rozmawiamy po polsku."
+  contact:
+    title: "Kto Ci odpowiada"
+    text: "Jedna konkretna osoba prowadzi szukanie dla Twojego dziecka i odpowiada na Twoje pytania."
+
+professionals:
+  meta:
+    title: "Umeblowane mieszkania na 3–12 miesięcy | Doorstep"
+    description: "Zaczynasz pracę w Warszawie? Znajdziemy umeblowane mieszkanie na 3–12 miesięcy, obejrzymy je za Ciebie i wyślemy nagranie. Stała opłata zamiast prowizji."
+  hero:
+    eyebrow: "Dla pracujących na umowach na 3–12 miesięcy"
+    title: "Zaczynasz pracę w Warszawie? Umeblowane mieszkanie na 3–12 miesięcy, bez straconego pierwszego miesiąca."
+    lead: "Wyszukiwanie dla pracujących kosztuje [[confirm:fee_professional]]. [[confirm:pay_on_signing]]. Znajdujemy, sprawdzamy i oglądamy mieszkania za Ciebie, żeby pierwsze tygodnie nie zeszły na noclegach w hotelu."
+    cta: "Wyślij zgłoszenie"
+    record:
+      - {k: "Pobyt", v: "3–12 miesięcy"}
+      - {k: "Dostajesz", v: "3–5 sprawdzonych opcji"}
+      - {k: "Oglądanie", v: "My jedziemy, Ty dostajesz nagranie"}
+      - {k: "Opłata", v: "[[confirm:fee_professional]]"}
+      - {k: "Płacisz", v: "[[confirm:pay_on_signing]]"}
+  stated:
+    title: "Mówimy, zanim zapytasz"
+    fee_title: "Opłata"
+    compare:
+      agency: "Agencja od procentu, mieszkanie za 2800–4500 zł"
+      agency_value: "≈ 2800–4500 zł"
+      us: "Doorstep, wyszukiwanie dla pracujących"
+      us_value: "[[confirm:fee_professional]]"
+      source: "Agencje zwykle pobierają prowizję w wysokości około miesięcznego czynszu, oprócz kaucji (IBB PAN Welcome Center). Mieszkanie 1–2-pokojowe kosztuje 2800–4500 zł miesięcznie (Akademia Leona Koźmińskiego, maj 2026)."
+    items:
+      - title: "Umowy krótsze niż 12 miesięcy"
+        text:
+          - "Wielu wynajmujących chce 12 miesięcy. Szukamy pobytów od 3 do 12 miesięcy i podajemy Twoje daty w pierwszej wiadomości."
+      - title: "Wynajmujący, którzy przyjmują obcokrajowców"
+        text:
+          - "[[confirm:foreigner_friendly_landlords]]"
+          - "Z wynajmującym rozmawiamy po polsku."
+  view:
+    title: "Oglądamy za Ciebie"
+    text:
+      - "Oglądanie koliduje z pracą. Ktoś z nas jedzie, nagrywa mieszkanie i wysyła Ci film, więc nie musisz wychodzić z biura."
+      - "Decydujesz na podstawie nagrania albo dołączasz po pracy, jeśli wolisz zobaczyć sam."
+  fast:
+    title: "Jak szybko?"
+    text:
+      - "Sprawdzona lista zajmuje dni, nie tygodnie. {?Zwykle [[confirm:shortlist_days]].?}"
+      - "Nie zarezerwujemy dziś wieczorem mieszkania, którego nikt nie widział: to sprawdzanie zajmuje te kilka dni."
+  setup:
+    title: "Internet, media, zameldowanie"
+    text:
+      - "Pierwszy tydzień to polskie formalności. Przygotowujemy [[confirm:setup_list]]."
+    link: "Zobacz kartę na pierwszy tydzień"
+  price_title: "Ile to kosztuje"
+  brief:
+    title: "Wyślij zgłoszenie"
+    text: "Kilka pytań. Odpowiedzi czyta konkretna osoba i odpisuje na WhatsAppie albo mailem."
+  hr:
+    title: "Twoi współpracownicy też się przeprowadzają?"
+    text: "Powiedz o nas swojemu działowi HR. Jedno wyszukiwanie na osobę, każde za tę samą stałą opłatę."
+  contact:
+    title: "Kto Ci odpowiada"
+    text: "Jedna osoba prowadzi Twoje szukanie, na WhatsAppie i mailowo."
+  faq:
+    title: "Zanim zapytasz"
+    items:
+      - id: "pro_shortest"
+        q: "Jaki jest najkrótszy pobyt?"
+        a: "Trzy miesiące. Nie zajmujemy się pobytami krótszymi niż miesiąc."
+      - id: "pro_relocation"
+        q: "Czy jesteście firmą relokacyjną?"
+        a: "Nie. Jeśli Twoja firma ma dział relokacji, nie potrzebujesz nas. Pomagamy osobom, którym pracodawca nie zapewnia relokacji."
+      - id: "pro_legal"
+        q: "Czy udzielacie porad prawnych?"
+        a: "Nie. Przed podpisaniem omawiamy z Tobą umowę prostym językiem."
+      - id: "pro_languages"
+        q: "Jakie języki znacie?"
+        a: "[[confirm:languages]]. Z wynajmującym rozmawiamy po polsku."
+
+universities:
+  meta:
+    title: "Program partnerski dla biur współpracy | Doorstep"
+    description: "Państwa studenci przyjeżdżają do sprawdzonego mieszkania. Krótki raport po każdym naborze, pilotaż na semestr, a rejestracja, OC i dane na jednej stronie."
+  hero:
+    eyebrow: "Dla biur współpracy z zagranicą"
+    title: "Państwa studenci przyjeżdżają do sprawdzonego mieszkania."
+    lead: "Po każdym naborze dostają Państwo krótki raport, a po jednym semestrze mogą Państwo zakończyć współpracę."
+    cta_dd: "Zobacz dane do weryfikacji"
+    record:
+      - {k: "Studenci płacą", v: "[[confirm:fee_university_student]], opłata obniżona"}
+      - {k: "Uczelnia płaci", v: "[[fill:university_annual_fee]] za rok akademicki"}
+      - {k: "Pilotaż", v: "[[confirm:pilot_terms]]"}
+      - {k: "Raporty", v: "Jeden krótki raport po każdym naborze"}
+      - {k: "Obszar", v: "Tylko Warszawa"}
+  problem:
+    title: "Problem, który Państwo znają"
+    text:
+      - "Co wrzesień przychodzą te same maile o zakwaterowaniu. Co roku ktoś trafia na ogłoszenie, którego nikt nie sprawdził."
+      - "Większość przyjeżdżających studentów szuka z zagranicy, w języku, którego nie zna, i na okres, którego wielu wynajmujących nie chce."
+    stats:
+      - {label: "Studenci zagraniczni w Polsce, 2024/25", value: "108 600"}
+      - {label: "Studenci w Warszawie mieszkający w publicznych akademikach", value: "około 7%"}
+    source: "EurobuildCEE, za JLL (27 sierpnia 2026)."
+  what:
+    title: "Na czym polega współpraca"
+    text:
+      - "Kierują Państwo do nas przyjeżdżających studentów, na przykład w pakiecie powitalnym. Za to samo wyszukiwanie płacą obniżoną opłatę [[confirm:fee_university_student]]. {?Uczelnia płaci opłatę roczną w wysokości [[fill:university_annual_fee]].?}"
+      - "Jedna umowa na rok akademicki. Działamy wyłącznie w Warszawie."
+    record:
+      - {k: "Zakres", v: "Wyszukiwanie dla Państwa studentów: 3–5 sprawdzonych opcji, oglądanie, kontakt z wynajmującym po polsku, omówienie umowy, protokół przekazania ze zdjęciami"}
+      - {k: "Opłata studenta", v: "[[confirm:fee_university_student]]"}
+      - {k: "Opłata uczelni", v: "[[fill:university_annual_fee]] rocznie"}
+      - {k: "Okres", v: "Jeden rok akademicki"}
+  dd:
+    title: "Weryfikacja na jednej stronie"
+    intro: "Wszystko, czego Państwo potrzebują, zanim polecą prywatną firmę. Polskie prawo wymaga od pośrednika w najmie zarejestrowanej działalności i ubezpieczenia OC; oba będą gotowe przed pierwszą płatną sprawą."
+    rows:
+      - {k: "Podmiot", v: "[[fill:legal_name]] {?([[fill:legal_form]])?}"}
+      - {k: "NIP", v: "[[fill:nip]]"}
+      - {k: "REGON", v: "[[fill:regon]]"}
+      - {k: "KRS / CEIDG", v: "[[fill:krs_or_ceidg]]"}
+      - {k: "Adres siedziby", v: "[[fill:registered_address]]"}
+      - {k: "Ubezpieczenie OC", v: "[[fill:oc_insurer]], polisa [[fill:oc_policy]]"}
+      - {k: "Przetwarzanie danych (RODO)", v: "[[fill:data_processing_summary]]"}
+      - {k: "Odpowiedzialność", v: "[[fill:liability_terms]]"}
+      - {k: "Referencje", v: "Na razie brak. Jesteśmy nową firmą, założoną jesienią 2026, i mówimy to otwarcie. {?[[fill:references]]?}"}
+  pilot:
+    title: "Pilotaż z możliwością zakończenia"
+    text:
+      - "[[confirm:pilot_terms]]"
+      - "Po jednym semestrze decydują Państwo, czy kontynuujemy."
+    report_title: "Krótki raport po każdym naborze"
+    report:
+      - "[[confirm:intake_report]]"
+      - "Tak, żeby problemy trafiały do nas, zanim trafią do Państwa."
+  contents:
+    title: "Co zawiera oferta na piśmie"
+    items:
+      - "Zakres: co robimy dla każdego studenta, a czego nie"
+      - "Cena dla studenta i opłata uczelni"
+      - "Przetwarzanie danych zgodnie z RODO: co zbieramy, po co i jak długo"
+      - "Odpowiedzialność: kto za co odpowiada"
+      - "Dokumenty rejestrowe i polisa OC"
+      - "Warunki pilotażu i sposób jego zakończenia"
+      - "Raporty: co Państwo otrzymują po każdym naborze"
+    pdf: "Jednostronicowe podsumowanie (PDF)"
+  form:
+    title: "Prośba o ofertę na piśmie"
+    text: "Odpowiadamy mailem, przesyłając ofertę, którą kierownik biura może ocenić bez dodatkowych wyjaśnień."
+  season:
+    title: "Rozmawiamy przed naborem, nie w jego trakcie"
+    text: "Sierpień–wrzesień i styczeń–luty to Państwa najbardziej pracowite miesiące. Kolejny nabór warto planować w miesiącach przed nimi."
+  contact:
+    title: "Osoba kontaktowa ds. współpracy"
+    text: "Jedna konkretna osoba odpowiada za współpracę i raporty."
+
+landlords:
+  meta:
+    title: "Współpraca z akademikami i wynajmującymi | Doorstep"
+    description: "Płaci Pan tylko za podpisaną umowę najmu. Najemcy znają regulamin i umowę przed podpisaniem. Warunki w liczbach, a najemcy wiedzą, że nam Pan płaci."
+  hero:
+    eyebrow: "Dla akademików i wynajmujących"
+    title: "Płaci Pan tylko za podpisaną umowę najmu."
+    lead: "Najemcy przyjeżdżają przygotowani: przed podpisaniem znają regulamin, a umowę omówiliśmy z nimi prostym językiem."
+    cta_email: "Napisz e-mail"
+    record:
+      - {k: "Opłata", v: "[[confirm:referral_fee]]"}
+      - {k: "Przed podpisaniem", v: "Nic"}
+      - {k: "Najemcy", v: "Studenci z wymiany i na studiach, młodzi pracujący"}
+      - {k: "Okres najmu", v: "3–12 miesięcy"}
+  terms:
+    title: "Warunki w liczbach"
+    record:
+      - {k: "Opłata za polecenie", v: "[[confirm:referral_fee]]"}
+      - {k: "Kiedy jest należna", v: "Dopiero po podpisaniu umowy najmu"}
+      - {k: "Przed podpisaniem", v: "Nic: bez opłaty za ogłoszenie i bez opłaty za zapytanie"}
+    text:
+      - "Szczegółowe warunki określa pisemna umowa o współpracy."
+  rules:
+    title: "Pana regulamin, przedstawiony poprawnie"
+    text:
+      - "[[confirm:rules_checklist]]"
+      - "Przedstawiamy budynek takim, jaki jest: pokoje, pełny koszt miesięczny i zasady, które Pan nam przekaże."
+  briefed:
+    title: "Najemcy, którzy wiedzą, co podpisują"
+    text:
+      - "Przed podpisaniem omawiamy z każdym najemcą umowę prostym językiem. Przy wprowadzeniu się sporządzamy protokół przekazania ze zdjęciami."
+      - "Mniej pytań trafia do Pana zespołu w pierwszym tygodniu."
+  need:
+    title: "Czego potrzebujemy od Pana"
+    items:
+      - "Informacje o pokojach lub mieszkaniach, z pełnym kosztem miesięcznym"
+      - "Regulamin"
+      - "Dostęp do oglądania, na miejscu lub na wideo na żywo"
+      - "Pisemna umowa z każdym najemcą"
+    not_for: "Nie współpracujemy z wynajmującymi, którzy nie pozwalają obejrzeć mieszkania albo nie podpisują pisemnej umowy."
+  summary:
+    title: "Zestawienie po każdym naborze"
+    text:
+      - "[[confirm:intake_summary_landlords]]"
+  open:
+    title: "Najemcy wiedzą, że nam Pan płaci"
+    text:
+      - "Każdemu najemcy mówimy, kto nam płaci, zanim podejmie decyzję. Pokój proponujemy, bo pasuje, a nie dlatego, że za niego płacą."
+      - "To jedna z naszych czterech stałych zasad."
+  form:
+    title: "Zapytanie o współpracę"
+    text: "Prosimy o kilka informacji o pokojach. Odpowiemy mailem lub telefonicznie."
+  contact:
+    title: "Osoba kontaktowa ds. współpracy"
+    text: "Jedna konkretna osoba odpowiada za współpracę i zestawienia po naborach."
+
+how:
+  meta:
+    title: "Jak działa Doorstep: kroki, opłaty, kto nam płaci"
+    description: "Pięć kroków od pierwszej wiadomości do kluczy. Stała opłata za każde wyszukiwanie, co obejmuje, czego nie, kiedy płacisz i kto jeszcze nam płaci."
+  hero:
+    eyebrow: "Jak to działa"
+    title: "Od Twojej wiadomości do kluczy, i ile to kosztuje."
+    lead: "Znajdujemy, sprawdzamy, negocjujemy i rezerwujemy. Ty wybierasz. Tu jest każdy krok, każda opłata i informacja, kto nam płaci."
+    cta_price: "Zobacz ceny"
+  price:
+    title: "Ceny"
+    intro: "Jedna stała opłata za wyszukiwanie. Nie rośnie razem z czynszem."
+    head: ["Wyszukiwanie", "Dla kogo", "Pobyt", "Opłata"]
+    rows:
+      - {name: "Dla studentów", for: "Studenci z wymiany i na studiach albo rodzic, który płaci", stay: "4–12 miesięcy, pokój lub kawalerka", fee: "[[confirm:fee_student]]"}
+      - {name: "Dla pracujących", for: "Młodzi pracujący, którym pracodawca nie zapewnia relokacji", stay: "3–12 miesięcy, umeblowane mieszkanie", fee: "[[confirm:fee_professional]]"}
+      - {name: "Dla studentów przez uczelnię", for: "Studenci uczelni partnerskiej", stay: "4–12 miesięcy, pokój lub kawalerka", fee: "[[confirm:fee_university_student]]"}
+    compare_title: "W porównaniu z agencją"
+  pays:
+    title: "Kto nam płaci"
+    text:
+      - "Ty płacisz naszą stałą opłatę za wyszukiwanie. Uczelnie w programie partnerskim płacą opłatę roczną."
+      - "Niektóre akademiki i wynajmujący płacą nam za polecenie, gdy umowa najmu zostanie podpisana: [[confirm:referral_fee]]. Jeśli dotyczy to pokoju z Twojej listy, widzisz to przed decyzją."
+      - "Pokój proponujemy, bo pasuje, a nie dlatego, że ktoś za niego płaci."
+  faq:
+    title: "Pytania o to, jak działamy"
+    items:
+      - id: "how_when_pay"
+        q: "Kiedy płacę?"
+        a: "[[confirm:pay_on_signing]]. [[confirm:no_home_no_fee]]"
+      - id: "how_deposit"
+        q: "Czy kaucja jest częścią waszej opłaty?"
+        a: "Nie. Kaucja trafia do wynajmującego i zwykle wynosi tyle, co miesięczny czynsz. Nasza opłata jest osobno."
+      - id: "how_long"
+        q: "Ile to trwa?"
+        a: "Sprawdzona lista zajmuje kilka dni. Szukamy do 8 tygodni przed Twoim przyjazdem. Nie zarezerwujemy dziś wieczorem mieszkania, którego nikt nie widział."
+      - id: "how_viewing"
+        q: "Co, jeśli nie mogę przyjść na oglądanie?"
+        a: "Ktoś z nas ogląda mieszkanie na miejscu albo sprawdza je na wideo na żywo, a Ty dostajesz nagranie."
+      - id: "how_area"
+        q: "Czy działacie poza Warszawą?"
+        a: "Nie. Działamy tylko w Warszawie, więc każde oglądanie w mieście możemy zrobić osobiście."
+      - id: "how_shortest"
+        q: "Jaki jest najkrótszy pobyt?"
+        a: "4 miesiące dla studentów, 3 miesiące dla pracujących. Nie zajmujemy się pobytami krótszymi niż miesiąc."
+
+about:
+  meta:
+    title: "O Doorstep: kim jesteśmy i jak nas sprawdzić"
+    description: "Doorstep założyło jesienią 2026 pięcioro studentów Uczelni Łazarskiego, którzy sami szukali mieszkania w Warszawie z zagranicy. Kim jesteśmy?"
+  hero:
+    eyebrow: "O nas"
+    title: "Zbudowaliśmy usługę, za którą sami byśmy zapłacili."
+    story:
+      - "Dwa miesiące przed tym semestrem Nikola miał potwierdzone mieszkanie w Warszawie. Odwołano je w ostatniej chwili, a on miał dwa tygodnie, żeby z zagranicy znaleźć nowe. Pokój w nowo otwartym akademiku znalazł przypadkiem, po kilku dniach stresu."
+      - "Każdy z nas miał podobną historię: ogłoszenia tylko po polsku, oferty, które znikały, i nikogo, kogo można zapytać, czy oferta jest prawdziwa."
+      - "Doorstep założyło jesienią 2026 pięcioro studentów Uczelni Łazarskiego: troje na wymianie Erasmus, dwoje na studiach stacjonarnych. Jeszcze nie prowadzimy sprzedaży."
+  team:
+    title: "Nasza piątka"
+    intro: "Twoją sprawę prowadzi jedna osoba z nas, od pierwszej wiadomości do kluczy."
+    role: "Rola"
+    languages: "Języki"
+    languages_line: "Razem mówimy: [[confirm:languages]]."
+  check:
+    title: "Sprawdź nas"
+    intro: "Polskie prawo wymaga od pośrednika w najmie zarejestrowanej działalności i ubezpieczenia OC. Oba będą gotowe przed pierwszą płatną sprawą."
+    rows:
+      - {k: "Nazwa", v: "[[fill:legal_name]] {?([[fill:legal_form]])?}"}
+      - {k: "NIP", v: "[[fill:nip]]"}
+      - {k: "REGON", v: "[[fill:regon]]"}
+      - {k: "KRS / CEIDG", v: "[[fill:krs_or_ceidg]]"}
+      - {k: "Adres siedziby", v: "[[fill:registered_address]]"}
+      - {k: "Ubezpieczenie OC", v: "[[fill:oc_insurer]], polisa [[fill:oc_policy]]"}
+  lazarski:
+    title: "Uczelnia Łazarskiego"
+    text:
+      - "Poznaliśmy się jako studenci Uczelni Łazarskiego w Warszawie. Doorstep to nasza własna firma, nie usługa uczelni."
+  notfor:
+    title: "Dla kogo nie jesteśmy"
+    items:
+      - "Dla osób, które potrzebują noclegu na mniej niż miesiąc"
+      - "Dla osób, które chcą najtańszej oferty i są gotowe pominąć sprawdzanie"
+      - "Dla firm z własnym działem relokacji"
+      - "Dla wynajmujących, którzy nie pozwalają obejrzeć mieszkania albo nie podpisują pisemnej umowy"
+
+start:
+  meta:
+    title: "Zacznij szukanie | Doorstep"
+    description: "Podaj daty, budżet i uczelnię albo miejsce pracy. Odpowiada konkretna osoba, a my wracamy z trzema do pięciu sprawdzonymi opcjami w Warszawie."
+  hero:
+    eyebrow: "Zacznij szukanie"
+    title: "Napisz raz. Szukanie zostaw nam."
+    lead: "Twoje daty, budżet i miejsce, w którym musisz być. Czyta to konkretna osoba."
+  next:
+    title: "Co dalej"
+    items:
+      - "Konkretna osoba czyta Twoje zgłoszenie i odpisuje."
+      - "Szukamy, oglądamy lub sprawdzamy każdą opcję na wideo i wysyłamy Ci trzy do pięciu."
+      - "Wybierasz i podpisujesz. [[confirm:pay_on_signing]]."
+    reply: "{?Czas odpowiedzi: [[fill:reply_time]]?}"
+    wa_text: "Wolisz napisać wiadomość?"
+
+contact:
+  meta:
+    title: "Kontakt z Doorstep: WhatsApp, e-mail, rozmowa"
+    description: "Napisz na WhatsAppie, wyślij e-mail albo umów rozmowę. Działamy tylko w Warszawie, a każde oglądanie w mieście możemy zrobić osobiście."
+  hero:
+    eyebrow: "Kontakt"
+    title: "Porozmawiaj z człowiekiem."
+    lead: "Napisz na WhatsAppie, wyślij e-mail, jeśli chcesz mieć coś na piśmie, albo umów rozmowę."
+  channels:
+    title: "Jak się z nami skontaktować"
+    email: "E-mail"
+    phone: "Telefon"
+    call: "Rozmowa"
+    call_link: "Umów rozmowę"
+    hours: "Kiedy odpowiadamy"
+    reply: "Czas odpowiedzi"
+    languages: "Języki: [[confirm:languages]]."
+  map:
+    title: "Gdzie działamy"
+    facade: "Pokaż mapę Warszawy (wczytuje Mapy Google)"
+    nojs: "Mapa Warszawy: otwórz ją linkiem poniżej."
+    caption: "Działamy tylko w Warszawie, a każde oglądanie w mieście możemy zrobić osobiście."
+    address: "Adres siedziby:"
+    open: "Otwórz w Mapach Google"
+    iframe_title: "Mapa: Doorstep działa w Warszawie"
+  form:
+    title: "Napisz do nas"
+    text: "Odpowiada konkretna osoba."
+    no_backend_anchor: "Jeśli trafiłeś tu po wysłaniu formularza: nasz formularz nie jest jeszcze podłączony, więc nic nie zostało wysłane. Napisz do nas na WhatsAppie albo mailem."
+
+guides:
+  meta:
+    title: "Poradniki o wynajmie w Warszawie | Doorstep"
+    description: "Krótkie, proste poradniki dla osób, które przeprowadzają się do Warszawy: jak rozpoznać fałszywe ogłoszenie, słowa z umowy najmu i pierwszy tydzień."
+    crumb: "Poradniki"
+  hero:
+    eyebrow: "Poradniki"
+    title: "Wynajem w Warszawie, wyjaśniony po ludzku."
+    lead: "Krótkie poradniki, które chcielibyśmy mieć po przyjeździe. Udostępnij je swojej grupie."
+  list_title: "Wszystkie poradniki"
+  read: "Czytaj poradnik"
+  items:
+    - page: "guide_fake"
+      label: "Poradnik · 5 sygnałów"
+      title: "Jak rozpoznać fałszywe ogłoszenie w Warszawie"
+      text: "Pięć schematów i co zrobić zamiast tego."
+    - page: "guide_words"
+      label: "Poradnik · 8 słów"
+      title: "Słowa z polskiej umowy najmu"
+      text: "Czynsz, kaucja, umowa najmu i pięć innych, każde wyjaśnione raz."
+    - page: "guide_first"
+      label: "Karta · pierwszy tydzień"
+      title: "Twój pierwszy tydzień"
+      text: "Klucze, liczniki, internet, rachunki i zameldowanie na jednej stronie."
+  soft_cta:
+    title: "Wolisz, żeby ktoś zrobił to za Ciebie?"
+    text: "Podaj daty, budżet i uczelnię. Wrócimy z trzema do pięciu sprawdzonymi opcjami."
+    links:
+      - {page: "students", label: "Dla studentów"}
+      - {page: "parents", label: "Dla rodziców"}
+      - {page: "professionals", label: "Dla pracujących"}
+
+guide_fake:
+  meta:
+    title: "Jak rozpoznać fałszywe ogłoszenie najmu | Doorstep"
+    description: "Pięć schematów fałszywych ogłoszeń najmu w Warszawie i co zrobić zamiast tego. Zasada: nie wysyłaj kaucji za mieszkanie, którego nikt nie widział."
+    crumb: "Fałszywe ogłoszenia"
+  hero:
+    eyebrow: "Poradnik"
+    title: "Jak rozpoznać fałszywe ogłoszenie w Warszawie"
+    lead: "Szukając z zagranicy, nie możesz stanąć w mieszkaniu. Oto schematy, na które warto uważać, i co zrobić zamiast tego."
+    review: "[[confirm:fake_listing_patterns]]"
+  sign_label: "Sygnał"
+  instead_label: "Co zrobić zamiast tego"
+  patterns:
+    - title: "Kaucja przed jakimkolwiek oglądaniem"
+      text:
+        - "Wynajmujący prosi o kaucję albo opłatę rezerwacyjną, zanim ktokolwiek zobaczył mieszkanie, często tłumacząc, że chętnych jest wielu."
+      instead:
+        - "Nie płać nic, dopóki Ty albo ktoś, komu ufasz, nie był w środku lub nie obejrzał mieszkania na wideo na żywo. Prawdziwy wynajmujący poczeka na oglądanie."
+    - title: "Brak wideo na żywo"
+      text:
+        - "Prosisz o rozmowę wideo na żywo, a dostajesz wymówki albo znowu te same zdjęcia."
+      instead:
+        - "Poproś o wideo na żywo, w którym ktoś przechodzi przez mieszkanie i pokazuje widok z okna. Zdjęcia i nagrania można skopiować z innych ogłoszeń."
+    - title: "Presja, żeby zdecydować dziś"
+      text:
+        - "Słyszysz, że ktoś inny weźmie mieszkanie jeszcze dziś, jeśli od razu nie zapłacisz."
+      instead:
+        - "Daj sobie czas na sprawdzenie. Mieszkanie, które jest warte wynajęcia, będzie warte tego także po oglądaniu."
+    - title: "Cena dużo niższa niż zwykle"
+      text:
+        - "Pokój albo mieszkanie oferowane dużo taniej niż podobne w okolicy."
+      instead:
+        - "Porównaj ze zwykłymi cenami: pokój we wspólnym mieszkaniu kosztuje 1400–2200 zł miesięcznie, mieszkanie 1–2-pokojowe 2800–4500 zł. Jeśli wygląda na zbyt tanie, najpierw zapytaj dlaczego."
+    - title: "Rozmowa przenosi się poza portal"
+      text:
+        - "Zaraz po pierwszej wiadomości ktoś prosi, żeby kontynuować w innej aplikacji albo przez prywatny e-mail, i tam zapłacić."
+      instead:
+        - "Rozmawiaj tam, gdzie jest ogłoszenie, dopóki nie zobaczysz mieszkania, i nigdy nie płać w sposób, którego nie da się prześledzić."
+  closing: "Nie wysyłaj kaucji za mieszkanie, którego nikt nie widział."
+  source: "Ceny: Akademia Leona Koźmińskiego, koszty życia studentów (maj 2026)."
+  soft_cta:
+    title: "Wolisz, żeby ktoś sprawdził to za Ciebie?"
+    text: "Każde mieszkanie, które proponujemy, ktoś z nas obejrzał na miejscu albo sprawdził na wideo na żywo, zanim cokolwiek zapłacisz."
+    links:
+      - {page: "students", label: "Dla studentów"}
+      - {page: "parents", label: "Dla rodziców"}
+
+guide_words:
+  meta:
+    title: "Słowniczek polskiej umowy najmu | Doorstep"
+    description: "Czynsz, czynsz administracyjny, kaucja, umowa najmu, media i trzy inne: osiem słów z ogłoszeń i umów najmu, każde wyjaśnione jednym prostym zdaniem."
+    crumb: "Słowniczek najmu"
+  hero:
+    eyebrow: "Poradnik"
+    title: "Słowa z polskiej umowy najmu"
+    lead: "Osiem słów, które spotkasz w ogłoszeniach i umowach, każde wyjaśnione raz. Przyda się też, jeśli wysyłasz ten link komuś, kto nie mówi po polsku."
+    review: "[[confirm:glossary_reviewed]]"
+  words:
+    - id: "czynsz"
+      term: "czynsz"
+      text: "W ogłoszeniach zwykle kwota płacona co miesiąc wynajmującemu, więc sprawdź, czy obejmuje też opłatę za budynek."
+    - id: "czynsz-administracyjny"
+      term: "czynsz administracyjny"
+      text: "Opłata za budynek. Dochodzi do czynszu najmu, a cena, którą pokazujemy, już ją zawiera."
+    - id: "kaucja"
+      term: "kaucja"
+      text: "Zwykle równowartość miesięcznego czynszu, płacona raz i zwracana przy wyprowadzce, pomniejszona o udokumentowane szkody."
+    - id: "umowa-najmu"
+      term: "umowa najmu"
+      text: "Umowa między Tobą a wynajmującym: sprawdź daty, okres wypowiedzenia i zasady zwrotu kaucji."
+    - id: "media"
+      term: "media"
+      text: "Prąd, gaz, woda, ogrzewanie i internet: sprawdź, które są w czynszu administracyjnym, a za które płacisz osobno."
+    - id: "protokol"
+      term: "protokół zdawczo-odbiorczy"
+      text: "Zapis stanu mieszkania, stanów liczników i zdjęć, podpisywany przy wprowadzeniu się i ponownie przy wyprowadzce."
+    - id: "najem-okazjonalny"
+      term: "najem okazjonalny"
+      text: "Rodzaj umowy, który daje wynajmującemu dodatkową ochronę; zwykle wymaga oświadczenia u notariusza i wskazania adresu, pod który możesz się wyprowadzić."
+    - id: "odstepne"
+      term: "odstępne"
+      text: "Jednorazowa opłata za przejęcie mieszkania lub mebli od kogoś innego: zapytaj, za co dokładnie płacisz."
+  source: "Czynsz administracyjny i kaucja: IBB PAN Welcome Center, poradnik mieszkaniowy. Pozostałe słowa: ogólne wyjaśnienia, nie porada prawna."
+  soft_cta:
+    title: "Wolisz, żeby ktoś Ci to wytłumaczył?"
+    text: "Przed podpisaniem omawiamy z Tobą umowę prostym językiem."
+    links:
+      - {page: "students", label: "Dla studentów"}
+      - {page: "professionals", label: "Dla pracujących"}
+
+guide_first:
+  meta:
+    title: "Twój pierwszy tydzień w warszawskim mieszkaniu | Doorstep"
+    description: "Jednostronicowa karta na pierwszy tydzień w Warszawie: klucze i protokół, stany liczników, internet, rachunki, zameldowanie i do kogo dzwonić."
+    crumb: "Pierwszy tydzień"
+  hero:
+    eyebrow: "Karta"
+    title: "Twój pierwszy tydzień"
+    lead: "Jedna strona na dni po odebraniu kluczy."
+    review: ""
+  sections:
+    - title: "Pierwszy dzień: klucze i protokół"
+      text: "Przeczytaj protokół zdawczo-odbiorczy, zanim go podpiszesz."
+    - title: "Stany liczników i zdjęcia"
+      text: "Sfotografuj każdy licznik w dniu wprowadzenia się."
+    - title: "Internet"
+      text: ""
+    - title: "Rachunki: czynsz, czynsz administracyjny i media"
+      text: ""
+    - title: "Zameldowanie"
+      text: ""
+    - title: "Do kogo dzwonić"
+      text: ""
+  soft_cta:
+    title: "Nadal szukasz mieszkania?"
+    text: "Podaj daty, budżet i uczelnię albo miejsce pracy. Wrócimy z trzema do pięciu sprawdzonymi opcjami."
+    links:
+      - {page: "students", label: "Dla studentów"}
+      - {page: "professionals", label: "Dla pracujących"}
+      - {page: "parents", label: "Dla rodziców"}
+
+thanks:
+  meta:
+    title: "Dziękujemy | Doorstep"
+    description: "Mamy Twoją wiadomość. Odpowie konkretna osoba."
+  hero:
+    eyebrow: "Wysłane"
+    title: "Dziękujemy. Mamy to."
+  messages:
+    default: "Odpowie konkretna osoba z naszego zespołu."
+    search: "Mamy Twoje zgłoszenie. Konkretna osoba je przeczyta i odpisze, co dalej."
+    call: "Mamy Twoją prośbę o rozmowę. Termin potwierdzimy mailem."
+    proposal: "Otrzymaliśmy Państwa prośbę. Ofertę na piśmie prześlemy mailem."
+    partner: "Otrzymaliśmy zapytanie. Odpowiemy mailem lub telefonicznie."
+    contact: "Mamy Twoją wiadomość. Odpowie konkretna osoba."
+  reply: "{?Odpowiadamy w ciągu: [[fill:reply_time]].?}"
+  guides_link: "Przeczytaj poradniki, zanim odpiszemy"
+
+privacy:
+  meta:
+    title: "Polityka prywatności | Doorstep"
+    description: "Jak Doorstep przetwarza dane osobowe zgodnie z RODO: kto jest administratorem, w jakim celu, jak długo je przechowujemy i jakie masz prawa."
+  title: "Polityka prywatności"
+  lead: "Jak przetwarzamy Twoje dane osobowe zgodnie z RODO."
+  body_key: "privacy_policy_body"
+  sections: ["Administrator danych", "Cele przetwarzania", "Podstawa prawna", "Jak długo przechowujemy dane", "Odbiorcy danych", "Twoje prawa", "Pliki cookies"]
+
+terms:
+  meta:
+    title: "Regulamin | Doorstep"
+    description: "Regulamin usługi wyszukiwania mieszkań w Warszawie: co zapewniamy, opłaty i termin płatności, czego usługa nie obejmuje, odpowiedzialność."
+  title: "Regulamin"
+  lead: "Zasady korzystania z naszej usługi wyszukiwania."
+  body_key: "terms_body"
+  sections: ["Kim jesteśmy", "Co zapewniamy", "Opłaty i termin płatności", "Czego usługa nie obejmuje", "Rezygnacja", "Odpowiedzialność", "Reklamacje"]
+
+notfound:
+  title: "Nie ma takiej strony."
+  text: "Ta strona nie istnieje albo została przeniesiona. Dokąd chcesz przejść?"
+  home: "Strona główna"

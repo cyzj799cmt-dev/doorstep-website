@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block main %}
+<article class="guide" data-guide="{{ pid }}">
+  <header class="hero hero-plain">
+    <div class="wrap narrow">
+      <nav class="crumbs" aria-label="{{ common.crumbs_label }}">
+        <ol>
+          <li><a href="{{ url('home') }}">{{ common.nav.home }}</a></li>
+          <li><a href="{{ url('guides') }}">{{ L.guides.meta.crumb }}</a></li>
+          <li aria-current="page">{{ c.meta.crumb }}</li>
+        </ol>
+      </nav>
+      {{ ui.eyebrow(c.hero.eyebrow) }}
+      <h1 id="h1">{{ c.hero.title }}</h1>
+      <p class="lead">{{ t(c.hero.lead) }}</p>
+      {% if c.hero.review and highlights %}<p class="small">{{ t(c.hero.review) }}</p>{% endif %}
+    </div>
+  </header>
+  <div class="section guide-body">
+    <div class="wrap narrow">
+      {% block guide %}{% endblock %}
+    </div>
+  </div>
+  <div class="wrap narrow">{{ ui.soft_cta(c.soft_cta) }}</div>
+</article>
+{% endblock %}

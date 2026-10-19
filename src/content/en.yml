@@ -1,0 +1,1148 @@
+# English copy. One key per page, plus `common` for shared parts.
+# Tokens:  [[fill:key]]     a missing fact from CONFIG (build.py)
+#          [[confirm:key]]  a value to confirm, from CONFIG
+#          [[url:page_id]]  link to a page in this language, e.g. [[url:students#brief]]
+#          [[pl:word]]      marks a Polish word with lang="pl"
+#          {? … ?}          optional sentence: dropped when its fill is empty and highlights are off
+# Tone (B01 §7): we, with a name; talk to one person; numbers before adjectives; no superlatives.
+
+common:
+  lang_name: "English"
+  skip: "Skip to main content"
+  new_tab: "(opens in a new tab)"
+  source_label: "Source"
+  record_title: "At a glance"
+  crumbs_label: "Breadcrumb"
+  org_description: "Housing search in Warsaw, done for you: we find, check, negotiate and book, and you choose."
+  founders: ["Bora Cetinkaya", "Arsen Dzhepparov", "Adon Grubi", "Nikola Hub", "Nina Schmelzer"]
+  ph:
+    fill: "FILL IN"
+    confirm: "confirm"
+    unset: "to be set"
+  fill_labels:
+    site_url: "website address"
+    og_image: "social sharing image"
+    search_console_verification: "Search Console code"
+    legal_name: "legal name"
+    legal_form: "legal form"
+    nip: "NIP"
+    regon: "REGON"
+    krs_or_ceidg: "KRS or CEIDG number"
+    registered_address: "registered address"
+    oc_insurer: "OC insurer"
+    oc_policy: "OC policy number"
+    email: "email"
+    phone: "phone"
+    whatsapp: "WhatsApp number"
+    instagram: "Instagram"
+    linkedin: "LinkedIn"
+    booking_url: "call booking link"
+    contact_hours: "hours when we answer"
+    reply_time: "reply time"
+    payment_methods: "payment details"
+    team_bora_role: "Bora's role"
+    team_bora_languages: "Bora's languages"
+    team_bora_photo: "photo of Bora"
+    team_bora_bio: "one line about Bora"
+    team_arsen_role: "Arsen's role"
+    team_arsen_languages: "Arsen's languages"
+    team_arsen_photo: "photo of Arsen"
+    team_arsen_bio: "one line about Arsen"
+    team_adon_role: "Adon's role"
+    team_adon_languages: "Adon's languages"
+    team_adon_photo: "photo of Adon"
+    team_adon_bio: "one line about Adon"
+    team_nikola_role: "Nikola's role"
+    team_nikola_languages: "Nikola's languages"
+    team_nikola_photo: "photo of Nikola"
+    team_nikola_bio: "one line about Nikola"
+    team_nina_role: "Nina's role"
+    team_nina_languages: "Nina's languages"
+    team_nina_photo: "photo of Nina"
+    team_nina_bio: "one line about Nina"
+    team_contact_students: "named contact for students"
+    team_contact_parents: "named contact for parents"
+    team_contact_professionals: "named contact for professionals"
+    team_contact_partners: "named contact for partners"
+    viewing_photo: "photo from a real viewing"
+    viewing_checklist: "viewing checklist"
+    districts_by_campus: "districts by campus"
+    aftercare_contact: "contact for landlord problems"
+    capacity_per_intake: "cases per intake"
+    university_annual_fee: "annual university fee"
+    data_processing_summary: "data handling summary"
+    liability_terms: "liability terms"
+    references: "references"
+    proposal_pdf: "proposal PDF"
+    first_week_content: "first-week content"
+    privacy_policy_body: "privacy policy text"
+    terms_body: "terms of service text"
+    cookie_policy_body: "cookie policy text"
+    form_endpoint: "form backend not connected"
+    gtm_id: "GTM container ID"
+    ga4_id: "GA4 measurement ID"
+    shortlist_days: "number of days"
+  nav:
+    label: "Main"
+    home: "Home"
+    home_suffix: "home page"
+    students: "Students"
+    parents: "Parents"
+    professionals: "Professionals"
+    partners: "Partners"
+    universities: "Universities"
+    landlords: "Residences & landlords"
+    how: "How it works"
+    about: "About"
+    guides: "Guides"
+    contact: "Contact"
+    menu: "Menu"
+    privacy: "Privacy"
+    terms: "Terms"
+  cta:
+    start: "Start my search"
+    whatsapp: "Message us on WhatsApp"
+    whatsapp_short: "WhatsApp"
+    proposal: "Request a written proposal"
+    partnership: "Ask about a partnership"
+  wa_text:
+    default: "Hi Doorstep, I'm looking for a place in Warsaw."
+    students: "Hi Doorstep, I'm coming to Warsaw for a semester. My dates: "
+    parents: "Hi Doorstep, my child starts a degree in Warsaw and I'd like to talk."
+    professionals: "Hi Doorstep, I start a job in Warsaw and need a furnished flat. My start date: "
+    start: "Hi Doorstep, I'd rather send my brief here: "
+    thanks: "Hi Doorstep, I just sent you a form."
+  bar:
+    label: "Quick actions"
+    book_call: "Book a call"
+    proposal: "Request a proposal"
+    partnership: "Ask about partnership"
+    email: "Email"
+  footer:
+    tagline: "Housing search in Warsaw, done for you. Warsaw only."
+    founded: "Founded in autumn 2026 by five Lazarski University students. Our own business, not a university service."
+    help_title: "Ask us"
+    whatsapp_label: "WhatsApp"
+    email_label: "Email:"
+    contact_page: "All ways to reach us"
+    hours: "{?We answer: [[fill:contact_hours]]?}"
+    languages: "We speak [[confirm:languages]]."
+    nav_title: "Pages"
+    legal_title: "Company"
+    legal_lines:
+      - "[[fill:legal_name]] {?· [[fill:legal_form]]?}"
+      - "NIP [[fill:nip]]"
+      - "{?REGON [[fill:regon]] · ?}KRS/CEIDG [[fill:krs_or_ceidg]]"
+      - "OC insurance: [[fill:oc_insurer]]"
+    cookie_settings: "Cookie settings"
+  consent:
+    title: "Cookies"
+    text: "We'd like to measure which pages help people find a home. Nothing loads until you choose."
+    privacy_link: "How we handle data"
+    accept: "Accept"
+    reject: "Reject"
+    settings: "Settings"
+    analytics: "Analytics"
+    analytics_hint: "Anonymous visit counts (Google Analytics)."
+    marketing: "Maps and marketing"
+    marketing_hint: "Loads Google Maps and lets us measure our ads."
+    save: "Save my choice"
+  checked_card:
+    stamp_person: "Checked in person"
+    stamp_video: "Checked on live video"
+    sample: "Sample"
+    photo: "[Photo from a real viewing]"
+    rent: "Rent"
+    czynsz: "[[pl:Czynsz administracyjny]] <span class='muted'>building charge</span>"
+    utilities: "Utilities <span class='muted'>([[pl:media]])</span>"
+    total: "You pay each month"
+    deposit: "Deposit <span class='muted'>([[pl:kaucja]], once)</span>"
+    empty: "— PLN"
+    note: "“Arsen here. I saw the flat this morning. The video is in your WhatsApp.”"
+    sr_caption: "Sample of what a checked option looks like. Values appear once real data exists."
+  promises:
+    title: "Three things we promise"
+    items:
+      - title: "Someone has been inside"
+        text: "Every flat we offer has been visited in person or checked live on video by one of us before you pay anything."
+      - title: "You only choose"
+        text: "You tell us your budget, dates and area once. We send a shortlist, arrange viewings and handle the landlord, in Polish where needed."
+      - title: "You arrive to keys"
+        text: "The contract is in a language you understand, the handover is documented, and you walk in on the day you land."
+  nonneg:
+    title: "Four things we don't bend on"
+    items:
+      - title: "A named person on every case"
+        text: "Software can sort offers. A person checks the flat and answers you."
+      - title: "Nothing paid before it is checked"
+        text: "We never ask you to send money for a flat no one has verified."
+      - title: "We say who pays us"
+        text: "If a landlord or residence pays us a fee for your placement, you see it before you decide."
+      - title: "A fixed fee, not a share of your rent"
+        text: "Our fee does not rise when your rent does, so we have no reason to push you higher."
+  steps:
+    title: "From your message to your keys"
+    pay_label: "You pay here"
+    not_instant: "A checked shortlist takes days. We won't book an unseen flat tonight."
+    items:
+      - title: "Tell us once"
+        text: "Dates, budget, campus or workplace, in one message. Searches start up to 8 weeks before you arrive."
+      - title: "Get 3–5 checked options"
+        text: "Every option has been visited in person or checked live on video by one of us. The full monthly cost is one number."
+      - title: "View them live"
+        text: "On video with one of us, or in person if you're already here."
+      - title: "Sign a contract you understand"
+        text: "We walk you through it in plain English and handle the landlord in Polish. Our fee: [[confirm:pay_on_signing]], not before."
+        pay: true
+      - title: "Walk in on the day you land"
+        text: "Keys, and a handover record with photos."
+  price:
+    student:
+      name: "Student Search"
+    professional:
+      name: "Professional Search"
+    included_title: "Included"
+    not_included_title: "Not included"
+    included:
+      - "A needs call"
+      - "A shortlist of 3–5 checked options"
+      - "Viewings, in person or on live video"
+      - "All contact with the landlord, in Polish where needed"
+      - "A plain-English walk-through of the contract"
+      - "A photo handover record"
+    not_included:
+      - "Rent"
+      - "The deposit, usually one month's rent"
+      - "Legal advice"
+      - "The move itself"
+    who_pays_note: "If a residence or landlord pays us for your placement, you'll see it on your shortlist."
+  checkus:
+    items:
+      - text: "Registered business: NIP [[fill:nip]] · KRS/CEIDG [[fill:krs_or_ceidg]]."
+        proof: "https://www.podatki.gov.pl/wykaz-podatnikow-vat-wyszukiwarka/"
+        proof_label: "Check the NIP in the official register"
+      - text: "OC liability insurance: [[fill:oc_insurer]], policy [[fill:oc_policy]]."
+      - text: "A named person on every case. You know who checks your flat and who answers you."
+      - text: "We say who pays us. If a landlord or residence pays us for your placement, you see it before you decide."
+  not_list:
+    title: "What we are not"
+    items:
+      - title: "Not a listings portal"
+        text: "You get three to five checked options, not three thousand unchecked ones."
+      - title: "Not a percentage agency"
+        text: "Our fee does not follow the rent."
+      - title: "Not lawyers"
+        text: "We walk you through the contract in plain English. We don't give legal advice."
+      - title: "Not instant"
+        text: "A checked shortlist takes days. We won't book an unseen flat tonight, and we don't apologise for that."
+      - title: "Not for stays under a month"
+        text: "Short stays belong to hotels and holiday lets."
+      - title: "Not a relocation firm for companies"
+        text: "Companies with their own relocation department don't need us."
+  team:
+    - {key: "bora", name: "Bora Cetinkaya", photo_caption: "[Team photo: Bora]"}
+    - {key: "arsen", name: "Arsen Dzhepparov", photo_caption: "[Team photo: Arsen]"}
+    - {key: "adon", name: "Adon Grubi", photo_caption: "[Team photo: Adon]"}
+    - {key: "nikola", name: "Nikola Hub", photo_caption: "[Team photo: Nikola]"}
+    - {key: "nina", name: "Nina Schmelzer", photo_caption: "[Team photo: Nina]"}
+  forms:
+    required: "(required)"
+    optional: "(optional)"
+    choose: "Choose one"
+    honeypot: "Leave this field empty"
+    error_title: "Please check these fields"
+    consent: "I agree that Doorstep uses these details to reply to this enquiry."
+    privacy_link: "How we handle your data"
+    next_year: "Write to me before the next academic year."
+    no_backend: "Form backend not connected. Nothing was sent."
+    sending: "Sending…"
+    failed: "That didn't go through. Please try again, or message us on WhatsApp."
+    reply_line: "{?We reply within [[fill:reply_time]].?}"
+    errors:
+      required: "Fill in this field."
+      who: "Tell us who is searching."
+      arrival: "Enter the date."
+      months: "Enter how many months you'll stay."
+      budget: "Enter your monthly budget in PLN."
+      area: "Tell us your university or where you'll work."
+      name: "Enter your name."
+      contact: "Enter a WhatsApp number or an email address."
+      email: "Enter your email address."
+      times: "Tell us when we can call you."
+      timezone: "Choose your time zone."
+      university: "Enter the university's name."
+      role: "Enter your role."
+      company: "Enter the residence or company name."
+      phone: "Enter a phone number."
+      message: "Write your message."
+      consent: "Tick the box so we can reply to you."
+      fmt_date: "Enter a real date, for example 28 August 2027."
+      fmt_months: "Enter a number of months from 1 to 24. We don't do stays under a month."
+      fmt_budget: "Enter the amount as a number, for example 1800."
+      fmt_email: "Enter an email address like name@example.com."
+      fmt_contact: "Enter a WhatsApp number with country code, or an email address."
+      fmt_phone: "Enter a phone number with country code, for example +48 600 000 000."
+    search:
+      who: "Who is searching?"
+      who_options:
+        - {v: "student", l: "Me, as a student"}
+        - {v: "parent", l: "My child"}
+        - {v: "professional", l: "Me, for work"}
+      arrival: "Arrival date"
+      job_start: "Job start date"
+      months: "Length of stay, in months"
+      months_hint:
+        full: "Students: 4–12 months. Work: 3–12 months."
+        student: "Usually 4–12 months."
+        professional: "Usually 3–12 months."
+      budget: "Monthly budget, all-in (PLN)"
+      budget_hint:
+        full: "Rent plus building charge and utilities. A room is usually 1,400–2,200 PLN, a 1–2-room flat 2,800–4,500 PLN."
+        student: "Rent plus building charge and utilities. A room is usually 1,400–2,200 PLN."
+        professional: "Rent plus building charge and utilities. A 1–2-room flat is usually 2,800–4,500 PLN."
+      area: "Your university, or where you'll work"
+      area_hint: "We search around it."
+      area_uni: "Your university in Warsaw"
+      area_work: "Where you'll work (district or address)"
+      place: "Room or whole flat?"
+      place_options:
+        - {v: "room", l: "A room"}
+        - {v: "flat", l: "A whole flat or studio"}
+        - {v: "either", l: "Either"}
+      furnished: "Furnished?"
+      reimburse: "Does your employer pay part of it?"
+      yes_no:
+        - {v: "yes", l: "Yes"}
+        - {v: "no", l: "No"}
+      yes_no_unsure:
+        - {v: "yes", l: "Yes"}
+        - {v: "no", l: "No"}
+        - {v: "unsure", l: "Not sure yet"}
+      name: "Your name"
+      contact: "WhatsApp number or email"
+      contact_hint: "WhatsApp with country code, for example +49 151 …"
+      channel: "How should we reply?"
+      channel_options:
+        - {v: "whatsapp", l: "WhatsApp"}
+        - {v: "email", l: "Email"}
+      notes: "Anything else we should know?"
+      submit_full: "Send my brief"
+      submit_inline:
+        student: "Send my dates"
+        professional: "Send my brief"
+    call:
+      name: "Your name"
+      child_name: "Your child's name"
+      email: "Your email"
+      phone: "Phone or WhatsApp"
+      times: "When suits you for a call?"
+      times_hint: "Days and times, in your time zone."
+      timezone: "Your time zone"
+      timezones:
+        - {v: "Europe/London", l: "UK, Ireland, Portugal"}
+        - {v: "Europe/Warsaw", l: "Central Europe (Poland, Germany, North Macedonia, …)"}
+        - {v: "Europe/Kyiv", l: "Eastern Europe (Ukraine, Greece, Finland, …)"}
+        - {v: "Europe/Istanbul", l: "Turkey, Moscow, Gulf states west"}
+        - {v: "Asia/Dubai", l: "Gulf, Caucasus"}
+        - {v: "Asia/Kolkata", l: "India"}
+        - {v: "Asia/Shanghai", l: "China, Singapore"}
+        - {v: "America/New_York", l: "US and Canada, east"}
+        - {v: "America/Los_Angeles", l: "US and Canada, west"}
+        - {v: "America/Sao_Paulo", l: "South America"}
+        - {v: "other", l: "Somewhere else"}
+      language: "Language for the call"
+      university_start: "University and start date"
+      university_start_hint: "For example: the university's name, October 2027."
+      submit: "Request a call"
+    proposal:
+      university: "University"
+      name: "Your name"
+      role: "Your role"
+      email: "Work email"
+      phone: "Phone"
+      students: "Incoming students per intake (approx.)"
+      students_hint: "A rough number is enough."
+      intakes: "Intakes you're planning for"
+      intake_options:
+        - {v: "aug_sep", l: "August–September"}
+        - {v: "jan_feb", l: "January–February"}
+      questions: "Questions the proposal should answer"
+      questions_hint: "For example: data handling, liability, pricing, exit terms."
+      submit: "Request a written proposal"
+    partner:
+      company: "Residence or company name"
+      name: "Your name"
+      role: "Your role"
+      email: "Email"
+      phone: "Phone"
+      type: "Type"
+      type_options:
+        - {v: "residence", l: "Student residence"}
+        - {v: "landlord", l: "Landlord with 5 or more flats"}
+        - {v: "other", l: "Other"}
+      rooms: "Rooms or flats available"
+      districts: "Districts"
+      available_from: "Available from"
+      submit: "Ask about a partnership"
+    contact:
+      name: "Your name"
+      contact: "Email or WhatsApp"
+      contact_hint: "WhatsApp with country code, or an email address."
+      topic: "Topic"
+      topics:
+        - {v: "moving", l: "I'm moving to Warsaw"}
+        - {v: "parent", l: "I'm a parent"}
+        - {v: "university", l: "University"}
+        - {v: "landlord", l: "Residence or landlord"}
+        - {v: "other", l: "Something else"}
+      message: "Your message"
+      submit: "Send my message"
+
+home:
+  meta:
+    title: "Doorstep · Checked housing in Warsaw, fixed fee"
+    description: "We find, check, negotiate and book a room or flat in Warsaw before you arrive. One of us has been inside every flat. A fixed fee you know upfront."
+  hero:
+    eyebrow: "Warsaw · housing search, done for you"
+    title: "Arrive to a home that’s real, checked and yours."
+    lead: "We find, check, negotiate and book. You choose. One of us has been inside every flat before you pay anything."
+    chips:
+      - "[[confirm:fee_student]] fixed fee"
+      - "[[confirm:pay_on_signing]]"
+      - "3–5 checked options"
+  doors:
+    title: "Which one sounds like you?"
+    people:
+      - {quote: "I’m coming for a semester and still don’t have a room.", link: "For exchange and degree students", page: "students", persona: "lena"}
+      - {quote: "My child starts a degree in Warsaw and I can’t check flats from here.", link: "For parents", page: "parents", persona: "katrin"}
+      - {quote: "I start a job in Warsaw in a few weeks and I’m in a hotel till then.", link: "For professionals", page: "professionals", persona: "marco"}
+    partners_label: "For partners"
+    partners:
+      - {quote: "Our students keep asking us about housing.", link: "For universities", page: "universities", persona: "agnieszka"}
+      - {quote: "I have empty rooms before term starts.", link: "For residences and landlords", page: "landlords", persona: "piotr"}
+  fee:
+    eyebrow: "What it costs"
+    title: "A fixed fee, not a share of your rent."
+    link: "What the fee covers"
+    compare:
+      agency: "Typical Warsaw agency, on a 1,800 PLN room"
+      agency_value: "≈ 1,800 PLN"
+      us: "Doorstep Student Search"
+      us_value: "[[confirm:fee_student]]"
+      source: "Agencies usually charge around one month’s rent, on top of the deposit (IBB PAS Welcome Center, accommodation guide). A room costs 1,400–2,200 PLN a month (Kozminski University, May 2026)."
+  checkus:
+    eyebrow: "Check us"
+    title: "We’re new. Here’s how to check us."
+    intro: "We have no reviews yet, so we show none. This is what you can verify."
+    link: "Registration and insurance details"
+  story:
+    heading: "Why we exist"
+    text: "Two months before term, Nikola’s confirmed flat in Warsaw was cancelled. He had two weeks to find a new one from abroad. We built the service we would have paid for."
+    meta: "Five founders · Lazarski University students"
+    names: "Bora, Arsen, Adon, Nikola and Nina"
+    link: "Meet us"
+  guides:
+    title: "Before you search"
+    read: "Read the guide"
+    items:
+      - page: "guide_fake"
+        label: "Guide · 5 signs"
+        title: "How to spot a fake Warsaw listing"
+        text: "Five patterns, and what to do instead. Never send a deposit for a flat nobody has seen."
+      - page: "guide_words"
+        label: "Guide · 8 words"
+        title: "Words in your Polish rental contract"
+        text: "[[pl:Czynsz]], [[pl:kaucja]], [[pl:umowa najmu]] and five more, each explained once."
+  final:
+    title: "Tell us your dates, budget and campus."
+    text: "We’ll come back with three to five options. Searches start up to 8 weeks before you arrive."
+
+students:
+  meta:
+    title: "Rooms for exchange and degree students in Warsaw | Doorstep"
+    description: "A room for your semester in Warsaw, seen by one of us before you pay. Stays of 4–12 months, landlord handled in Polish, full monthly cost in one number."
+  hero:
+    eyebrow: "For exchange and degree students"
+    title: "Coming for a semester? Land with a room someone has seen."
+    lead: "Tell us your dates, budget and campus once. We send three to five checked options for stays of 4 to 12 months, and handle the landlord in Polish."
+    cta: "Send my dates"
+    cta_wa: "Ask on WhatsApp first"
+    record:
+      - {k: "Stays", v: "4–12 months"}
+      - {k: "You get", v: "3–5 checked options"}
+      - {k: "Viewings", v: "In person or on live video"}
+      - {k: "Fee", v: "[[confirm:fee_student]]"}
+      - {k: "You pay", v: "[[confirm:pay_on_signing]]"}
+      - {k: "Landlord", v: "Handled in Polish"}
+  questions:
+    title: "The four questions everyone asks"
+    items:
+      - id: "real"
+        q: "Is this offer real, or a scam?"
+        a:
+          - "Every flat we send has been visited in person or checked live on video by one of us, before you pay anything. You get the video."
+          - "Never send a deposit for a flat nobody has seen. We never ask you to."
+        link: {page: "guide_fake", label: "How to spot a fake Warsaw listing"}
+      - id: "short"
+        q: "Can I rent for five months only?"
+        a:
+          - "Yes. We search for stays of 4 to 12 months and tell landlords your dates in the first message, so nobody wastes your time."
+          - "[[confirm:shortlist_accepts_dates]]"
+      - id: "cost"
+        q: "What do [[pl:czynsz]] and [[pl:kaucja]] add to the price?"
+        a:
+          - "[[pl:Czynsz administracyjny]] is the building charge. It comes on top of the rent, and the price we show you includes it. [[pl:Kaucja]] is the deposit, usually one month’s rent, paid once."
+          - "We show you one monthly number with everything in it, and the deposit on its own line:"
+      - id: "campus"
+        q: "How far is it from my campus?"
+        a:
+          - "You tell us your university. We search around it {?[[confirm:travel_time_per_option]]?}."
+          - "{?Which districts work for which campus: [[fill:districts_by_campus]]?}"
+  price_title: "What it costs"
+  brief:
+    title: "Send us your dates"
+    text: "Six questions. A named person reads your answers and replies."
+  contact:
+    title: "Who answers you"
+    text: "One person handles your search, from your first message to your keys."
+  faq:
+    title: "Before you ask"
+    items:
+      - id: "students_shortest"
+        q: "What’s the shortest stay you handle?"
+        a: "Four months for students. We don’t do stays under a month: those belong to hotels and holiday lets."
+      - id: "students_legal"
+        q: "Do you check the contract legally?"
+        a: "No, we’re not lawyers. We walk you through the contract in plain English before you sign, but we don’t give legal advice."
+      - id: "students_languages"
+        q: "Which languages do you speak?"
+        a: "[[confirm:languages]]. With the landlord, we speak Polish."
+      - id: "students_nothing"
+        q: "What if nothing on the shortlist fits?"
+        a: "[[confirm:no_home_no_fee]] [[confirm:pay_on_signing]]."
+      - id: "students_abroad"
+        q: "How do I pay from abroad?"
+        a: "By bank transfer when you sign. {?Payment details: [[fill:payment_methods]]?}"
+  share:
+    title: "Coming with other students?"
+    text: "Send this page to your incoming students’ group."
+    button: "Copy the link"
+    copied: "Link copied. Paste it in your group chat."
+    wa: "Message us on WhatsApp"
+
+parents:
+  meta:
+    title: "Your child’s first flat in Warsaw, checked | Doorstep"
+    description: "We find and check a safe, legal flat for your child in Warsaw and explain the contract. You and your child decide together. Talk to a named person first."
+  hero:
+    eyebrow: "For parents"
+    title: "Your child’s first flat in Warsaw, checked by someone who’s been inside."
+    lead: "We find, check and explain the contract. You and your child decide together, and you talk to a named person before you pay anything."
+    cta: "Book a [[confirm:call_length]] call with a named person"
+    cta_email: "Email us"
+    record:
+      - {k: "For", v: "Students starting a degree, and the parents who pay"}
+      - {k: "You talk to", v: "A named person"}
+      - {k: "Fee", v: "[[confirm:fee_student]]"}
+      - {k: "You pay", v: "[[confirm:pay_on_signing]]"}
+      - {k: "Contract", v: "Walked through in plain English"}
+      - {k: "Handover", v: "Documented with photos"}
+  real:
+    title: "Is this company real?"
+    text:
+      - "A fair question. Doorstep was founded in autumn 2026 by five students at Lazarski University. We have no reviews yet, so we show none."
+      - "This is what you can check before you pay us anything:"
+    link: "Registration and insurance details"
+  safe:
+    title: "Safe area, legal contract, protected deposit"
+    items:
+      - title: "What we check at a viewing"
+        text:
+          - "One of us visits the flat in person or checks it live on video, and you get the video."
+          - "{?Our viewing checklist: [[fill:viewing_checklist]]?}"
+      - title: "The contract, in plain English"
+        text:
+          - "Before anyone signs, we walk you and your child through the contract in plain English. The landlord side is handled in Polish."
+          - "We’re not lawyers and don’t give legal advice."
+      - title: "The deposit"
+        text:
+          - "The deposit ([[pl:kaucja]]) is usually one month’s rent. It is paid once, and the handover record with photos documents the flat on the first day."
+        source: "Deposit size: Kozminski University, student living costs (May 2026)."
+      - title: "The full cost"
+        text:
+          - "Rent, the building charge ([[pl:czynsz administracyjny]]) and utilities as one monthly number, and the deposit on its own line."
+          - "[[confirm:written_cost_summary]]"
+  together:
+    title: "How you and your child choose together"
+    step: "Step"
+    you: "You"
+    child: "Your child"
+    rows:
+      - {you: "Tell us the budget and the start date on a call.", child: "Tells us the campus and what matters day to day."}
+      - {you: "See the same shortlist, with the full monthly cost.", child: "Watches the viewing videos and picks a favourite."}
+      - {you: "Ask us anything about the area, the contract or the deposit.", child: "Can veto any option. Nothing goes ahead without a yes."}
+      - {you: "Pay the deposit, and our fee ([[confirm:pay_on_signing]]).", child: "Signs the contract after our walk-through."}
+      - {you: "Get the handover record with photos.", child: "Walks in on arrival day and collects the keys."}
+  after:
+    title: "After move-in: who you call"
+    text:
+      - "You’ll be far away when the first thing breaks, and the landlord speaks Polish. So for us, the search doesn’t end at the keys."
+    items:
+      - "[[confirm:first_month_checkin]]"
+      - "{?For problems with the landlord: [[fill:aftercare_contact]]?}"
+      - "The handover is documented with photos, so there is a record of the flat on day one."
+  price_title: "What it costs"
+  call:
+    title: "Book a [[confirm:call_length]] call"
+    text: "Ask about the area, the contract and our insurance. A named person answers."
+    new_tab_warning: "The booking page opens in a new tab."
+    booking_fallback: "Until then, this form sends us a call request."
+  faq:
+    title: "Before you ask"
+    items:
+      - id: "parents_lawyers"
+        q: "Are you lawyers?"
+        a: "No. We walk you and your child through the contract in plain English, but we don’t give legal advice."
+      - id: "parents_not_covered"
+        q: "What doesn’t the fee cover?"
+        a: "Rent, the deposit (usually one month’s rent), legal advice and the move itself."
+      - id: "parents_pay"
+        q: "Can I pay for my child’s search?"
+        a: "[[confirm:payer_differs]]"
+      - id: "parents_languages"
+        q: "Which languages do you speak?"
+        a: "[[confirm:languages]]. With the landlord, we speak Polish."
+  contact:
+    title: "Who answers you"
+    text: "One named person handles your child’s search and answers your questions."
+
+professionals:
+  meta:
+    title: "Furnished flats for 3–12 months in Warsaw | Doorstep"
+    description: "Starting a job in Warsaw? We find a furnished flat for 3–12 months, view it for you and send the video. A fixed fee you know upfront, not a month’s rent."
+  hero:
+    eyebrow: "For professionals on 3–12-month contracts"
+    title: "Starting a job in Warsaw? A furnished flat for 3–12 months, without losing your first month."
+    lead: "Professional Search costs [[confirm:fee_professional]]. [[confirm:pay_on_signing]]. We find, check and view flats for you, so your first weeks don’t go on hotel nights."
+    cta: "Send my brief"
+    record:
+      - {k: "Stays", v: "3–12 months"}
+      - {k: "You get", v: "3–5 checked options"}
+      - {k: "Viewings", v: "We go, you get the video"}
+      - {k: "Fee", v: "[[confirm:fee_professional]]"}
+      - {k: "You pay", v: "[[confirm:pay_on_signing]]"}
+  stated:
+    title: "Stated before you ask"
+    fee_title: "The fee"
+    compare:
+      agency: "Percentage agency, on a 2,800–4,500 PLN flat"
+      agency_value: "≈ 2,800–4,500 PLN"
+      us: "Doorstep Professional Search"
+      us_value: "[[confirm:fee_professional]]"
+      source: "Agencies usually charge around one month’s rent, on top of the deposit (IBB PAS Welcome Center). A 1–2-room flat costs 2,800–4,500 PLN a month (Kozminski University, May 2026)."
+    items:
+      - title: "Contracts shorter than 12 months"
+        text:
+          - "Many landlords want 12 months. We search for stays of 3 to 12 months and give your dates in the first message."
+      - title: "Landlords who accept foreigners"
+        text:
+          - "[[confirm:foreigner_friendly_landlords]]"
+          - "We handle the conversation with the landlord in Polish."
+  view:
+    title: "We view it for you"
+    text:
+      - "Viewings clash with work. One of us goes, films the flat and sends you the video, so you don’t leave the office."
+      - "You decide from the video, or come along after work if you’d rather see it yourself."
+  fast:
+    title: "How fast?"
+    text:
+      - "A checked shortlist takes days, not weeks. {?Usually [[confirm:shortlist_days]].?}"
+      - "We won’t book an unseen flat tonight: checking is the part that takes the days."
+  setup:
+    title: "Internet, utilities, registration"
+    text:
+      - "Your first week comes with Polish admin. We’re preparing [[confirm:setup_list]]."
+    link: "See the first-week sheet"
+  price_title: "What it costs"
+  brief:
+    title: "Send your brief"
+    text: "A few questions. A named person reads your answers and replies on WhatsApp or by email."
+  hr:
+    title: "Moving colleagues here too?"
+    text: "Tell your HR team about us. One search per person, each for the same fixed fee."
+  contact:
+    title: "Who answers you"
+    text: "One person handles your search, on WhatsApp and by email."
+  faq:
+    title: "Before you ask"
+    items:
+      - id: "pro_shortest"
+        q: "What’s the shortest stay?"
+        a: "Three months. We don’t do stays under a month."
+      - id: "pro_relocation"
+        q: "Are you a relocation firm?"
+        a: "No. If your company has a relocation department, you don’t need us. We help people whose employer doesn’t offer relocation support."
+      - id: "pro_legal"
+        q: "Do you give legal advice?"
+        a: "No. We walk you through the contract in plain English before you sign."
+      - id: "pro_languages"
+        q: "Which languages do you speak?"
+        a: "[[confirm:languages]]. With the landlord, we speak Polish."
+
+universities:
+  meta:
+    title: "Partner programme for international offices | Doorstep"
+    description: "Your incoming students arrive to a checked home. One short report per intake, a one-semester pilot, and registration, insurance and data on one page."
+  hero:
+    eyebrow: "For international offices"
+    title: "Your incoming students arrive to a checked home."
+    lead: "You get one short report per intake, and you can stop after one semester."
+    cta_dd: "See the due diligence page"
+    record:
+      - {k: "Students pay", v: "[[confirm:fee_university_student]], a reduced fee"}
+      - {k: "University pays", v: "[[fill:university_annual_fee]] per academic year"}
+      - {k: "Pilot", v: "[[confirm:pilot_terms]]"}
+      - {k: "Reporting", v: "One short report per intake"}
+      - {k: "Area", v: "Warsaw only"}
+  problem:
+    title: "The problem you know"
+    text:
+      - "Every September the same housing emails arrive. Every year someone is caught by a listing nobody had checked."
+      - "Most incoming students search from abroad, in a language they can’t read, for stays many landlords don’t want."
+    stats:
+      - {label: "International students in Poland, 2024/25", value: "108,600"}
+      - {label: "Students in Warsaw housed by public residences", value: "about 7%"}
+    source: "EurobuildCEE, citing JLL (27 August 2026)."
+  what:
+    title: "What the partnership is"
+    text:
+      - "You point your incoming students to us, for example in the welcome pack. They pay a reduced fee of [[confirm:fee_university_student]] for the same Student Search. {?The university pays an annual fee of [[fill:university_annual_fee]].?}"
+      - "One agreement per academic year. We work in Warsaw only."
+    record:
+      - {k: "Scope", v: "Student Search for your incoming students: 3–5 checked options, viewings, landlord contact in Polish, contract walk-through, photo handover"}
+      - {k: "Student fee", v: "[[confirm:fee_university_student]]"}
+      - {k: "University fee", v: "[[fill:university_annual_fee]] per year"}
+      - {k: "Term", v: "One academic year"}
+  dd:
+    title: "Due diligence on one page"
+    intro: "What you need before recommending a private business. Polish law requires registration and OC insurance for a rental intermediary; both are in place before our first paid case."
+    rows:
+      - {k: "Legal entity", v: "[[fill:legal_name]] {?([[fill:legal_form]])?}"}
+      - {k: "NIP", v: "[[fill:nip]]"}
+      - {k: "REGON", v: "[[fill:regon]]"}
+      - {k: "KRS / CEIDG", v: "[[fill:krs_or_ceidg]]"}
+      - {k: "Registered address", v: "[[fill:registered_address]]"}
+      - {k: "OC insurance", v: "[[fill:oc_insurer]], policy [[fill:oc_policy]]"}
+      - {k: "Data handling (RODO)", v: "[[fill:data_processing_summary]]"}
+      - {k: "Liability", v: "[[fill:liability_terms]]"}
+      - {k: "References", v: "None yet. We are a new business, founded in autumn 2026, and we say so. {?[[fill:references]]?}"}
+  pilot:
+    title: "A pilot with an exit"
+    text:
+      - "[[confirm:pilot_terms]]"
+      - "You decide after one semester whether to continue."
+    report_title: "One short report per intake"
+    report:
+      - "[[confirm:intake_report]]"
+      - "So that problems reach us before they reach you."
+  contents:
+    title: "What the written proposal contains"
+    items:
+      - "Scope: what we do for each student, and what we don’t"
+      - "Student price and university fee"
+      - "Data handling under RODO: what we collect, why, and for how long"
+      - "Liability: who is responsible for what"
+      - "Registration and insurance documents"
+      - "Pilot terms and how to end the pilot"
+      - "Reporting: what you receive after each intake"
+    pdf: "One-page summary (PDF)"
+  form:
+    title: "Request a written proposal"
+    text: "We reply by email with a proposal your head of office can review as it stands."
+  season:
+    title: "We talk before intakes, not during them"
+    text: "August–September and January–February are your busiest months. The time to plan the next intake is the months before."
+  contact:
+    title: "Your contact for partnerships"
+    text: "One named person handles the partnership and the reports."
+
+landlords:
+  meta:
+    title: "Residence and landlord partnership in Warsaw | Doorstep"
+    description: "Pay only for a signed tenancy. Tenants who arrive briefed on your house rules and contract. Terms in plain numbers, and tenants see that you pay us."
+  hero:
+    eyebrow: "For residences and landlords"
+    title: "You pay only for a signed tenancy."
+    lead: "Tenants who arrive informed: they have seen your house rules, and we have walked them through the contract before they sign."
+    cta_email: "Email us"
+    record:
+      - {k: "Fee", v: "[[confirm:referral_fee]]"}
+      - {k: "Before signing", v: "Nothing"}
+      - {k: "Tenants", v: "Exchange and degree students, young professionals"}
+      - {k: "Stays", v: "3–12 months"}
+  terms:
+    title: "Terms in plain numbers"
+    record:
+      - {k: "Referral fee", v: "[[confirm:referral_fee]]"}
+      - {k: "When it is due", v: "Only after a tenancy agreement is signed"}
+      - {k: "Before signing", v: "Nothing: no listing fee, no fee per enquiry"}
+    text:
+      - "The exact terms are set out in a written partnership agreement."
+  rules:
+    title: "Your rules, shown correctly"
+    text:
+      - "[[confirm:rules_checklist]]"
+      - "We present your building as it is: the rooms, the full monthly cost and the rules you give us."
+  briefed:
+    title: "Tenants who arrive briefed"
+    text:
+      - "Before signing, we walk every tenant through the contract in plain English. At move-in, the handover is documented with photos."
+      - "Fewer questions land on your team in the first week."
+  need:
+    title: "What we need from you"
+    items:
+      - "Room or flat details, with the full monthly cost"
+      - "Your house rules"
+      - "Access for viewings, in person or on live video"
+      - "A written contract with every tenant"
+    not_for: "We do not work with landlords who will not let us see the flat or will not sign a written contract."
+  summary:
+    title: "A summary after each intake"
+    text:
+      - "[[confirm:intake_summary_landlords]]"
+  open:
+    title: "Tenants see that you pay us"
+    text:
+      - "We tell every tenant who pays us, before they decide. A room is offered because it fits, not because it pays."
+      - "This is one of our four non-negotiables."
+  form:
+    title: "Ask about a partnership"
+    text: "Tell us about the rooms. We reply by email or phone."
+  contact:
+    title: "Your contact for partnerships"
+    text: "One named person handles the partnership and the intake summaries."
+
+how:
+  meta:
+    title: "How Doorstep works: steps, fees and who pays us"
+    description: "Five steps from your first message to your keys. The fixed fee for each search, what it covers and what it doesn’t, when you pay, and who else pays us."
+  hero:
+    eyebrow: "How it works"
+    title: "From your message to your keys, and what it costs."
+    lead: "We find, check, negotiate and book. You choose. Here is every step, every fee, and who pays us."
+    cta_price: "See the prices"
+  price:
+    title: "Prices"
+    intro: "One fixed fee per search. It doesn’t rise with your rent."
+    head: ["Search", "For", "Stay", "Fee"]
+    rows:
+      - {name: "Student Search", for: "Exchange and degree students, or a parent paying for one", stay: "4–12 months, room or studio", fee: "[[confirm:fee_student]]"}
+      - {name: "Professional Search", for: "Young professionals whose employer offers no relocation support", stay: "3–12 months, furnished flat", fee: "[[confirm:fee_professional]]"}
+      - {name: "Student Search via your university", for: "Students of a partner university", stay: "4–12 months, room or studio", fee: "[[confirm:fee_university_student]]"}
+    compare_title: "Compared with an agency"
+  pays:
+    title: "Who pays us"
+    text:
+      - "You pay our fixed search fee. Universities in our partner programme pay an annual fee."
+      - "Some residences and landlords pay us a referral fee when a tenancy is signed: [[confirm:referral_fee]]. If that applies to a room on your shortlist, you see it before you decide."
+      - "A room is offered because it fits, not because it pays."
+  faq:
+    title: "Questions about how it works"
+    items:
+      - id: "how_when_pay"
+        q: "When do I pay?"
+        a: "[[confirm:pay_on_signing]]. [[confirm:no_home_no_fee]]"
+      - id: "how_deposit"
+        q: "Is the deposit part of your fee?"
+        a: "No. The deposit ([[pl:kaucja]]) goes to the landlord and is usually one month’s rent. Our fee is separate."
+      - id: "how_long"
+        q: "How long does it take?"
+        a: "A checked shortlist takes days. Searches start up to 8 weeks before you arrive. We won’t book an unseen flat tonight."
+      - id: "how_viewing"
+        q: "What if I can’t come to a viewing?"
+        a: "One of us views the flat in person or checks it live on video, and you get the video."
+      - id: "how_area"
+        q: "Do you work outside Warsaw?"
+        a: "No. We work in Warsaw only, so every viewing in the city can be done in person."
+      - id: "how_shortest"
+        q: "What’s the shortest stay?"
+        a: "4 months for students, 3 months for professionals. We don’t do stays under a month."
+
+about:
+  meta:
+    title: "About Doorstep: who we are and how to check us"
+    description: "Doorstep was founded in autumn 2026 by five Lazarski University students who searched for housing in Warsaw from abroad. Who we are, and how to check us."
+  hero:
+    eyebrow: "About us"
+    title: "We built the service we would have paid for."
+    story:
+      - "Two months before this semester, Nikola had a flat in Warsaw confirmed. It was cancelled at short notice, and he had two weeks to find a new one from abroad. He found his room in a newly opened student residence by chance, after days of stress."
+      - "The rest of us had versions of the same story: ads only in Polish, listings that vanished, and nobody to ask whether an offer was genuine."
+      - "Doorstep was founded in autumn 2026 by five students at Lazarski University: three on Erasmus exchange, two in full-time degree programmes. We are not trading yet."
+  team:
+    title: "The five of us"
+    intro: "One of us handles your case from your first message to your keys."
+    role: "Role"
+    languages: "Languages"
+    languages_line: "Between us we speak [[confirm:languages]]."
+  check:
+    title: "Check us"
+    intro: "Polish law requires a rental intermediary to have a registered business and OC liability insurance. Both are in place before our first paid case."
+    rows:
+      - {k: "Legal name", v: "[[fill:legal_name]] {?([[fill:legal_form]])?}"}
+      - {k: "NIP", v: "[[fill:nip]]"}
+      - {k: "REGON", v: "[[fill:regon]]"}
+      - {k: "KRS / CEIDG", v: "[[fill:krs_or_ceidg]]"}
+      - {k: "Registered address", v: "[[fill:registered_address]]"}
+      - {k: "OC insurance", v: "[[fill:oc_insurer]], policy [[fill:oc_policy]]"}
+  lazarski:
+    title: "Lazarski University"
+    text:
+      - "We met as students at Lazarski University in Warsaw. Doorstep is our own business, not a university service."
+  notfor:
+    title: "Who we’re not for"
+    items:
+      - "People who need a bed for less than a month"
+      - "People who want the cheapest possible offer and will skip the checking"
+      - "Companies with their own relocation department"
+      - "Landlords who won’t let us see the flat or won’t sign a written contract"
+
+start:
+  meta:
+    title: "Start your search | Doorstep"
+    description: "Send your dates, budget and campus or workplace. A named person replies, and we come back with three to five checked options in Warsaw."
+  hero:
+    eyebrow: "Start your search"
+    title: "Tell us once. We do the searching."
+    lead: "Your dates, your budget and where you need to be. A named person reads it."
+  next:
+    title: "What happens next"
+    items:
+      - "A named person reads your brief and replies."
+      - "We search, visit or video-check each option, and send you three to five."
+      - "You choose and sign. [[confirm:pay_on_signing]]."
+    reply: "{?Reply time: [[fill:reply_time]]?}"
+    wa_text: "Rather send a message?"
+
+contact:
+  meta:
+    title: "Contact Doorstep: WhatsApp, email or a call"
+    description: "Message us on WhatsApp, write an email or book a call. We work in Warsaw only, and every viewing in the city can be done in person."
+  hero:
+    eyebrow: "Contact"
+    title: "Talk to a person."
+    lead: "Message us on WhatsApp, email us for anything you want in writing, or book a call."
+  channels:
+    title: "How to reach us"
+    email: "Email"
+    phone: "Phone"
+    call: "Call"
+    call_link: "Book a call"
+    hours: "When we answer"
+    reply: "Reply time"
+    languages: "Languages: [[confirm:languages]]."
+  map:
+    title: "Where we work"
+    facade: "Show map of Warsaw (loads Google Maps)"
+    nojs: "Map of Warsaw: open it with the link below."
+    caption: "We work in Warsaw only, and every viewing in the city can be done in person."
+    address: "Registered address:"
+    open: "Open in Google Maps"
+    iframe_title: "Map: Doorstep works in Warsaw"
+  form:
+    title: "Write to us"
+    text: "A named person replies."
+    no_backend_anchor: "If a form brought you here: our form service is not connected yet, so nothing was sent. Please write to us on WhatsApp or by email."
+
+guides:
+  meta:
+    title: "Guides to renting in Warsaw | Doorstep"
+    description: "Short, plain guides for people moving to Warsaw: how to spot a fake listing, the words in a Polish rental contract, and your first week."
+    crumb: "Guides"
+  hero:
+    eyebrow: "Guides"
+    title: "Renting in Warsaw, explained plainly."
+    lead: "Short guides we wish we’d had when we arrived. Share them with your group."
+  list_title: "All guides"
+  read: "Read the guide"
+  items:
+    - page: "guide_fake"
+      label: "Guide · 5 signs"
+      title: "How to spot a fake Warsaw listing"
+      text: "Five patterns, and what to do instead."
+    - page: "guide_words"
+      label: "Guide · 8 words"
+      title: "Words in your Polish rental contract"
+      text: "[[pl:Czynsz]], [[pl:kaucja]], [[pl:umowa najmu]] and five more, each explained once."
+    - page: "guide_first"
+      label: "Sheet · first week"
+      title: "Your first week"
+      text: "Keys, meters, internet, bills and registration, on one page."
+  soft_cta:
+    title: "Rather have someone do it for you?"
+    text: "Tell us your dates, budget and campus. We’ll come back with three to five checked options."
+    links:
+      - {page: "students", label: "For students"}
+      - {page: "parents", label: "For parents"}
+      - {page: "professionals", label: "For professionals"}
+
+guide_fake:
+  meta:
+    title: "How to spot a fake Warsaw rental listing | Doorstep"
+    description: "Five patterns fake rental listings in Warsaw share, and what to do instead. One rule above all: never send a deposit for a flat nobody has seen."
+    crumb: "Fake listings"
+  hero:
+    eyebrow: "Guide"
+    title: "How to spot a fake Warsaw listing"
+    lead: "Searching from abroad, you can’t stand in the flat. These are the patterns to look out for, and what to do instead."
+    review: "[[confirm:fake_listing_patterns]]"
+  sign_label: "Sign"
+  instead_label: "What to do instead"
+  patterns:
+    - title: "A deposit before any viewing"
+      text:
+        - "The landlord asks for a deposit or a reservation fee before anyone has seen the flat, often because many people are interested."
+      instead:
+        - "Pay nothing until you, or someone you trust, has been inside or watched a live video. A real landlord can wait for a viewing."
+    - title: "No live video"
+      text:
+        - "You ask for a live video call and get excuses, or the same photos again."
+      instead:
+        - "Ask for a live video in which the person walks through the flat and shows the view from a window. Photos and recorded videos can be copied from other ads."
+    - title: "Pressure to decide today"
+      text:
+        - "You’re told someone else will take it tonight unless you pay now."
+      instead:
+        - "Take the time to check. A flat worth having is still worth having after a viewing."
+    - title: "A price far below the usual range"
+      text:
+        - "A room or flat offered for much less than similar ones nearby."
+      instead:
+        - "Compare with the usual ranges: a room in a shared flat costs 1,400–2,200 PLN a month, a 1–2-room flat 2,800–4,500 PLN. If it looks too cheap, ask why before anything else."
+    - title: "The conversation moves off the platform"
+      text:
+        - "Soon after your first message, you’re asked to continue on another app or by private email, and to pay there."
+      instead:
+        - "Keep the conversation where the ad is until you’ve seen the flat, and never pay by a method you can’t trace."
+  closing: "Never send a deposit for a flat nobody has seen."
+  source: "Price ranges: Kozminski University, student living costs (May 2026)."
+  soft_cta:
+    title: "Rather have someone check it for you?"
+    text: "Every flat we offer has been visited in person or checked live on video by one of us, before you pay anything."
+    links:
+      - {page: "students", label: "For students"}
+      - {page: "parents", label: "For parents"}
+
+guide_words:
+  meta:
+    title: "Polish rental contract words, explained | Doorstep"
+    description: "Czynsz, czynsz administracyjny, kaucja, umowa najmu, media and three more: eight words from Polish rental ads and contracts, each in one plain sentence."
+    crumb: "Rental words"
+  hero:
+    eyebrow: "Guide"
+    title: "Words in your Polish rental contract"
+    lead: "Eight words you will meet in ads and contracts, each explained once."
+    review: "[[confirm:glossary_reviewed]]"
+  words:
+    - id: "czynsz"
+      term: "czynsz"
+      text: "Rent: in ads it usually means what you pay the landlord each month, so check whether the building charge is included."
+    - id: "czynsz-administracyjny"
+      term: "czynsz administracyjny"
+      text: "The building charge. It comes on top of the rent, and the price we show you includes it."
+    - id: "kaucja"
+      term: "kaucja"
+      text: "The deposit, usually one month’s rent, paid once and returned when you move out, minus any documented damage."
+    - id: "umowa-najmu"
+      term: "umowa najmu"
+      text: "The rental contract between you and the landlord: check the dates, the notice period and what happens to the deposit."
+    - id: "media"
+      term: "media"
+      text: "Utilities, such as electricity, gas, water, heating and internet: check which are in the building charge and which you pay separately."
+    - id: "protokol"
+      term: "protokół zdawczo-odbiorczy"
+      text: "The handover record: the flat’s condition, meter readings and photos, signed when you move in and again when you move out."
+    - id: "najem-okazjonalny"
+      term: "najem okazjonalny"
+      text: "A type of rental contract that gives the landlord extra protection; it usually needs a notarised statement from you and an address you could move to."
+    - id: "odstepne"
+      term: "odstępne"
+      text: "A one-off payment to take over a flat or its furniture from someone else: ask what exactly you are paying for."
+  source: "[[pl:Czynsz administracyjny]] and [[pl:kaucja]]: IBB PAS Welcome Center, accommodation guide. The other words: general guidance, not legal advice."
+  soft_cta:
+    title: "Rather have it explained in person?"
+    text: "We walk you through your contract in plain English before you sign."
+    links:
+      - {page: "students", label: "For students"}
+      - {page: "professionals", label: "For professionals"}
+
+guide_first:
+  meta:
+    title: "Your first week in a Warsaw flat | Doorstep"
+    description: "A one-page sheet for your first week in a Warsaw flat: keys and handover, meter readings, internet, bills, registering your address and who to call."
+    crumb: "First week"
+  hero:
+    eyebrow: "Sheet"
+    title: "Your first week"
+    lead: "One page for the days after you get the keys."
+    review: ""
+  sections:
+    - title: "Day one: keys and handover"
+      text: "Read the handover record ([[pl:protokół zdawczo-odbiorczy]]) before you sign it."
+    - title: "Meter readings and photos"
+      text: "Photograph every meter on the day you move in."
+    - title: "Internet"
+      text: ""
+    - title: "Bills: rent, building charge and utilities"
+      text: ""
+    - title: "Registering your address"
+      text: ""
+    - title: "Who to call"
+      text: ""
+  soft_cta:
+    title: "Still looking for the flat?"
+    text: "Tell us your dates, budget and campus or workplace. We’ll come back with three to five checked options."
+    links:
+      - {page: "students", label: "For students"}
+      - {page: "professionals", label: "For professionals"}
+      - {page: "parents", label: "For parents"}
+
+thanks:
+  meta:
+    title: "Thank you | Doorstep"
+    description: "We’ve got your message. A named person will reply."
+  hero:
+    eyebrow: "Sent"
+    title: "Thank you. We’ve got it."
+  messages:
+    default: "A named person from our team will reply."
+    search: "We’ve got your brief. A named person reads it and replies with the next step."
+    call: "We’ve got your call request. We’ll confirm a time by email."
+    proposal: "We’ve got your request. We’ll send a written proposal by email."
+    partner: "We’ve got your enquiry. We’ll reply by email or phone."
+    contact: "We’ve got your message. A named person will reply."
+  reply: "{?We reply within [[fill:reply_time]].?}"
+  guides_link: "Read our guides while you wait"
+
+privacy:
+  meta:
+    title: "Privacy policy | Doorstep"
+    description: "How Doorstep handles personal data under RODO (GDPR): who controls it, why we use it, how long we keep it and your rights."
+  title: "Privacy policy"
+  lead: "How we handle your personal data under RODO (GDPR)."
+  body_key: "privacy_policy_body"
+  sections: ["Who controls your data", "Why we use it", "Legal basis", "How long we keep it", "Who receives it", "Your rights", "Cookies"]
+
+terms:
+  meta:
+    title: "Terms of service | Doorstep"
+    description: "The terms for Doorstep’s housing search in Warsaw: what we provide, the fees and when they are due, what is not included, and liability."
+  title: "Terms of service"
+  lead: "The terms for our housing search."
+  body_key: "terms_body"
+  sections: ["Who we are", "What we provide", "Fees and when they are due", "What is not included", "Cancellation", "Liability", "Complaints"]
+
+notfound:
+  title: "Page not found."
+  text: "This page doesn’t exist, or it has moved. Where were you heading?"
+  home: "Home page"

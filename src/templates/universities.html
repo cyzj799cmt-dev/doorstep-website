@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% import "forms.html" as forms with context %}
+{% block main %}
+{# 1. Hero: A1 (a provider to recommend safely), B01 partner do-line. CTA: written proposal #}
+<section class="hero hero-persona" aria-labelledby="h1">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      {{ ui.eyebrow(c.hero.eyebrow) }}
+      <h1 id="h1">{{ c.hero.title }}</h1>
+      <p class="lead">{{ t(c.hero.lead) }}</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#proposal" data-cta="proposal" data-loc="hero">{{ common.cta.proposal }}</a>
+        <a class="btn btn-secondary" href="#due-diligence" data-cta="due_diligence" data-loc="hero">{{ c.hero.cta_dd }}</a>
+      </div>
+    </div>
+    <div class="hero-side">{{ ui.record(c.hero.record, common.record_title) }}</div>
+  </div>
+</section>
+
+{# 2. The problem you know: A1; sourced numbers (EurobuildCEE citing JLL) #}
+<section class="section section-plaster" aria-labelledby="problem-h">
+  <div class="wrap two-col">
+    <div data-reveal>
+      <h2 id="problem-h">{{ c.problem.title }}</h2>
+      {{ ui.paras(c.problem.text) }}
+    </div>
+    <div data-reveal>
+      <dl class="stats">
+        {% for s in c.problem.stats %}<div><dt>{{ s.label }}</dt><dd>{{ s.value }}</dd></div>{% endfor %}
+      </dl>
+      {{ ui.source(c.problem.source) }}
+    </div>
+  </div>
+</section>
+
+{# 3. What the partnership is: scope, student price (pain: affordability) #}
+<section class="section" aria-labelledby="what-h">
+  <div class="wrap narrow">
+    <h2 id="what-h">{{ c.what.title }}</h2>
+    {{ ui.paras(c.what.text) }}
+    {{ ui.record(c.what.record) }}
+  </div>
+</section>
+
+{# 4. Due diligence on one page: A2; pain: legitimacy, liability, RODO #}
+<section class="section section-card" id="due-diligence" aria-labelledby="dd-h">
+  <div class="wrap narrow">
+    <h2 id="dd-h">{{ c.dd.title }}</h2>
+    <p>{{ c.dd.intro }}</p>
+    <dl class="dd-table">
+      {% for r in c.dd.rows %}
+      {% set v = t(r.v) %}{% if v %}<div><dt>{{ r.k }}</dt><dd>{{ v }}</dd></div>{% endif %}
+      {% endfor %}
+    </dl>
+  </div>
+</section>
+
+{# 5. Pilot with an exit: A3, A4; pain: defending the decision in a meeting she may not attend #}
+<section class="section" aria-labelledby="pilot-h">
+  <div class="wrap two-col">
+    <div data-reveal>
+      <h2 id="pilot-h">{{ c.pilot.title }}</h2>
+      {{ ui.paras(c.pilot.text) }}
+    </div>
+    <div data-reveal>
+      <h3>{{ c.pilot.report_title }}</h3>
+      {{ ui.paras(c.pilot.report) }}
+    </div>
+  </div>
+</section>
+
+{# 6. What goes into the proposal: A3, "stands without her" #}
+<section class="section section-plaster" aria-labelledby="contents-h">
+  <div class="wrap narrow">
+    <h2 id="contents-h">{{ c.contents.title }}</h2>
+    {{ ui.bullets(c.contents['items']) }}
+    {% if filled('proposal_pdf') %}<p><a class="text-link" href="{{ cfg('proposal_pdf') }}">{{ c.contents.pdf }} {{ ui.icon('arrow', 'arrow') }}</a></p>
+    {% elif highlights %}<p>{{ c.contents.pdf }}: {{ fill('proposal_pdf') }}</p>{% endif %}
+  </div>
+</section>
+
+{# 7. Proposal request: Agnieszka's channel is email with a written proposal #}
+<section class="section" id="proposal" aria-labelledby="proposal-h">
+  <div class="wrap narrow">
+    <h2 id="proposal-h">{{ c.form.title }}</h2>
+    <p>{{ c.form.text }}</p>
+    {{ forms.proposal() }}
+  </div>
+</section>
+
+{# 8. Planning season: B01 Agnieszka stage 1 opportunity #}
+<section class="section section-card" aria-labelledby="season-h">
+  <div class="wrap narrow">
+    <h2 id="season-h">{{ c.season.title }}</h2>
+    <p>{{ c.season.text }}</p>
+    {{ ui.named_contact(c.contact, 'team_contact_partners') }}
+  </div>
+</section>
+{% endblock %}

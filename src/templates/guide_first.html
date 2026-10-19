@@ -1,0 +1,11 @@
+{% extends "guide_base.html" %}
+{% block guide %}
+{# Role 6: post-sale support. L (stage 4 bills), M4 (setup admin), K4 (who to call). Skeleton only. #}
+{% for s in c.sections %}
+<section class="sheet-section" aria-labelledby="fw-{{ loop.index }}">
+  <h2 id="fw-{{ loop.index }}">{{ s.title }}</h2>
+  {{ ui.para(s.text) }}
+  {{ ui.para('[[fill:first_week_content]]') }}
+</section>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,24 @@
+{% set k = common.consent %}
+{# Hidden until site.js finds no stored choice. Nothing loads before a choice is made. #}
+<section class="consent" id="consent" aria-labelledby="consent-h" hidden>
+  <div class="consent-in">
+    <h2 id="consent-h" class="consent-h">{{ k.title }}</h2>
+    <p>{{ t(k.text) }} <a href="{{ url('privacy') }}">{{ k.privacy_link }}</a></p>
+    <div class="consent-actions">
+      <button type="button" class="btn btn-secondary" data-consent="reject">{{ k.reject }}</button>
+      <button type="button" class="btn btn-secondary" data-consent="accept">{{ k.accept }}</button>
+      <button type="button" class="btn btn-ghost" data-consent="settings" aria-expanded="false" aria-controls="consent-settings">{{ k.settings }}</button>
+    </div>
+    <div class="consent-settings" id="consent-settings" hidden>
+      <div class="check">
+        <input type="checkbox" id="consent-analytics" name="analytics">
+        <label for="consent-analytics"><strong>{{ k.analytics }}</strong> <span class="hint">{{ k.analytics_hint }}</span></label>
+      </div>
+      <div class="check">
+        <input type="checkbox" id="consent-marketing" name="marketing">
+        <label for="consent-marketing"><strong>{{ k.marketing }}</strong> <span class="hint">{{ k.marketing_hint }}</span></label>
+      </div>
+      <button type="button" class="btn btn-secondary" data-consent="save">{{ k.save }}</button>
+    </div>
+  </div>
+</section>

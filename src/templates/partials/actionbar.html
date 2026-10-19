@@ -1,0 +1,19 @@
+{# Sticky mobile action bar. People pages: start + WhatsApp. Partner pages get their own action. #}
+{% if page.bar %}
+{% set b = common.bar %}
+<div class="action-bar" role="region" aria-label="{{ b.label }}">
+  {% if page.bar == 'people' %}
+  <a class="btn btn-primary" href="{{ url('start') }}{% if persona %}?for={{ {'lena': 'student', 'marco': 'professional'}[persona] }}{% endif %}" data-cta="start" data-loc="sticky">{{ common.cta.start }}</a>
+  {{ ui.whatsapp_button(common.cta.whatsapp_short, 'sticky') }}
+  {% elif page.bar == 'parents' %}
+  <a class="btn btn-primary" href="#book-call" data-cta="book_call" data-loc="sticky">{{ b.book_call }}</a>
+  {{ ui.whatsapp_button(common.cta.whatsapp_short, 'sticky') }}
+  {% elif page.bar == 'uni' %}
+  <a class="btn btn-primary" href="#proposal" data-cta="proposal" data-loc="sticky">{{ b.proposal }}</a>
+  {{ ui.email_button(b.email, 'sticky') }}
+  {% elif page.bar == 'landlord' %}
+  <a class="btn btn-primary" href="#partnership" data-cta="partnership" data-loc="sticky">{{ b.partnership }}</a>
+  {{ ui.email_button(b.email, 'sticky') }}
+  {% endif %}
+</div>
+{% endif %}

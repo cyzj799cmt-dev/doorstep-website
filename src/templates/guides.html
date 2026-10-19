@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block main %}
+{# Role 5: findability and education. The "smallest step" guides from B01 §5 #}
+<section class="hero hero-plain" aria-labelledby="h1">
+  <div class="wrap narrow">
+    {{ ui.eyebrow(c.hero.eyebrow) }}
+    <h1 id="h1">{{ c.hero.title }}</h1>
+    <p class="lead">{{ c.hero.lead }}</p>
+  </div>
+</section>
+<section class="section section-plaster" aria-labelledby="list-h">
+  <div class="wrap">
+    <h2 id="list-h" class="vh">{{ c.list_title }}</h2>
+    <div class="cards cards-3">
+      {% for g in c['items'] %}
+      <a class="card card-link" href="{{ url(g.page) }}" data-reveal>
+        <span class="mono-label">{{ g.label }}</span>
+        <h3>{{ g.title }}</h3>
+        <p>{{ t(g.text) }}</p>
+        <span class="door-go">{{ c.read }} {{ ui.icon('arrow', 'arrow') }}</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{{ ui.soft_cta(c.soft_cta) }}
+{% endblock %}

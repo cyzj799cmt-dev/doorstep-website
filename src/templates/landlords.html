@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% import "forms.html" as forms with context %}
+{% block main %}
+{# 1. Hero: P1 (pay only for each signed tenancy). CTA: ask about a partnership #}
+<section class="hero hero-persona" aria-labelledby="h1">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      {{ ui.eyebrow(c.hero.eyebrow) }}
+      <h1 id="h1">{{ c.hero.title }}</h1>
+      <p class="lead">{{ t(c.hero.lead) }}</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#partnership" data-cta="partnership" data-loc="hero">{{ common.cta.partnership }}</a>
+        {{ ui.email_button(c.hero.cta_email, 'hero') }}
+      </div>
+    </div>
+    <div class="hero-side">{{ ui.record(c.hero.record, common.record_title) }}</div>
+  </div>
+</section>
+
+{# 2. Terms in plain numbers: P2; pain: platform fees for enquiries that never sign #}
+<section class="section section-plaster" aria-labelledby="terms-h">
+  <div class="wrap narrow">
+    <h2 id="terms-h">{{ c.terms.title }}</h2>
+    {{ ui.record(c.terms.record) }}
+    {{ ui.paras(c.terms.text) }}
+  </div>
+</section>
+
+{# 3 + 4. Your rules, shown right (P3, pain: being misrepresented) and tenants who arrive briefed (pain: tenants who don't understand the contract) #}
+<section class="section" aria-labelledby="rules-h">
+  <div class="wrap">
+    <h2 id="rules-h" class="vh">{{ c.rules.title }} / {{ c.briefed.title }}</h2>
+    <div class="cards cards-2">
+      <article class="card" data-reveal>
+        <h3>{{ c.rules.title }}</h3>
+        {{ ui.paras(c.rules.text) }}
+      </article>
+      <article class="card" data-reveal>
+        <h3>{{ c.briefed.title }}</h3>
+        {{ ui.paras(c.briefed.text) }}
+      </article>
+    </div>
+  </div>
+</section>
+
+{# 5. What we need from you: B01 "who it is not for" (landlords who won't allow viewing or a written contract) #}
+<section class="section section-card" aria-labelledby="need-h">
+  <div class="wrap narrow">
+    <h2 id="need-h">{{ c.need.title }}</h2>
+    {{ ui.bullets(c.need['items']) }}
+    <p class="note">{{ c.need.not_for }}</p>
+  </div>
+</section>
+
+{# 6. Per-intake summary: P4 #}
+<section class="section" aria-labelledby="summary-h">
+  <div class="wrap two-col">
+    <div data-reveal>
+      <h2 id="summary-h">{{ c.summary.title }}</h2>
+      {{ ui.paras(c.summary.text) }}
+    </div>
+    {# 7. Transparency: B01 non-negotiable "we say who pays us" #}
+    <div class="callout" data-reveal>
+      <h2>{{ c.open.title }}</h2>
+      {{ ui.paras(c.open.text) }}
+    </div>
+  </div>
+</section>
+
+{# 8. Partnership enquiry: Piotr's channel is email and phone, in Polish #}
+<section class="section section-plaster" id="partnership" aria-labelledby="partner-h">
+  <div class="wrap narrow">
+    <h2 id="partner-h">{{ c.form.title }}</h2>
+    <p>{{ c.form.text }}</p>
+    {{ forms.partnership() }}
+    {{ ui.named_contact(c.contact, 'team_contact_partners') }}
+  </div>
+</section>
+{% endblock %}

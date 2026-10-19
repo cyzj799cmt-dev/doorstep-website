@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% import "forms.html" as forms with context %}
+{% block main %}
+{# The full search brief. L6, K1, M1. "Who is searching" preselected from ?for= or the referring page #}
+<section class="hero hero-plain" aria-labelledby="h1">
+  <div class="wrap start-grid">
+    <div>
+      {{ ui.eyebrow(c.hero.eyebrow) }}
+      <h1 id="h1">{{ c.hero.title }}</h1>
+      <p class="lead">{{ t(c.hero.lead) }}</p>
+      {{ forms.search_brief('full') }}
+    </div>
+    <aside class="start-aside" aria-labelledby="next-h">
+      <h2 id="next-h" class="h3">{{ c.next.title }}</h2>
+      <ol class="next-list">
+        {% for n in c.next['items'] %}<li>{{ t(n) }}</li>{% endfor %}
+      </ol>
+      {{ ui.para(c.next.reply) }}
+      <p class="small">{{ c.next.wa_text }} {{ ui.whatsapp_link(common.cta.whatsapp_short, 'start') }}</p>
+    </aside>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block main %}
+{# Role 2: trust and credibility. K2, A2 #}
+<section class="hero hero-plain" aria-labelledby="h1">
+  <div class="wrap narrow">
+    {{ ui.eyebrow(c.hero.eyebrow) }}
+    <h1 id="h1">{{ c.hero.title }}</h1>
+    {{ ui.paras(c.hero.story, 'lead') }}
+  </div>
+</section>
+
+{# The five founders. Roles, languages, photos and bios: FILL IN, never invented #}
+<section class="section section-plaster" aria-labelledby="team-h">
+  <div class="wrap">
+    <h2 id="team-h">{{ c.team.title }}</h2>
+    <p>{{ t(c.team.intro) }}</p>
+    <ul class="team">
+      {% for m in common.team %}
+      <li class="team-card" data-reveal>
+        {{ ui.photo(m.photo_caption, 'team_' ~ m.key ~ '_photo', 'square') }}
+        <h3>{{ m.name }}</h3>
+        <dl class="team-facts">
+          {% for f in ['role', 'languages'] %}{% set v = fill('team_' ~ m.key ~ '_' ~ f) %}{% if v %}<div><dt>{{ c.team[f] }}</dt><dd>{{ v }}</dd></div>{% endif %}{% endfor %}
+        </dl>
+        {{ ui.para('[[fill:team_' ~ m.key ~ '_bio]]', 'small') }}
+      </li>
+      {% endfor %}
+    </ul>
+    <p class="small">{{ t(c.team.languages_line) }}</p>
+  </div>
+</section>
+
+{# Four non-negotiables: B01 §1 #}
+<section class="section" aria-labelledby="nn-h">
+  <div class="wrap">
+    <h2 id="nn-h">{{ common.nonneg.title }}</h2>
+    <ol class="promises promises-4">
+      {% for n in common.nonneg['items'] %}<li data-reveal><span class="mono-label">0{{ loop.index }}</span><h3>{{ n.title }}</h3><p>{{ n.text }}</p></li>{% endfor %}
+    </ol>
+  </div>
+</section>
+
+{# Check us: registration, insurance, address (K2, A2) #}
+<section class="section section-card" id="check-us" aria-labelledby="check-h">
+  <div class="wrap narrow">
+    <h2 id="check-h">{{ c.check.title }}</h2>
+    <p>{{ c.check.intro }}</p>
+    <dl class="dd-table">
+      {% for r in c.check.rows %}{% set v = t(r.v) %}{% if v %}<div><dt>{{ r.k }}</dt><dd>{{ v }}</dd></div>{% endif %}{% endfor %}
+    </dl>
+    {{ ui.checkus(common.checkus['items']) }}
+  </div>
+</section>
+
+{# Lazarski context: founded by students; no university endorsement implied #}
+<section class="section" aria-labelledby="lazarski-h">
+  <div class="wrap narrow">
+    <h2 id="lazarski-h">{{ c.lazarski.title }}</h2>
+    {{ ui.paras(c.lazarski.text) }}
+  </div>
+</section>
+
+{# Who we're not for: B01 §4 #}
+<section class="section section-plaster" aria-labelledby="notfor-h">
+  <div class="wrap narrow">
+    <h2 id="notfor-h">{{ c.notfor.title }}</h2>
+    {{ ui.bullets(c.notfor['items'], 'crosses') }}
+  </div>
+</section>
+
+<section class="section" aria-labelledby="final-h">
+  <div class="wrap final-cta">
+    <div><h2 id="final-h">{{ L.home.final.title }}</h2><p>{{ L.home.final.text }}</p></div>
+    <a class="btn btn-primary btn-lg" href="{{ url('start') }}" data-cta="start" data-loc="final">{{ common.cta.start }}</a>
+  </div>
+</section>
+{% endblock %}

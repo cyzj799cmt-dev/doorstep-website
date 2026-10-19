@@ -1,0 +1,56 @@
+# Builds the site with build.py and publishes site/ to GitHub Pages.
+# One-time setup: repo Settings → Pages → Source: "GitHub Actions".
+# Optional repository variables (Settings → Secrets and variables → Actions → Variables):
+#   DOORSTEP_SITE_URL       e.g. https://doorstep.example  (removes noindex: only set it when you go live)
+#   DOORSTEP_FORM_ENDPOINT  https URL of your form service
+#   DOORSTEP_GTM_ID / DOORSTEP_GA4_ID
+# Any other CONFIG key works the same way: DOORSTEP_<KEY_IN_CAPITALS>.
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - id: pages
+        uses: actions/configure-pages@v5
+      - name: Build site/
+        env:
+          # "/repo-name/" for a project page, "/" for user.github.io or a custom domain
+          DOORSTEP_BASE_PATH: ${{ steps.pages.outputs.base_path }}/
+          DOORSTEP_SITE_URL: ${{ vars.DOORSTEP_SITE_URL }}
+          DOORSTEP_FORM_ENDPOINT: ${{ vars.DOORSTEP_FORM_ENDPOINT }}
+          DOORSTEP_GTM_ID: ${{ vars.DOORSTEP_GTM_ID }}
+          DOORSTEP_GA4_ID: ${{ vars.DOORSTEP_GA4_ID }}
+        run: python build.py
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

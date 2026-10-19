@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- FILL IN site_url in build.py: sitemap URLs must be absolute before going live -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="/pl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/"/>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>/pl/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="/pl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/"/>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>/students/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/students/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="/pl/studenci/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/students/"/>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>/pl/studenci/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/students/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="/pl/studenci/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/students/"/>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>/parents/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/parents/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="/pl/rodzice/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/parents/"/>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>/pl/rodzice/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/parents/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="/pl/rodzice/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/parents/"/>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>/professionals/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/professionals/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="/pl/praca/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/professionals/"/>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>/pl/praca/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/professionals/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="/pl/praca/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/professionals/"/>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>/universities/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/universities/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="/pl/uczelnie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/universities/"/>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>/pl/uczelnie/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/universities/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="/pl/uczelnie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/universities/"/>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>/landlords/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/landlords/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="/pl/wynajmujacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/landlords/"/>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>/pl/wynajmujacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/landlords/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="/pl/wynajmujacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/landlords/"/>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>/how-it-works/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/how-it-works/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="/pl/jak-to-dziala/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/how-it-works/"/>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>/pl/jak-to-dziala/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/how-it-works/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="/pl/jak-to-dziala/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/how-it-works/"/>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>/about/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/about/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="/pl/o-nas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/about/"/>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>/pl/o-nas/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/about/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="/pl/o-nas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/about/"/>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>/start/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/start/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="/pl/start/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/start/"/>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>/pl/start/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/start/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="/pl/start/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/start/"/>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/contact/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="/pl/kontakt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/contact/"/>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>/pl/kontakt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/contact/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="/pl/kontakt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/contact/"/>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>/guides/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/guides/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="/pl/poradniki/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/guides/"/>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>/pl/poradniki/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/guides/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="/pl/poradniki/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/guides/"/>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>/guides/fake-listings/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/guides/fake-listings/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="/pl/poradniki/falszywe-ogloszenia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/guides/fake-listings/"/>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>/pl/poradniki/falszywe-ogloszenia/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/guides/fake-listings/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="/pl/poradniki/falszywe-ogloszenia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/guides/fake-listings/"/>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>/guides/rental-words/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/guides/rental-words/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="/pl/poradniki/slowniczek-najmu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/guides/rental-words/"/>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>/pl/poradniki/slowniczek-najmu/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/guides/rental-words/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="/pl/poradniki/slowniczek-najmu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/guides/rental-words/"/>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>/guides/first-week/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/guides/first-week/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="/pl/poradniki/pierwszy-tydzien/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/guides/first-week/"/>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>/pl/poradniki/pierwszy-tydzien/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/guides/first-week/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="/pl/poradniki/pierwszy-tydzien/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/guides/first-week/"/>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="/pl/prywatnosc/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/privacy/"/>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>/pl/prywatnosc/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="/pl/prywatnosc/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/privacy/"/>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="/pl/regulamin/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/terms/"/>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>/pl/regulamin/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="/pl/regulamin/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/terms/"/>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+</urlset>

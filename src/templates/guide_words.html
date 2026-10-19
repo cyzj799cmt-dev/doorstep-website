@@ -1,0 +1,13 @@
+{% extends "guide_base.html" %}
+{% block guide %}
+{# L3, K3; "explain the Polish word once" (B01 §7) #}
+<dl class="glossary">
+  {% for w in c.words %}
+  <div id="{{ w.id }}" data-reveal>
+    <dt><span lang="pl">{{ w.term }}</span>{% if w.say %} <span class="say">{{ w.say }}</span>{% endif %}</dt>
+    <dd>{{ t(w.text) }}</dd>
+  </div>
+  {% endfor %}
+</dl>
+{{ ui.source(c.source) }}
+{% endblock %}

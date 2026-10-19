@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block main %}
+{# Page shell only. Legal text must be written by someone qualified: [[fill:privacy_policy_body]] / [[fill:terms_body]] #}
+<section class="hero hero-plain" aria-labelledby="h1">
+  <div class="wrap narrow">
+    <h1 id="h1">{{ c.title }}</h1>
+    <p class="lead">{{ t(c.lead) }}</p>
+  </div>
+</section>
+<div class="section legal">
+  <div class="wrap narrow">
+    {% for s in c.sections %}
+    <section aria-labelledby="legal-{{ loop.index }}">
+      <h2 id="legal-{{ loop.index }}">{{ s }}</h2>
+      {{ ui.para('[[fill:' ~ c.body_key ~ ']]') }}
+    </section>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
