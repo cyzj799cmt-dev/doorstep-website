@@ -32,6 +32,11 @@ BASE_PATH = "/"                      # "/" for a custom domain or user.github.io
 USE_GSAP = True                      # minimal entrance animations (self-hosted GSAP, skipped
                                      # for prefers-reduced-motion and when JS is off)
 
+def _invented(en, pl):
+    """A made-up detail the owner asked for: shown as plain text, listed under Confirm as 'confirmed'."""
+    return {"value": {"en": en, "pl": pl}, "source": "made up at the owner's request (placeholder team)", "confirmed": True}
+
+
 CONFIG = {
     # --- Website -------------------------------------------------------------
     "site_url": "",                  # e.g. https://doorstep.example (no trailing slash)
@@ -59,17 +64,36 @@ CONFIG = {
     "reply_time": "",
     "payment_methods": "",
 
-    # --- Team (six founders; roles, languages, photos and bios still to fill in) --
-    "team_mila_role": "", "team_mila_languages": "", "team_mila_photo": "", "team_mila_bio": "",
-    "team_taras_role": "", "team_taras_languages": "", "team_taras_photo": "", "team_taras_bio": "",
-    "team_elif_role": "", "team_elif_languages": "", "team_elif_photo": "", "team_elif_bio": "",
-    "team_jonas_role": "", "team_jonas_languages": "", "team_jonas_photo": "", "team_jonas_bio": "",
-    "team_ana_role": "", "team_ana_languages": "", "team_ana_photo": "", "team_ana_bio": "",
-    "team_kacper_role": "", "team_kacper_languages": "", "team_kacper_photo": "", "team_kacper_bio": "",
-    "team_contact_students": "",     # name + channel of the person who answers students
-    "team_contact_parents": "",
-    "team_contact_professionals": "",
-    "team_contact_partners": "",
+    # --- Team (six invented founders; roles, languages and bios are made up, photos still to add) --
+    "team_mila_role": _invented('Student Search lead', 'Prowadzi wyszukiwanie dla studentów'),
+    "team_mila_languages": _invented('Polish, English', 'polski, angielski'),
+    "team_mila_bio": _invented('Degree student. Runs the Student Search desk and sends the first shortlist.', 'Studentka stacjonarna. Prowadzi wyszukiwanie dla studentów i wysyła pierwszą listę.'),
+    "team_mila_photo": "",
+    "team_taras_role": _invented('Viewings and landlord calls', 'Oglądanie mieszkań i rozmowy z wynajmującymi'),
+    "team_taras_languages": _invented('Ukrainian, Polish, English', 'ukraiński, polski, angielski'),
+    "team_taras_bio": _invented('Erasmus student. Visits flats, films them and talks to landlords in Polish.', 'Student z wymiany Erasmus. Ogląda mieszkania, nagrywa je i rozmawia z wynajmującymi po polsku.'),
+    "team_taras_photo": "",
+    "team_elif_role": _invented('Parents and aftercare', 'Rodzice i opieka po wprowadzeniu'),
+    "team_elif_languages": _invented('German, English', 'niemiecki, angielski'),
+    "team_elif_bio": _invented('Degree student. Takes the calls with parents and checks in after move-in.', 'Studentka stacjonarna. Rozmawia z rodzicami i odzywa się po wprowadzeniu.'),
+    "team_elif_photo": "",
+    "team_jonas_role": _invented('Professional Search', 'Wyszukiwanie dla pracujących'),
+    "team_jonas_languages": _invented('German, English', 'niemiecki, angielski'),
+    "team_jonas_bio": _invented('Erasmus student. Handles flats for people starting work in Warsaw.', 'Student z wymiany Erasmus. Zajmuje się mieszkaniami dla osób zaczynających pracę w Warszawie.'),
+    "team_jonas_photo": "",
+    "team_ana_role": _invented('University partnerships', 'Współpraca z uczelniami'),
+    "team_ana_languages": _invented('Macedonian, English', 'macedoński, angielski'),
+    "team_ana_bio": _invented('Erasmus student. Writes the proposals and reports for international offices.', 'Studentka z wymiany Erasmus. Pisze oferty i raporty dla biur współpracy z zagranicą.'),
+    "team_ana_photo": "",
+    "team_kacper_role": _invented('Landlords and contracts', 'Wynajmujący i umowy'),
+    "team_kacper_languages": _invented('Polish, English', 'polski, angielski'),
+    "team_kacper_bio": _invented('Degree student. Works with residences and landlords and explains the contract.', 'Student stacjonarny. Współpracuje z akademikami i wynajmującymi oraz omawia umowy.'),
+    "team_kacper_photo": "",
+    "team_contact_students": _invented("Mila Novak, our Student Search lead", "Mila Novak, prowadząca wyszukiwanie dla studentów"),
+    "team_contact_parents": _invented("Elif Yilmaz, who takes the calls with parents", "Elif Yilmaz, która rozmawia z rodzicami"),
+    "team_contact_professionals": _invented("Jonas Weber, who handles Professional Search", "Jonas Weber, który zajmuje się wyszukiwaniem dla pracujących"),
+    "team_contact_partners": _invented("Ana Petrovska for universities, Kacper Wiśniewski for residences and landlords",
+                                       "Ana Petrovska w sprawach uczelni, Kacper Wiśniewski w sprawach akademików i wynajmujących"),
 
     # --- Service details --------------------------------------------------------
     "viewing_photo": "",             # path to a real viewing photo (JPEG; .webp/.avif siblings used if present)
@@ -284,8 +308,9 @@ class Site:
             return f'<span lang="pl">{arg}</span>' if self.lang != "pl" else arg, False
         key = arg.strip()
         actual = self.kind(key)
-        if actual != kind:
+        if actual != kind and not (kind == "fill" and actual == "confirm"):
             raise ValueError(f"[[{kind}:{key}]] but CONFIG says it is a {actual} item")
+        kind = actual
         value = self.raw(key)
         show = self.highlights and not plain
         ui = self.content[self.lang]["common"]["ph"]
