@@ -87,7 +87,7 @@
     <div class="cc-total"><dt>{{ cc.total }}</dt><dd><span class="brass">{{ cc.empty }}</span></dd></div>
     {% if deposit %}<div class="cc-deposit"><dt>{{ t(cc.deposit) }}</dt><dd>{{ cc.empty }}</dd></div>{% endif %}
   </dl>
-  <figcaption id="cc-{{ variant }}-cap"><span class="vh">{{ cc.sr_caption }} </span>{{ cc.note }}</figcaption>
+  <figcaption id="cc-{{ variant }}-cap"><span class="vh">{{ cc.sr_caption }} </span>{{ t(cc.note) }}</figcaption>
 </figure>
 {% endmacro %}
 

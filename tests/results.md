@@ -1,6 +1,6 @@
 # Test results
 
-Run: 2026-10-19 12:28 · 68 checks · **68 passed, 0 failed** · 36 s
+Run: 2026-10-19 12:32 · 68 checks · **68 passed, 0 failed** · 36 s
 
 
 ## content
@@ -10,7 +10,7 @@ Run: 2026-10-19 12:28 · 68 checks · **68 passed, 0 failed** · 36 s
 | PASS | banned-word / caps / !!! lint passes on en.yml and pl.yml |  |
 | PASS | every [[…]] token is resolved in the output |  |
 | PASS | no lorem / TODO text in the output |  |
-| PASS | CHECKLIST.md matches the 59 placeholder keys found on pages |  |
+| PASS | CHECKLIST.md matches the 89 placeholder keys found on pages |  |
 | PASS | CHECKLIST.md lists every CONFIG item |  |
 | PASS | style.css under 40 KB (33 KB) |  |
 | PASS | site.js under 25 KB (19 KB) |  |

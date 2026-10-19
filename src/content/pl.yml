@@ -11,7 +11,6 @@ common:
   record_title: "W skrócie"
   crumbs_label: "Ścieżka"
   org_description: "Szukamy mieszkania w Warszawie za Ciebie: znajdujemy, sprawdzamy, negocjujemy i rezerwujemy, a Ty wybierasz."
-  founders: ["Mila Novak", "Taras Kovalenko", "Elif Yilmaz", "Jonas Weber", "Ana Petrovska", "Kacper Wiśniewski"]
   ph:
     fill: "UZUPEŁNIJ"
     confirm: "do potwierdzenia"
@@ -37,30 +36,38 @@ common:
     contact_hours: "godziny, w których odpowiadamy"
     reply_time: "czas odpowiedzi"
     payment_methods: "dane do płatności"
-    team_mila_role: "rola Mili"
-    team_mila_languages: "języki Mili"
-    team_mila_photo: "zdjęcie Mili"
-    team_mila_bio: "jedno zdanie o Mili"
-    team_taras_role: "rola Tarasa"
-    team_taras_languages: "języki Tarasa"
-    team_taras_photo: "zdjęcie Tarasa"
-    team_taras_bio: "jedno zdanie o Tarasie"
-    team_elif_role: "rola Elif"
-    team_elif_languages: "języki Elif"
-    team_elif_photo: "zdjęcie Elif"
-    team_elif_bio: "jedno zdanie o Elif"
-    team_jonas_role: "rola Jonasa"
-    team_jonas_languages: "języki Jonasa"
-    team_jonas_photo: "zdjęcie Jonasa"
-    team_jonas_bio: "jedno zdanie o Jonasie"
-    team_ana_role: "rola Any"
-    team_ana_languages: "języki Any"
-    team_ana_photo: "zdjęcie Any"
-    team_ana_bio: "jedno zdanie o Anie"
-    team_kacper_role: "rola Kacpra"
-    team_kacper_languages: "języki Kacpra"
-    team_kacper_photo: "zdjęcie Kacpra"
-    team_kacper_bio: "jedno zdanie o Kacprze"
+    team_1_name: "imię i nazwisko założyciela 1"
+    team_1_role: "rola założyciela 1"
+    team_1_languages: "języki założyciela 1"
+    team_1_photo: "zdjęcie założyciela 1"
+    team_1_bio: "jedno zdanie o założycielu 1"
+    team_2_name: "imię i nazwisko założyciela 2"
+    team_2_role: "rola założyciela 2"
+    team_2_languages: "języki założyciela 2"
+    team_2_photo: "zdjęcie założyciela 2"
+    team_2_bio: "jedno zdanie o założycielu 2"
+    team_3_name: "imię i nazwisko założyciela 3"
+    team_3_role: "rola założyciela 3"
+    team_3_languages: "języki założyciela 3"
+    team_3_photo: "zdjęcie założyciela 3"
+    team_3_bio: "jedno zdanie o założycielu 3"
+    team_4_name: "imię i nazwisko założyciela 4"
+    team_4_role: "rola założyciela 4"
+    team_4_languages: "języki założyciela 4"
+    team_4_photo: "zdjęcie założyciela 4"
+    team_4_bio: "jedno zdanie o założycielu 4"
+    team_5_name: "imię i nazwisko założyciela 5"
+    team_5_role: "rola założyciela 5"
+    team_5_languages: "języki założyciela 5"
+    team_5_photo: "zdjęcie założyciela 5"
+    team_5_bio: "jedno zdanie o założycielu 5"
+    team_6_name: "imię i nazwisko założyciela 6"
+    team_6_role: "rola założyciela 6"
+    team_6_languages: "języki założyciela 6"
+    team_6_photo: "zdjęcie założyciela 6"
+    team_6_bio: "jedno zdanie o założycielu 6"
+    story_founder: "imię założyciela, któremu odwołano mieszkanie"
+    sample_signer: "imię na przykładowej notatce"
     team_contact_students: "osoba kontaktowa dla studentów"
     team_contact_parents: "osoba kontaktowa dla rodziców"
     team_contact_professionals: "osoba kontaktowa dla osób pracujących"
@@ -159,7 +166,7 @@ common:
     total: "Płacisz co miesiąc"
     deposit: "Kaucja <span class='muted'>(jednorazowo)</span>"
     empty: "— zł"
-    note: "„Tu Jonas. Byłem dziś rano w tym mieszkaniu. Nagranie masz na WhatsAppie.”"
+    note: "„{?Tu [[fill:sample_signer]]. ?}Byliśmy dziś rano w tym mieszkaniu. Nagranie masz na WhatsAppie.”"
     sr_caption: "Przykład sprawdzonej oferty. Kwoty pojawią się, gdy będą prawdziwe dane."
   promises:
     title: "Trzy rzeczy, które obiecujemy"
@@ -241,12 +248,12 @@ common:
       - title: "Nie jesteśmy firmą relokacyjną dla korporacji"
         text: "Firmy z własnym działem relokacji nas nie potrzebują."
   team:
-    - {key: "mila", name: "Mila Novak", photo_caption: "[Zdjęcie zespołu: Mila]"}
-    - {key: "taras", name: "Taras Kovalenko", photo_caption: "[Zdjęcie zespołu: Taras]"}
-    - {key: "elif", name: "Elif Yilmaz", photo_caption: "[Zdjęcie zespołu: Elif]"}
-    - {key: "jonas", name: "Jonas Weber", photo_caption: "[Zdjęcie zespołu: Jonas]"}
-    - {key: "ana", name: "Ana Petrovska", photo_caption: "[Zdjęcie zespołu: Ana]"}
-    - {key: "kacper", name: "Kacper Wiśniewski", photo_caption: "[Zdjęcie zespołu: Kacper]"}
+    - {key: "1", photo_caption: "[Zdjęcie zespołu 1]"}
+    - {key: "2", photo_caption: "[Zdjęcie zespołu 2]"}
+    - {key: "3", photo_caption: "[Zdjęcie zespołu 3]"}
+    - {key: "4", photo_caption: "[Zdjęcie zespołu 4]"}
+    - {key: "5", photo_caption: "[Zdjęcie zespołu 5]"}
+    - {key: "6", photo_caption: "[Zdjęcie zespołu 6]"}
   forms:
     required: "(wymagane)"
     optional: "(opcjonalnie)"
@@ -439,9 +446,8 @@ home:
     link: "Dane rejestrowe i ubezpieczenie"
   story:
     heading: "Dlaczego istniejemy"
-    text: "Dwa miesiące przed semestrem Tarasowi odwołano potwierdzone mieszkanie w Warszawie. Miał dwa tygodnie, żeby z zagranicy znaleźć nowe. Zbudowaliśmy usługę, za którą sami chętnie byśmy zapłacili."
+    text: "Dwa miesiące przed semestrem jednej z nas lub jednemu z nas{? ([[fill:story_founder]])?} odwołano potwierdzone mieszkanie w Warszawie. Zostały dwa tygodnie, żeby z zagranicy znaleźć nowe. Zbudowaliśmy usługę, za którą sami chętnie byśmy zapłacili."
     meta: "Sześcioro założycieli · studenci Uczelni Łazarskiego"
-    names: "Mila, Taras, Elif, Jonas, Ana i Kacper"
     link: "Poznaj nas"
   guides:
     title: "Zanim zaczniesz szukać"
@@ -878,7 +884,7 @@ about:
     eyebrow: "O nas"
     title: "Zbudowaliśmy usługę, za którą sami byśmy zapłacili."
     story:
-      - "Dwa miesiące przed tym semestrem Taras miał potwierdzone mieszkanie w Warszawie. Odwołano je w ostatniej chwili, a on miał dwa tygodnie, żeby z zagranicy znaleźć nowe. Pokój w nowo otwartym akademiku znalazł przypadkiem, po kilku dniach stresu."
+      - "Dwa miesiące przed tym semestrem jednemu z nas{? ([[fill:story_founder]])?} odwołano potwierdzone mieszkanie w Warszawie, w ostatniej chwili. Zostały dwa tygodnie, żeby z zagranicy znaleźć nowe. Nowy pokój znalazł się przypadkiem, w nowo otwartym akademiku, po kilku dniach stresu."
       - "Każdy z nas miał podobną historię: ogłoszenia tylko po polsku, oferty, które znikały, i nikogo, kogo można zapytać, czy oferta jest prawdziwa."
       - "Doorstep założyło jesienią 2026 sześcioro studentów Uczelni Łazarskiego: troje na wymianie Erasmus, troje na studiach stacjonarnych. Jeszcze nie prowadzimy sprzedaży."
   team:

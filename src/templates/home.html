@@ -68,10 +68,9 @@
 <section class="section section-door" aria-labelledby="story-h">
   <div class="wrap story">
     <h2 id="story-h" class="vh">{{ c.story.heading }}</h2>
-    <blockquote class="story-quote" data-reveal><p>{{ c.story.text }}</p></blockquote>
+    <blockquote class="story-quote" data-reveal><p>{{ t(c.story.text) }}</p></blockquote>
     <div class="story-meta">
       <p class="eyebrow eyebrow-brass">{{ c.story.meta }}</p>
-      <p>{{ c.story.names }}</p>
       <p><a class="text-link on-dark" href="{{ url('about') }}">{{ c.story.link }} {{ ui.icon('arrow', 'arrow') }}</a></p>
     </div>
   </div>

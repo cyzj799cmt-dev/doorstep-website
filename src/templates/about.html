@@ -18,7 +18,7 @@
       {% for m in common.team %}
       <li class="team-card" data-reveal>
         {{ ui.photo(m.photo_caption, 'team_' ~ m.key ~ '_photo', 'square') }}
-        <h3>{{ m.name }}</h3>
+        {% set nm = fill('team_' ~ m.key ~ '_name') %}{% if nm %}<h3>{{ nm }}</h3>{% endif %}
         <dl class="team-facts">
           {% for f in ['role', 'languages'] %}{% set v = fill('team_' ~ m.key ~ '_' ~ f) %}{% if v %}<div><dt>{{ c.team[f] }}</dt><dd>{{ v }}</dd></div>{% endif %}{% endfor %}
         </dl>

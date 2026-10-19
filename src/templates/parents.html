@@ -34,7 +34,7 @@
       {% for m in common.team %}
       <figure class="team-mini">
         {{ ui.photo(m.photo_caption, 'team_' ~ m.key ~ '_photo', 'square') }}
-        <figcaption><strong>{{ m.name }}</strong></figcaption>
+        {% set nm = fill('team_' ~ m.key ~ '_name') %}{% if nm %}<figcaption><strong>{{ nm }}</strong></figcaption>{% endif %}
       </figure>
       {% endfor %}
     </div>

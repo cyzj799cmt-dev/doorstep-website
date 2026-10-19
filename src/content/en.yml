@@ -14,7 +14,6 @@ common:
   record_title: "At a glance"
   crumbs_label: "Breadcrumb"
   org_description: "Housing search in Warsaw, done for you: we find, check, negotiate and book, and you choose."
-  founders: ["Mila Novak", "Taras Kovalenko", "Elif Yilmaz", "Jonas Weber", "Ana Petrovska", "Kacper Wiśniewski"]
   ph:
     fill: "FILL IN"
     confirm: "confirm"
@@ -40,30 +39,38 @@ common:
     contact_hours: "hours when we answer"
     reply_time: "reply time"
     payment_methods: "payment details"
-    team_mila_role: "Mila's role"
-    team_mila_languages: "Mila's languages"
-    team_mila_photo: "photo of Mila"
-    team_mila_bio: "one line about Mila"
-    team_taras_role: "Taras's role"
-    team_taras_languages: "Taras's languages"
-    team_taras_photo: "photo of Taras"
-    team_taras_bio: "one line about Taras"
-    team_elif_role: "Elif's role"
-    team_elif_languages: "Elif's languages"
-    team_elif_photo: "photo of Elif"
-    team_elif_bio: "one line about Elif"
-    team_jonas_role: "Jonas's role"
-    team_jonas_languages: "Jonas's languages"
-    team_jonas_photo: "photo of Jonas"
-    team_jonas_bio: "one line about Jonas"
-    team_ana_role: "Ana's role"
-    team_ana_languages: "Ana's languages"
-    team_ana_photo: "photo of Ana"
-    team_ana_bio: "one line about Ana"
-    team_kacper_role: "Kacper's role"
-    team_kacper_languages: "Kacper's languages"
-    team_kacper_photo: "photo of Kacper"
-    team_kacper_bio: "one line about Kacper"
+    team_1_name: "name of founder 1"
+    team_1_role: "role of founder 1"
+    team_1_languages: "languages of founder 1"
+    team_1_photo: "photo of founder 1"
+    team_1_bio: "one line about founder 1"
+    team_2_name: "name of founder 2"
+    team_2_role: "role of founder 2"
+    team_2_languages: "languages of founder 2"
+    team_2_photo: "photo of founder 2"
+    team_2_bio: "one line about founder 2"
+    team_3_name: "name of founder 3"
+    team_3_role: "role of founder 3"
+    team_3_languages: "languages of founder 3"
+    team_3_photo: "photo of founder 3"
+    team_3_bio: "one line about founder 3"
+    team_4_name: "name of founder 4"
+    team_4_role: "role of founder 4"
+    team_4_languages: "languages of founder 4"
+    team_4_photo: "photo of founder 4"
+    team_4_bio: "one line about founder 4"
+    team_5_name: "name of founder 5"
+    team_5_role: "role of founder 5"
+    team_5_languages: "languages of founder 5"
+    team_5_photo: "photo of founder 5"
+    team_5_bio: "one line about founder 5"
+    team_6_name: "name of founder 6"
+    team_6_role: "role of founder 6"
+    team_6_languages: "languages of founder 6"
+    team_6_photo: "photo of founder 6"
+    team_6_bio: "one line about founder 6"
+    story_founder: "name of the founder whose flat was cancelled"
+    sample_signer: "first name for the sample note"
     team_contact_students: "named contact for students"
     team_contact_parents: "named contact for parents"
     team_contact_professionals: "named contact for professionals"
@@ -162,7 +169,7 @@ common:
     total: "You pay each month"
     deposit: "Deposit <span class='muted'>([[pl:kaucja]], once)</span>"
     empty: "— PLN"
-    note: "“Jonas here. I saw the flat this morning. The video is in your WhatsApp.”"
+    note: "“{?[[fill:sample_signer]] here. ?}I saw the flat this morning. The video is in your WhatsApp.”"
     sr_caption: "Sample of what a checked option looks like. Values appear once real data exists."
   promises:
     title: "Three things we promise"
@@ -244,12 +251,12 @@ common:
       - title: "Not a relocation firm for companies"
         text: "Companies with their own relocation department don't need us."
   team:
-    - {key: "mila", name: "Mila Novak", photo_caption: "[Team photo: Mila]"}
-    - {key: "taras", name: "Taras Kovalenko", photo_caption: "[Team photo: Taras]"}
-    - {key: "elif", name: "Elif Yilmaz", photo_caption: "[Team photo: Elif]"}
-    - {key: "jonas", name: "Jonas Weber", photo_caption: "[Team photo: Jonas]"}
-    - {key: "ana", name: "Ana Petrovska", photo_caption: "[Team photo: Ana]"}
-    - {key: "kacper", name: "Kacper Wiśniewski", photo_caption: "[Team photo: Kacper]"}
+    - {key: "1", photo_caption: "[Team photo 1]"}
+    - {key: "2", photo_caption: "[Team photo 2]"}
+    - {key: "3", photo_caption: "[Team photo 3]"}
+    - {key: "4", photo_caption: "[Team photo 4]"}
+    - {key: "5", photo_caption: "[Team photo 5]"}
+    - {key: "6", photo_caption: "[Team photo 6]"}
   forms:
     required: "(required)"
     optional: "(optional)"
@@ -442,9 +449,8 @@ home:
     link: "Registration and insurance details"
   story:
     heading: "Why we exist"
-    text: "Two months before term, Taras’s confirmed flat in Warsaw was cancelled. He had two weeks to find a new one from abroad. We built the service we would have paid for."
+    text: "Two months before term, one of us{? ([[fill:story_founder]])?} had a flat in Warsaw confirmed. It was cancelled, leaving two weeks to find a new one from abroad. We built the service we would have paid for."
     meta: "Six founders · Lazarski University students"
-    names: "Mila, Taras, Elif, Jonas, Ana and Kacper"
     link: "Meet us"
   guides:
     title: "Before you search"
@@ -881,7 +887,7 @@ about:
     eyebrow: "About us"
     title: "We built the service we would have paid for."
     story:
-      - "Two months before this semester, Taras had a flat in Warsaw confirmed. It was cancelled at short notice, and he had two weeks to find a new one from abroad. He found his room in a newly opened student residence by chance, after days of stress."
+      - "Two months before this semester, one of us{? ([[fill:story_founder]])?} had a flat in Warsaw confirmed. It was cancelled at short notice, leaving two weeks to find a new one from abroad. The new room turned up by chance, in a newly opened student residence, after days of stress."
       - "The rest of us had versions of the same story: ads only in Polish, listings that vanished, and nobody to ask whether an offer was genuine."
       - "Doorstep was founded in autumn 2026 by six students at Lazarski University: three on Erasmus exchange, three in full-time degree programmes. We are not trading yet."
   team:
